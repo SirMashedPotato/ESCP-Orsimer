@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>MorrowRim_Bow_OrsimerBow</defName>
+		<label>orsimer greatbow</label>
+		<description>A somewhat brutish looking greatbow. Boasts superior range over regular greatbows and is easier to make, though is somewhat unwieldy, and takes longer to fire and slows movement speed while equipped.</description>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+		  <texPath>Things/Item/Equipment/WeaponRanged/MorrowRim_Orcish_Bow</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Large</soundInteract>
+		<stuffCategories>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<statBases>
+		  <Beauty>-4</Beauty>
+		  <WorkToMake>8000</WorkToMake>
+		  <Mass>5.0</Mass>
+		  <AccuracyTouch>0.65</AccuracyTouch>
+		  <AccuracyShort>0.85</AccuracyShort>
+		  <AccuracyMedium>0.75</AccuracyMedium>
+		  <AccuracyLong>0.50</AccuracyLong>
+		  <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+		  <li>OrsimerWeaponRanged</li>
+		</weaponTags>
+		<verbs>
+		  <li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Arrow_Great</defaultProjectile>
+			<warmupTime>3.0</warmupTime>
+			<range>35.9</range>
+			<soundCast>Bow_Large</soundCast>
+		  </li>
+		</verbs>
+		<tools>
+		  <li>
+			<label>limb</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		</tools>
+		<recipeMaker>
+		  <researchPrerequisite>MorrowRim_OrsimerArmoryAdvanced</researchPrerequisite>
+		  <skillRequirements>
+			<Crafting>7</Crafting>
+		  </skillRequirements>
+		  <recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		  </recipeUsers>
+		</recipeMaker>
+		<equippedStatOffsets>
+		  <MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+</Defs>

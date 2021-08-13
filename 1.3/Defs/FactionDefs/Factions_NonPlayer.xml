@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase" Name="OrsimerFactionBase" Abstract="True">
+
+  </FactionDef>
+
+	<!-- Tribes -->
+
+  <FactionDef ParentName="OrsimerFactionBase" Name="OrsimerTribeBase" Abstract="True">
+    <pawnSingular>Orsimer</pawnSingular>
+    <pawnsPlural>Orsimer</pawnsPlural>
+	<description>Tribes of Orsimer, following a high chieftain, one who earned their position through blood and sweat. The Orsimer settle strongholds anywhere the please, as long as the location is remote.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nOrsimer are somewhat reclusive and untrustring of outsiders, likely due to their treatment in the past. As long as one respects their culture they may be called a friend. In combat they present a powerful ally, as Orsimer are well known for their beserker rage.</description>
+    <categoryTag>Tribal</categoryTag>
+    <listOrderPriority>110</listOrderPriority>
+	<settlementGenerationWeight>0.8</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>UI/OrsimerSettlement</factionIconPath>
+    <geneticVariance>0.1</geneticVariance>
+    <factionNameMaker>MorrowRim_NamerFactionOrsimer</factionNameMaker>
+    <settlementNameMaker>MorrowRim_NamerSettlementOrsimerHouse</settlementNameMaker>
+	<allowedCultures><li>MorrowRim_Orsimeri</li></allowedCultures>
+	<requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Animist>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">4</Structure_TheistEmbodied>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">4</Structure_TheistAbstract>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+    </structureMemeWeights>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <leaderTitle>high chieftain</leaderTitle>
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_ShamanMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>0~50</allowedArrivalTemperatureRange>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+	<raidLootMaker>MorrowRim_OrsimerTribeRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(800, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <OrsimerTribal_Warrior>10</OrsimerTribal_Warrior>
+          <OrsimerTribal_Archer>5</OrsimerTribal_Archer>
+          <OrsimerTribal_Hunter>5</OrsimerTribal_Hunter>
+          <OrsimerTribal_HeavyArcher>5</OrsimerTribal_HeavyArcher>
+          <OrsimerTribal_Berserker>10</OrsimerTribal_Berserker>
+          <OrsimerTribal_ChiefMelee>1.5</OrsimerTribal_ChiefMelee>
+		  
+          <MorrowRim_Echatere>5</MorrowRim_Echatere>
+          <MorrowRim_Welwa>5</MorrowRim_Welwa>
+        </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <OrsimerTribal_Warrior>20</OrsimerTribal_Warrior>
+          <OrsimerTribal_Archer>5</OrsimerTribal_Archer>
+          <OrsimerTribal_Hunter>5</OrsimerTribal_Hunter>
+          <OrsimerTribal_HeavyArcher>5</OrsimerTribal_HeavyArcher>
+          <OrsimerTribal_Berserker>10</OrsimerTribal_Berserker>
+          <OrsimerTribal_ChiefMelee>1.5</OrsimerTribal_ChiefMelee>
+		  
+          <MorrowRim_Welwa>2.5</MorrowRim_Welwa>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <OrsimerTribal_Trader>1</OrsimerTribal_Trader>
+        </traders>
+        <carriers>
+		  <MorrowRim_Echatere>10</MorrowRim_Echatere> <!-- need to add to allowed animals -->
+          <Muffalo>1</Muffalo>
+          <Alpaca>1</Alpaca>
+        </carriers>
+        <guards>
+          <OrsimerTribal_Warrior>10</OrsimerTribal_Warrior>
+          <OrsimerTribal_Archer>5</OrsimerTribal_Archer>
+          <OrsimerTribal_Hunter>10</OrsimerTribal_Hunter>
+          <OrsimerTribal_HeavyArcher>5</OrsimerTribal_HeavyArcher>
+          <OrsimerTribal_Berserker>7</OrsimerTribal_Berserker>
+          <MorrowRim_Welwa>3</MorrowRim_Welwa>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <OrsimerTribal_Warrior>10</OrsimerTribal_Warrior>
+          <OrsimerTribal_Archer>5</OrsimerTribal_Archer>
+          <OrsimerTribal_Hunter>5</OrsimerTribal_Hunter>
+          <OrsimerTribal_HeavyArcher>5</OrsimerTribal_HeavyArcher>
+          <OrsimerTribal_Berserker>10</OrsimerTribal_Berserker>
+           <OrsimerTribal_ChiefMelee>10</OrsimerTribal_ChiefMelee>
+		  
+		  <MorrowRim_Echatere>5</MorrowRim_Echatere>
+		  <MorrowRim_Welwa>5</MorrowRim_Welwa>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<apparelStuffFilter>
+		<thingDefs>
+			<li>MorrowRim_Orichalcum</li>
+			<li>MorrowRim_EchaterePelt</li>
+			<li>MorrowRim_WoolEchatere</li>
+			<li>Leather_Plain</li>
+			<li>Leather_Wolf</li>
+			<li>Leather_Panthera</li>
+			<li>Leather_Bear</li>
+			<li>Leather_Light</li>
+			<li>Leather_Heavy</li>
+			<li>Leather_Patch</li>
+		</thingDefs>
+	</apparelStuffFilter>
+	<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>	
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>MorrowRim_OrsimerTribeRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>Jade</li>
+            <li>Steel</li>
+            <li>Pemmican</li>
+            <li>MorrowRim_Orichalcum</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+
+  <FactionDef ParentName="OrsimerTribeBase">
+    <defName>OrsimerTribeCivil</defName>
+    <label>gentle Orsimer strongholds</label>
+    <colorSpectrum>
+      <li>(0.0, 0.7, 0.1)</li>
+      <li>(0.5, 0.3, 0.0)</li>
+    </colorSpectrum>
+	<disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+    </disallowedMemes>
+  </FactionDef>
+
+  <FactionDef ParentName="OrsimerTribeBase">
+    <defName>OrsimerTribeRough</defName>
+    <label>fierce Orsimer strongholds</label>
+    <factionIconPath>UI/OrsimerSettlementAlt</factionIconPath>
+	<colorSpectrum>
+      <li>(0.7, 0.6, 0.3)</li>
+      <li>(0.8, 0.4, 0.1)</li>
+    </colorSpectrum>
+	<naturalEnemy>true</naturalEnemy>
+	<disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+  </FactionDef>
+  
+  <FactionDef ParentName="OrsimerTribeBase">
+    <defName>OrsimerTribeRaider</defName>
+    <label>Orsimer raiders</label>
+    <factionIconPath>UI/OrsimerRaider</factionIconPath>
+	<colorSpectrum>
+      <li>(0.85, 0, 0)</li>
+      <li>(0.85, 0.7, 0.7)</li>
+    </colorSpectrum>
+	<permanentEnemy>true</permanentEnemy>
+	<factionNameMaker>MorrowRim_NamerFactionOrsimerRaider</factionNameMaker>
+	<requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+  </FactionDef>
+
+</Defs>

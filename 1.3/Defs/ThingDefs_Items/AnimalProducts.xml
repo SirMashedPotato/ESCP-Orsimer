@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="WoolBase">
+		<defName>MorrowRim_WoolEchatere</defName>
+		<label>echatere wool</label>
+		<description>Soft, light and provides rather good insulation. Echatere wool clothes can keep the body warm even in rather cold conditions.</description>
+		<graphicData>
+		  <color>(121,116,116)</color>
+		</graphicData>
+		<statBases>
+		  <StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+		  <color>(121,116,116)</color>
+		</stuffProps>
+	</ThingDef>
+
+</Defs>

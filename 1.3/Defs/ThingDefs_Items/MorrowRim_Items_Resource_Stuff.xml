@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>MorrowRim_Orichalcum</defName>
+		<label>orichalcum</label>
+		<description>A somewhat rare metal, almost solely mined by the Orsimer. Armor made from orichalcum is highly resistant to blunt damage, though does not fare particularly well against sharp damage. Most often used to forge special armor for Orsimer.</description>
+		<graphicData>
+		  <color>(61,68,60)</color>
+		  <texPath>Things/Item/Resource/MorrowRim_MetalBar</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+		  <MarketValue>2.4</MarketValue>
+		  <Mass>1.4</Mass>
+		  <StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>0.9</StuffPower_Armor_Blunt>
+		  <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+		  <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+		  <SharpDamageMultiplier>1.05</SharpDamageMultiplier>
+		  <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+		  <li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+		  <categories>
+			<li>Metallic</li>
+		  </categories>
+		  <commonality>0.05</commonality>
+		  <constructEffect>ConstructMetal</constructEffect>
+		  <color>(61,68,60)</color>
+		  <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+		  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+		  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+		  <statFactors>
+			<MaxHitPoints>1.3</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<Flammability>0.3</Flammability>
+		  </statFactors>
+		  <statOffsets>
+				<Beauty>4</Beauty>
+		  </statOffsets>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<comps></comps>
+	</ThingDef>
+	
+</Defs>

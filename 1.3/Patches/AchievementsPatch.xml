@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>MorrowRim_AchievementsTab</defName>
+							<label>MorrowRim</label>
+						</AchievementsExpanded.AchievementTabDef>
+						
+						<AchievementsExpanded.Reward_MapIncident>
+							<defName>MorrowRim_RewardOrsimerJoins</defName>
+							<label>Orsimer Joins</label>
+							<tab>MorrowRim_AchievementsTab</tab>
+							
+							<cost>150</cost>
+							<incident>MorrowRim_OrsimerJoins</incident>
+						</AchievementsExpanded.Reward_MapIncident>
+						
+						<!-- Colonist -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementOrsimerColonists</defName>
+							<label>A Town Full of Hot Heads</label>
+							<description>Have 12 Orsimer in your colony at the same time</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundOrsimer</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.RaceDefTracker">
+								<raceDefs>
+									<li>
+										<key>MorrowRim_OrsimerRace</key>
+										<value>12</value>
+									</li>
+								</raceDefs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementOrsimerColonists</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- Hediffs -->
+						<!-- Incidents -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBondedEchatere</defName>
+							<label>Don't Grow Soft</label>
+							<description>Have a colonist develop a bond with an echatere</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundOrsimer</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.AnimalBondedTracker">
+								<kindDef>MorrowRim_Echatere</kindDef>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBondedEchatere</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- Items -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementOrichalcum</defName>
+							<label>Pig Steel</label>
+							<description>Obtain 100 ingots of orichalcum</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundOrsimer</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_Orichalcum</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementOrichalcum</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- Kills -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_OrsimerSlayer</defName>
+							<label>Death to the Green-Skins</label>
+							<description>Slay 50 Orsimer</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundOrsimer</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<raceDef>MorrowRim_OrsimerRace</raceDef>
+								<count>50</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_OrsimerSlayer</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- Livestock -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementTameWelwa</defName>
+							<label>Well Well Well-Wa</label>
+							<description>Have 3 tame welwa</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundOrsimer</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>MorrowRim_Welwa</key>
+										<value>3</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementTameWelwa</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- Stats -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBeserkOrsimer</defName>
+							<label>Now The Kid Gloves Come Off</label>
+							<description>Witness an Orsimer enter a beserk frenzy for the first time</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundOrsimer</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.RecordEventTracker">
+								<def>MorrowRim_OrsimerEnrages</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBeserkOrsimer</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBeserkOrsimerMany</defName>
+							<label>Fury to Rival Malacath</label>
+							<description>Have an Orsimer enter a beserk frenzy for the 100th time</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundOrsimer</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.RecordEventTracker">
+								<def>MorrowRim_OrsimerEnrages</def>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBeserkOrsimerMany</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<!-- Trade -->
+						
+						<!-- Weapons -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_OrsimerVolendrung</defName>
+							<label>Volendrung</label>
+							<description>Forcefully obtain Volendrung from an Orsimer Chieftain</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundOrsimer</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_MeleeWeapon_Volendrung</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_OrsimerVolendrung</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_OrsimerUmbra</defName>
+							<label>Umbra</label>
+							<description>Forcefully obtain Umbra from an Orsimer Chieftain</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundOrsimer</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_MeleeWeapon_Umbra</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_OrsimerUmbra</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_OrsimerScourge</defName>
+							<label>Scourge</label>
+							<description>Forcefully obtain Scourge from an Orsimer Chieftain</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundOrsimer</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>MorrowRim_MeleeWeapon_Scourge</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_OrsimerScourge</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

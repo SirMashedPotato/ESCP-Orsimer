@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>MorrowRim_NamerPersonOrsimerMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name(p=5)->[MaleList] gro-[FamilyList]</li>
+				<li>name(p=2)->[MaleList] gro-[MaleList]</li>
+				<li>name(p=2)->[MaleList] gro-[FemaleList]</li>
+				<li>name(p=0.2)->[MaleList] gor-[FamilyList]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>MaleList</keyword>
+					<path>OrsimerNames/OrsimerMale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FemaleList</keyword>
+					<path>OrsimerNames/OrsimerFemale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FamilyList</keyword>
+					<path>OrsimerNames/OrsimerFamily</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>MorrowRim_NamerPersonOrsimerFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name(p=5)->[FemaleList] gra-[FamilyList]</li>
+				<li>name(p=2)->[FemaleList] gra-[FemaleList]</li>
+				<li>name(p=2)->[FemaleList] gra-[MaleList]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>MaleList</keyword>
+					<path>OrsimerNames/OrsimerMale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FemaleList</keyword>
+					<path>OrsimerNames/OrsimerFemale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FamilyList</keyword>
+					<path>OrsimerNames/OrsimerFamily</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>MorrowRim_NamerEchatere</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[a]-[c]</li>
+				<li>name->[b]-[c]</li>
+				<li>name->[c]-[d]</li>
+				<li>name->[d]-[c]</li>
+				<li>name->[a]-[c]-[d]</li>
+				<li>name->[a]-[d]-[c]</li>
+				<li>name->[b]-[c]-[d]</li>
+				<li>name->[b]-[d]-[c]</li>
+				<li>name->[a]-[b]-[c]</li>
+				<li>name->[b]-[a]-[c]</li>
+				<li>name->[a]-[b]-[c]-[d]</li>
+				<li>name->[a]-[b]-[d]-[c]</li>
+				<li>name->[b]-[a]-[c]-[d]</li>
+				<li>name->[b]-[a]-[d]-[c]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>a</keyword>
+					<path>EchatereNames/a</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>b</keyword>
+					<path>EchatereNames/b</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>c</keyword>
+					<path>EchatereNames/c</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>d</keyword>
+					<path>EchatereNames/d</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

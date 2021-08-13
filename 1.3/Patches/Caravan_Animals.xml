@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/Defs/BiomeDef[defName="BorealForest" or "Tundra" or "ColdBog" or "ColdBog" or "IceSheet" or "SeaIce" or "TemperateForest" or "TemperateSwamp" or "TropicalRainforest" or "TropicalSwamp" or "AridShrubland" or "Desert" or "ExtremeDesert"]/allowedPackAnimals</xpath>
+			<value>
+				<li>MorrowRim_Echatere</li>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands" or "MorrowRim_BlightedAshlands"]/allowedPackAnimals</xpath>
+						<value>
+							<li>MorrowRim_Echatere</li>
+						</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

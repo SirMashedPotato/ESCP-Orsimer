@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Nature's Pretty Sweet</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- TKKN_RedwoodForest -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="TKKN_RedwoodForest"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Echatere>0.2</MorrowRim_Echatere>
+					</value>			
+				</li>
+				
+				<!-- TKKN_Grasslands -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="TKKN_Grasslands"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Welwa>0.05</MorrowRim_Welwa>
+					</value>			
+				</li>
+				
+				<!-- TKKN_Savanna -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="TKKN_Savanna"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Welwa>0.05</MorrowRim_Welwa>
+					</value>	
+				</li>
+		
+			</operations>
+		</match>
+	</Operation>
+		
+</Patch>
+

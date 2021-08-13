@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>MorrowRim_NamerSettlementOrsimerHouse</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[OrsimerCities]</li>
+        <li>r_name->[FamilyList] Stronghold</li>
+        <li>r_name->[FamilyList] Fortress</li>
+        <li>r_name->[FamilyList] Camp</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>OrsimerCities->OrsimerNames/OrsimerCities</li>
+        <li>FamilyList->OrsimerNames/OrsimerFamily</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>MorrowRim_NamerFactionOrsimer</defName>
+	<include>
+      <li>TribalWordUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=2)->The [Color] [TerrainFeature] Orsimer</li>
+        <li>r_name(p=1)->The [TerrainFeature] Orsimer</li>
+      </rulesStrings>
+	  <rulesFiles>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>MorrowRim_NamerFactionOrsimerRaider</defName>
+	<include>
+      <li>TribalWordUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [Color] [TerrainFeature] Ravagers</li>
+        <li>r_name->[FamilyList]'s Ravagers</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>FamilyList->OrsimerNames/OrsimerFamily</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

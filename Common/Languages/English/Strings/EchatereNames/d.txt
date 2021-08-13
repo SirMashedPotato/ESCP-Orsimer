@@ -1,0 +1,9 @@
+Crab
+Spider
+Insect
+Bug
+Insectoid
+Scarab
+Beetle
+Ant
+Roach

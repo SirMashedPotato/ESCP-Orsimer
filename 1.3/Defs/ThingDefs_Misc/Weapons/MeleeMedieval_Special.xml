@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Abstract="True" Name="MorrowRim_MeleeWeaponChieftain" ParentName="BaseWeapon">
+		<techLevel>Medieval</techLevel>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<thingCategories>
+		  <li>WeaponsMelee</li>
+		</thingCategories>
+		<weaponTags>
+		  <li>OrsimerWeaponChief</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- One handed -->
+	
+	<ThingDef ParentName="MorrowRim_MeleeWeaponChieftain">
+		<defName>MorrowRim_MeleeWeapon_Scourge</defName>
+		<label>scourge</label>
+		<description>An ornate mace, with a strangely light build. Possibly a prized artifact said to open a gateway to other realms, though there is always the possibility it is simply a convincing replica.\n\nScourge deals more blunt damage than most weapons of similar weight.</description>
+		<graphicData>
+		  <texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Scourge</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+		  <Beauty>4</Beauty>
+		  <MarketValue>1000</MarketValue>
+		  <MaxHitPoints>120</MaxHitPoints>
+		  <Mass>1.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+		  <li>
+			<label>handle</label>
+			<capacities>
+			  <li>Poke</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		  <li>
+			<label>head</label>
+			<labelUsedInLogging>false</labelUsedInLogging>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>17</power>
+			<cooldownTime>1.3</cooldownTime>
+		  </li>
+		</tools>
+	</ThingDef>
+	
+	<!-- Two handed -->
+
+	<ThingDef ParentName="MorrowRim_MeleeWeaponChieftain">
+		<defName>MorrowRim_MeleeWeapon_Volendrung</defName>
+		<label>volendrung</label>
+		<description>An ornate warhammer, that seems to burn with an unnatural fury. Possibly a prized artifact said to disappear into thin air, though there is always the possibility it is simply a convincing replica.\n\nAttacks with Volendrung are capable of setting victims alight.</description>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+		  <MarketValue>1500</MarketValue>
+		  <MaxHitPoints>120</MaxHitPoints>
+		  <Mass>6.6</Mass>
+		</statBases>
+		<tools>
+		  <li>
+			<label>handle</label>
+			<capacities>
+			  <li>Poke</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>2.6</cooldownTime>
+		  </li>
+		  <li>
+			<label>head</label>
+			<labelUsedInLogging>false</labelUsedInLogging>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>31</power>
+			<cooldownTime>3</cooldownTime>
+			<extraMeleeDamages>
+			  <li>
+				<def>Flame</def>
+				<amount>10</amount>
+				<chance>0.5</chance>
+			  </li>
+			</extraMeleeDamages>
+		  </li>
+		</tools>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<graphicData>
+		  <texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Volendrung</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="MorrowRim_MeleeWeaponChieftain">
+		<defName>MorrowRim_MeleeWeapon_Umbra</defName>
+		<label>umbra</label>
+		<description>An ornate claymore, with an unnaturally sharp blade. Possibly a prized artifact said to devour the souls of its victims, though there is always the possibility it is simply a convincing replica.\n\nAttacks with Umbra easily cleave through armour.</description>
+		<graphicData>
+		  <texPath>Things/Item/Equipment/WeaponMelee/MorrowRim_Umbra</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+		  <li>OrsimerWeaponLarge</li>
+		</weaponTags>
+		<statBases>
+		  <MarketValue>2000</MarketValue>
+		  <Mass>3.3</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+		  <li>
+			<label>handle</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		  <li>
+			<label>point</label>
+			<capacities>
+			  <li>Stab</li>
+			</capacities>
+			<power>25</power>
+			<cooldownTime>2.6</cooldownTime>
+			<armorPenetration>0.9</armorPenetration>
+		  </li>
+		  <li>
+			<label>edge</label>
+			<capacities>
+			  <li>Cut</li>
+			</capacities>
+			<power>25</power>
+			<cooldownTime>2.6</cooldownTime>
+			<armorPenetration>0.9</armorPenetration>
+		  </li>
+		</tools>
+	</ThingDef>
+
+</Defs>

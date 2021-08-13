@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>A RimWorld of Magic</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+
+		<operations>
+	
+			<!-- increase the enchantability of stuff -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_Orichalcum"]/comps</xpath>
+				<value>
+					<li Class="TorannMagic.Enchantment.CompProperties_EnchantedStuff">
+						<isEnchanted>true</isEnchanted>
+						<enchantmentBonusMultiplier>0.5</enchantmentBonusMultiplier>
+						<arcaneResOffset>0.4</arcaneResOffset>
+					</li>
+				</value>
+			</li>
+
+			<!-- edit descriptions to reflect this -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_Orichalcum"]/description</xpath>
+				<value>
+					<description>A somewhat rare metal, almost solely mined by the Orsimer. Armor made from orichalcum is highly resistant to blunt damage, though does not fare particularly well against sharp damage. Most often used to forge special armor for Orsimer.\n\nAs orichalcum is exceptionally resistant to magic, any gear made of it will increase the wielders resistance to magic abilities. However any enchantments on this gear will only function at half strength.</description>
+				</value>
+			</li>
+
+		</operations>
+
+    </match>
+  </Operation>
+
+</Patch>

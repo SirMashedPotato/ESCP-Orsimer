@@ -1,0 +1,9 @@
+Hamster
+Ox
+Cow
+Moose
+Muffalo
+Buffalo
+Bison
+Bull
+Deer

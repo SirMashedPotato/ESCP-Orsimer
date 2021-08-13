@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef ParentName="TileMetalBase">
+		<defName>MorrowRim_OrichalcumTile</defName>
+		<label>orichalcum tile</label>
+		<renderPrecedence>242</renderPrecedence>
+		<description>For a medieval but royal look, orichalcum tiles fit perfectly into luxurious rooms.</description>
+		<color>(61,68,60)</color>
+		<statBases>
+		  <Beauty>5</Beauty>
+		  <WorkToBuild>800</WorkToBuild>
+		  <Cleanliness>0.2</Cleanliness>
+		</statBases>
+		<costList>
+		  <MorrowRim_Orichalcum>7</MorrowRim_Orichalcum>
+		</costList>
+		<designationHotKey>Misc3</designationHotKey>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<tags>
+		  <li>FineFloor</li>
+		</tags>
+	</TerrainDef>
+
+</Defs>

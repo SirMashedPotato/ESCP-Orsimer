@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Advanced Biomes (Continued)</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Savanna -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="Savanna"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Welwa>0.05</MorrowRim_Welwa>
+					</value>			
+				</li>
+			</operations>
+		</match>
+	</Operation>
+		
+</Patch>
+

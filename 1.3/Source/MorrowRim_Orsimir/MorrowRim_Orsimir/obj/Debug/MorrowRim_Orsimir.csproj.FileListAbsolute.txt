@@ -1,0 +1,8 @@
+C:\Users\andre\Desktop\Rimworld\MorrowRim\. Races\MorrowRim - Orsimer Race\Common\Assemblies\MorrowRim_Orsimir.dll
+C:\Users\andre\Desktop\Rimworld\MorrowRim\. Races\MorrowRim - Orsimer Race\Common\Source\MorrowRim_Orsimir\MorrowRim_Orsimir\obj\Debug\MorrowRim_Orsimir.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\Rimworld\MorrowRim\. Races\MorrowRim - Orsimer Race\Common\Source\MorrowRim_Orsimir\MorrowRim_Orsimir\obj\Debug\MorrowRim_Orsimir.dll
+C:\Users\andre\Desktop\Rimworld\MorrowRim\. Races\MorrowRim - Orsimer Race\Common\Source\MorrowRim_Orsimir\MorrowRim_Orsimir\obj\Debug\MorrowRim_Orsimir.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Rimworld\MorrowRim\. Races [1.3]\MorrowRim - Orsimer\1.3\Assemblies\MorrowRim_Orsimir.dll
+C:\Users\andre\Desktop\Rimworld\MorrowRim\. Races [1.3]\MorrowRim - Orsimer\1.3\Source\MorrowRim_Orsimir\MorrowRim_Orsimir\obj\Debug\MorrowRim_Orsimir.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\Rimworld\MorrowRim\. Races [1.3]\MorrowRim - Orsimer\1.3\Source\MorrowRim_Orsimir\MorrowRim_Orsimir\obj\Debug\MorrowRim_Orsimir.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Rimworld\MorrowRim\. Races [1.3]\MorrowRim - Orsimer\1.3\Source\MorrowRim_Orsimir\MorrowRim_Orsimir\obj\Debug\MorrowRim_Orsimir.dll
