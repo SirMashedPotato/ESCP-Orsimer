@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MorrowRim_MineableOrichalcum</defName>
+		<label>orichalcum node</label>
+		<description>A node of raw orichalcum. Can be mined for orichalcum, a strong, yet difficult to work with, metal.</description>
+		<graphicData>
+		  <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <color>(129,124,101)</color>
+		  <colorTwo>(59,84,71)</colorTwo>
+		</graphicData>
+		<statBases>
+		  <MaxHitPoints>600</MaxHitPoints>
+		</statBases>
+		<building>
+		  <isResourceRock>true</isResourceRock>
+		  <mineableThing>MorrowRim_Orichalcum</mineableThing>
+		  <mineableYield>15</mineableYield>
+		  <mineableScatterCommonality>0.04</mineableScatterCommonality>
+		  <mineableScatterLumpSizeRange>10~25</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+</Defs>

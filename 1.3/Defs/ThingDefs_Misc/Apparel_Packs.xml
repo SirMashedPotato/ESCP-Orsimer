@@ -3,30 +3,10 @@
 
 	<ThingDef ParentName="ApparelBase" Name="MorrowRimTotemBase" Abstract="True">
 	    <techLevel>Medieval</techLevel>
-		<recipeMaker>
-		  <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
-		  <recipeUsers>
-			<li>TableSculpting</li>
-		  </recipeUsers>
-		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-		  <workSkill>Crafting</workSkill>
-		  <effectWorking>Smith</effectWorking>
-		  <soundWorking>Recipe_Smith</soundWorking>
-		  <skillRequirements>
-			<Crafting>6</Crafting>
-		  </skillRequirements>
-		  <researchPrerequisite>MorrowRim_OrsimerTotems</researchPrerequisite>
-		</recipeMaker>
-		<stuffCategories>
-			<li>Stony</li>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
 		<graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-		  <WorkToMake>5000</WorkToMake>
 		  <Mass>3</Mass>
 		  <Flammability>0.4</Flammability>
 		  <EquipDelay>2</EquipDelay>
@@ -74,8 +54,35 @@
 		  </layers>
 		</apparel>
 	</ThingDef>
+	
+	<ThingDef ParentName="MorrowRimTotemBase" Name="MorrowRimTotemCraftableBase" Abstract="True">
+		<recipeMaker>
+		  <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+		  <recipeUsers>
+			<li>TableSculpting</li>
+		  </recipeUsers>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <skillRequirements>
+			<Crafting>6</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>MorrowRim_OrsimerTotems</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+		  <WorkToMake>5000</WorkToMake>
+		</statBases>
+	</ThingDef>
+	
+	<!-- -->
 
-	<ThingDef ParentName="MorrowRimTotemBase">
+	<ThingDef ParentName="MorrowRimTotemCraftableBase">
 		<defName>MorrowRim_Apparel_TotemWroth</defName>
 		<label>totem of wroth</label>
 		<descriptionHyperlinks>
@@ -93,7 +100,7 @@
 		</apparel>
 	</ThingDef>
 	
-	<ThingDef ParentName="MorrowRimTotemBase">
+	<ThingDef ParentName="MorrowRimTotemCraftableBase">
 		<defName>MorrowRim_Apparel_TotemFury</defName>
 		<label>totem of fury</label>
 		<descriptionHyperlinks>
@@ -111,7 +118,7 @@
 		</apparel>
 	</ThingDef>
 	
-	<ThingDef ParentName="MorrowRimTotemBase">
+	<ThingDef ParentName="MorrowRimTotemCraftableBase">
 		<defName>MorrowRim_Apparel_TotemFuror</defName>
 		<label>totem of furor</label>
 		<descriptionHyperlinks>
@@ -127,6 +134,35 @@
 				<li>OrsimerTotem_Basic</li>
 			</tags>
 		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="MorrowRimTotemBase">
+		<defName>MorrowRim_Apparel_TotemArchotech</defName>
+		<label>totem of the archotech</label>
+		<techLevel>Archotech</techLevel>
+		<tradeTags>
+		  <li>Artifact</li>
+		</tradeTags>
+		<thingSetMakerTags><li>RewardStandardMedFreq</li></thingSetMakerTags>
+		<descriptionHyperlinks>
+			<HediffDef>MorrowRim_ArchotechsRage</HediffDef>
+		</descriptionHyperlinks>
+		<description>An Orsimer totem, attached to the belt. Augments an Orsimer's beserker rage, increasing durability, moving and manipulation.</description>
+		<graphicData>
+		  <texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_TotemArchotech/OrcishTotem_Archotech_east</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_TotemArchotech/OrcishTotem_Archotech</wornGraphicPath>
+			<tags>
+				<li>OrsimerTotem_Artifact</li>
+			</tags>
+		</apparel>
+		<statBases>
+		  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Styleable"></li>
+		</comps>
 	</ThingDef>
 
 </Defs>

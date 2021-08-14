@@ -78,7 +78,7 @@
 								</stages>
 							</HediffDef>
 						
-							<ThingDef ParentName="MorrowRimTotemBase">
+							<ThingDef ParentName="MorrowRimTotemCraftableBase">
 								<defName>MorrowRim_Apparel_TotemPrimal</defName>
 								<label>primal totem</label>
 								<descriptionHyperlinks>
@@ -169,7 +169,7 @@
 								</stages>
 							</HediffDef>
 						
-							<ThingDef ParentName="MorrowRimTotemBase">
+							<ThingDef ParentName="MorrowRimTotemCraftableBase">
 								<defName>MorrowRim_Apparel_TotemBeastial</defName>
 								<label>beastial totem</label>
 								<descriptionHyperlinks>

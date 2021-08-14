@@ -16,7 +16,7 @@
 							
 							<!-- Ogrim -->
 						
-							<ThingDef ParentName="MorrowRimTotemBase">
+							<ThingDef ParentName="MorrowRimTotemCraftableBase">
 								<defName>MorrowRim_Apparel_TotemTitan</defName>
 								<label>totem of the titan</label>
 								<descriptionHyperlinks>

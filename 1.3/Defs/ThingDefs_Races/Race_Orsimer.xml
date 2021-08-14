@@ -134,7 +134,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="MorrowRim_BasePawnOrsimer">
 		<defName>MorrowRim_OrsimerRace</defName>
 		<label>Orsimer</label>
-		<description>An elven race, though many consider them to be more closely related to goblins or trolls, likely due to their appearance and previous animalistic nature. Orsimer lack many features typical of the other elven races, angular faces, extended lifespands, increased psychic sensitivity and heightened intelligence.\n\nThey make up for these losses with a strong punch and durable body, capable of dishing out, and taking, severe beatings. It is best not to enter a fist-fight with an Orsimer, for even if you are capable of throwing good punches, the Orsimer will just enter a beserker rage, ignoring all pain and dishing out great deals of it.\n\nThe Orsimer have a tendency towards more brutish traits, such as brawler or bloodlust. Their increased strength makes them the perfect choice for working in mines, at a forge, or in the front line. They do not mind wearing clothing stripped from a corpse, as the corpse did not deserve the clothing, for it is a corpse.</description>
+		<description>An elven race, though many consider them to be more closely related to goblins or trolls, likely due to their appearance and previous animalistic nature. Orsimer lack many features typical of the other elven races, angular faces, extended lifespans, increased psychic sensitivity and heightened intelligence.\n\nThey make up for these losses with a strong punch and durable body, capable of dishing out, and taking, severe beatings. It is best not to enter a fist-fight with an Orsimer, for even if you are capable of throwing good punches, the Orsimer will just enter a beserker rage, ignoring all pain and dishing out great deals of it.\n\nAn Orsimer's increased strength makes them the perfect choice for working in mines or in the front line. Orsimer also make for good smiths, and have a unique understanding of working orichalcum. They do not mind wearing clothing stripped from a corpse, as the corpse did not deserve the clothing, for it is a corpse.</description>
 		<descriptionHyperlinks>
 			<HediffDef>MorrowRim_BeserkerRage</HediffDef>
 		</descriptionHyperlinks>
@@ -164,10 +164,14 @@
 			<totems>
 				<li>MorrowRim_Apparel_TotemWroth</li>
 				<li>MorrowRim_Apparel_TotemFury</li>
+				<li>MorrowRim_Apparel_TotemFuror</li>
+				<li>MorrowRim_Apparel_TotemArchotech</li>
 			</totems>
 			<augments>
 				<li>MorrowRim_BeserkerWroth</li>
 				<li>MorrowRim_BeserkerFury</li>
+				<li>MorrowRim_BeserkerFuror</li>
+				<li>MorrowRim_ArchotechsRage</li>
 			</augments>
 		  </li>
 
@@ -185,8 +189,28 @@
 			<generalSettings>
 				<maxDamageForSocialfight>8</maxDamageForSocialfight>
 				<forcedRaceTraitEntries>
+					<li>
+						<defName>Brawler</defName>
+						<chance>5</chance>
+					</li>
 				</forcedRaceTraitEntries>
 				<disallowedTraits>
+					<li>
+						<defName>Beauty</defName>
+						<degree>1</degree>
+						<commonalityMale>90</commonalityMale>
+						<commonalityFemale>50</commonalityFemale>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>2</degree>
+						<commonalityMale>100</commonalityMale>
+						<commonalityFemale>80</commonalityFemale>
+					</li>
+					<li>
+						<defName>Wimp</defName>
+						<chance>80</chance>
+					</li>
 				</disallowedTraits>
 				<allowHumanBios>false</allowHumanBios>
 				<humanRecipeImport>true</humanRecipeImport>

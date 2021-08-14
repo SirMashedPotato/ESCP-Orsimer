@@ -252,5 +252,68 @@
 		  </li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>MorrowRim_ArchotechsRage</defName>
+		<label>archotech's rage</label>
+		<description>A modified version of beserker rage that fortifies durability, moving and manipulation. Caused by wearing a totem of the archotech.\n\nOrsimer are left slightly drained after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while in a drained state, which will last 11 hours.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1.0, 0.4, 0.2)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<maxSeverity>1</maxSeverity>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<comps>
+		  <li Class="HediffCompProperties_Immunizable">
+			<severityPerDayNotImmune>-2.0</severityPerDayNotImmune>
+		  </li>
+		</comps>
+		<stages>
+		  <li>
+			<label>drained</label>
+			<minSeverity>0.0</minSeverity>
+			<capMods>
+			  <li>
+				<capacity>BloodFiltration</capacity>
+				<offset>-0.1</offset>
+			  </li>
+			  <li>
+				<capacity>BloodPumping</capacity>
+				<offset>-0.1</offset>
+			  </li>
+			  <li>
+				<capacity>Metabolism</capacity>
+				<offset>-0.1</offset>
+			  </li>
+			</capMods>
+		  </li>
+		  <li>
+			<label>enraged</label>
+			<minSeverity>0.8</minSeverity>
+			<painOffset>-2.0</painOffset>
+			<statOffsets>
+				<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			</statOffsets>
+			<capMods>
+			  <li>
+				<capacity>Moving</capacity>
+				<offset>1.25</offset>
+			  </li>
+			  <li>
+				<capacity>Manipulation</capacity>
+				<offset>1.25</offset>
+			  </li>
+			  <li>
+				<capacity>Sight</capacity>
+				<offset>-0.25</offset>
+			  </li>
+			  <li>
+				<capacity>Hearing</capacity>
+				<offset>-0.25</offset>
+			  </li>
+			</capMods>
+		  </li>
+		</stages>
+	</HediffDef>
 
 </Defs>
