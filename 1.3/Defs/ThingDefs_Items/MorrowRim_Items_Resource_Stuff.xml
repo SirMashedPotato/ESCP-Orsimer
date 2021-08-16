@@ -4,7 +4,6 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>MorrowRim_Orichalcum</defName>
 		<label>orichalcum</label>
-		<!--<description>A somewhat rare metal, almost solely mined by the Orsimer. Armor made from orichalcum is highly resistant to blunt damage, though does not fare particularly well against sharp damage. Most often used to forge special armor for Orsimer.</description>-->
 		<description>A rare metal, stronger and more durable than steel, though exceptionally time consuming to work with.\n\nOrsimer are masters of working orichalcum, and are considered one of the few races that truly understand the metal. As such, anything crafted from orichalcum will be one quality level higher when crafted by an Orsimer.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/MorrowRim_Orichalcum</texPath>

@@ -163,7 +163,7 @@
 	<initialWillRange>3~5</initialWillRange>
     <initialResistanceRange>19~30</initialResistanceRange>
   </PawnKindDef>
-  
+  <!--
   <PawnKindDef ParentName="OrsimerTribalBase">
     <defName>OrsimerTribal_EliteArcher</defName>
     <label>elite archer</label>
@@ -179,12 +179,12 @@
     </disallowedTraits>
     <weaponMoney>250~250</weaponMoney>
     <weaponTags>
-      <li>OrsimerWeaponCrossbow</li>
+      <li>OrsimerWeaponRanged</li>
     </weaponTags>
 	<initialWillRange>3~5</initialWillRange>
     <initialResistanceRange>19~30</initialResistanceRange>
   </PawnKindDef>
-
+	-->
   <!-- need chieftain gear -->
 
   <PawnKindDef ParentName="OrsimerTribalBase" Name="OrsimerTribalChiefBase" Abstract="True">

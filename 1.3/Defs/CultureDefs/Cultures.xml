@@ -15,19 +15,32 @@
     <allowedPlaceTags>
       <li>OriginTribal</li>
     </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/Village</iconPath>
+    <iconPath>UI/OrsimerSettlement</iconPath>
     <preferredWeaponClasses>
       <noble>Melee</noble>
       <despised>Ranged</despised>
     </preferredWeaponClasses>
     <thingStyleCategories>
       <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>Totemic</category>
+        <category>MorrowRim_OrsimerStyle</category>
         <priority>2</priority>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Rustic</category>
+        <priority>1</priority>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Totemic</category>
+        <priority>1</priority>
       </li>
     </thingStyleCategories>
     <styleItemTags>
-      <li>
+	  <li>
+        <tag>TattooFaceOrsimer</tag>
+        <baseWeight>3</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+	  <li>
         <tag>Tribal</tag>
         <baseWeight>1</baseWeight>
         <weightFactor>1</weightFactor>

@@ -57,6 +57,10 @@
       <li>Caravan_Neolithic_BulkGoods</li>
       <li>Caravan_Neolithic_WarMerchant</li>
       <li>Caravan_Neolithic_ShamanMerchant</li>
+	  <!--
+	  <li>Caravan_Orsimer_Smith</li>
+	  <li>Caravan_Orsimer_BeastTamer</li>
+	  -->
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
@@ -93,8 +97,8 @@
           <OrsimerTribal_Berserker>10</OrsimerTribal_Berserker>
           <OrsimerTribal_ChiefMelee>1.5</OrsimerTribal_ChiefMelee>
 		  
-          <MorrowRim_Echatere>5</MorrowRim_Echatere>
-          <MorrowRim_Welwa>5</MorrowRim_Welwa>
+          <MorrowRim_Welwa>3</MorrowRim_Welwa>
+		  <MorrowRim_TrollHill MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollHill>
         </options>
       </li>
       <li>
@@ -109,6 +113,7 @@
           <OrsimerTribal_ChiefMelee>1.5</OrsimerTribal_ChiefMelee>
 		  
           <MorrowRim_Welwa>2.5</MorrowRim_Welwa>
+		  <MorrowRim_TrollHill MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollHill>
         </options>
       </li>
       <li>
@@ -140,8 +145,8 @@
           <OrsimerTribal_Berserker>10</OrsimerTribal_Berserker>
            <OrsimerTribal_ChiefMelee>10</OrsimerTribal_ChiefMelee>
 		  
-		  <MorrowRim_Echatere>5</MorrowRim_Echatere>
-		  <MorrowRim_Welwa>5</MorrowRim_Welwa>
+		  <MorrowRim_Welwa>3</MorrowRim_Welwa>
+		  <MorrowRim_TrollHill MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollHill>
         </options>
       </li>
     </pawnGroupMakers>

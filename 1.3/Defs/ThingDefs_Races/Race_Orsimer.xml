@@ -219,6 +219,7 @@
 						<li>Average_Pointy</li>
 						<li>Average_Wide</li>
 						<li>Average_Normal</li>
+
 						<li>Narrow_Pointy</li>
 						<li>Narrow_Wide</li>
 						<li>Narrow_Normal</li>
@@ -393,6 +394,7 @@
 								  <li>FullHead</li>
 								  <li>Teeth</li>
 								  <li>Mouth</li>
+								  <li>MorrowRim_CoverOrsimerTusks</li>
 							</hiddenUnderApparelFor>
 							<!-- offsets -->
 							<offsets>
@@ -544,6 +546,119 @@
 										<Narrow_Normal>(0.05,0.05)</Narrow_Normal>
 										<Narrow_Pointy>(0.05,0.05)</Narrow_Pointy>
 										<Narrow_Wide>(0.05,0.05)</Narrow_Wide>
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>
+						<!-- ears right, both genders -->
+						<li>
+							<path>Things/Pawn/Humanlike/Orsimer/Ear/RightEar</path>
+							<colorChannel>skin</colorChannel>
+							 <bodyPart>right ear</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>false</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<!-- offsets -->
+							<offsets>
+								<south>
+									<bodyTypes>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.0,0.0)</Average_Normal>
+										<Average_Pointy>(0.0,0.0)</Average_Pointy>
+										<Average_Wide>(0.0,0.0)</Average_Wide>
+										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
+										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
+										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
+									</crownTypes>
+								</south>
+								<north>
+									<layerOffset>-0.28</layerOffset>
+									<bodyTypes>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.0,0.0)</Average_Normal>
+										<Average_Pointy>(0.0,0.0)</Average_Pointy>
+										<Average_Wide>(0.0,0.0)</Average_Wide>
+										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
+										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
+										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
+									</crownTypes>
+								</north>
+								<east>
+									<layerOffset>-0.332</layerOffset>
+									<bodyTypes>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.0,0.0)</Average_Normal>
+										<Average_Pointy>(0.0,0.0)</Average_Pointy>
+										<Average_Wide>(0.0,0.0)</Average_Wide>
+										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
+										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
+										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>
+						<!-- ears left, both genders -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Things/Pawn/Humanlike/Orsimer/Ear/LeftEar</path>
+							<colorChannel>skin</colorChannel>
+							 <bodyPart>left ear</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>false</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<!-- offsets -->
+							<offsets>
+								<south>
+									<bodyTypes>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.0,0.0)</Average_Normal>
+										<Average_Pointy>(0.0,0.0)</Average_Pointy>
+										<Average_Wide>(0.0,0.0)</Average_Wide>
+										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
+										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
+										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
+									</crownTypes>
+								</south>
+								<north>
+									<layerOffset>-0.28</layerOffset>
+									<bodyTypes>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.0,0.0)</Average_Normal>
+										<Average_Pointy>(0.0,0.0)</Average_Pointy>
+										<Average_Wide>(0.0,0.0)</Average_Wide>
+										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
+										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
+										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
+									</crownTypes>
+								</north>
+								<east>
+									<layerOffset>-0.332</layerOffset>
+									<bodyTypes>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.0,0.0)</Average_Normal>
+										<Average_Pointy>(0.0,0.0)</Average_Pointy>
+										<Average_Wide>(0.0,0.0)</Average_Wide>
+										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
+										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
+										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
 									</crownTypes>
 								</east>
 							</offsets>

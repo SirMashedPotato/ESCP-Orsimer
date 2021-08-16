@@ -37,21 +37,19 @@ namespace MorrowRim_Orsimir
         [HarmonyPriority(Priority.Last)]
         public static void CheckOrichalcum(Pawn worker, List<Thing> things)
         {
-            Log.Message("1");
-            foreach (Thing thing in things)
+            if (true) //TODO mod setting
             {
-                Log.Message(": " + thing);
-                if (thing.def.CostStuffCount > 0 && HarmonyUtility.MadeOfOrichalc(thing) && HarmonyUtility.IsOrsimer(worker))
+                foreach (Thing thing in things)
                 {
-                    Log.Message("2");
-                    if (thing.def.comps.Any(x => x.compClass.Name == "CompQuality"))
+                    if (thing.def.CostStuffCount > 0 && HarmonyUtility.MadeOfOrichalc(thing) && HarmonyUtility.IsOrsimer(worker))
                     {
-                        Log.Message("3");
-                        thing.TryGetQuality(out QualityCategory qc);
-                        if (qc != QualityCategory.Legendary)
+                        if (thing.def.comps.Any(x => x.compClass.Name == "CompQuality"))
                         {
-                            thing.TryGetComp<CompQuality>().SetQuality(qc + 1, new ArtGenerationContext());
-                            Log.Message("Quality increased for: " + thing + ", from: " + qc);
+                            thing.TryGetQuality(out QualityCategory qc);
+                            if (qc != QualityCategory.Legendary)
+                            {
+                                thing.TryGetComp<CompQuality>().SetQuality(qc + 1, new ArtGenerationContext());
+                            }
                         }
                     }
                 }
