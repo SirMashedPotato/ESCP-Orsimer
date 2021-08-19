@@ -37,7 +37,7 @@ namespace MorrowRim_Orsimir
         [HarmonyPriority(Priority.Last)]
         public static void CheckOrichalcum(Pawn worker, List<Thing> things)
         {
-            if (true) //TODO mod setting
+            if (true) //TODO mod setting?
             {
                 foreach (Thing thing in things)
                 {
@@ -48,6 +48,7 @@ namespace MorrowRim_Orsimir
                             thing.TryGetQuality(out QualityCategory qc);
                             if (qc != QualityCategory.Legendary)
                             {
+                                Log.Message("Increasing item quality by 1 level: " + thing);
                                 thing.TryGetComp<CompQuality>().SetQuality(qc + 1, new ArtGenerationContext());
                             }
                         }
@@ -56,4 +57,10 @@ namespace MorrowRim_Orsimir
             }
         }
     }
+
+    /* 
+     * Patch that checks if animal has tame boost from orsimer
+     * If thing is so, increase tame chance by 10%
+     * Probably needs to use transpiler though...
+     */
 }

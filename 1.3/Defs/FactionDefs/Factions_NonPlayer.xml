@@ -39,8 +39,8 @@
       <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">4</Structure_TheistEmbodied>
       <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">4</Structure_TheistAbstract>
       <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
-      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
-      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginChristian>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginIslamic>
       <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
       <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
     </structureMemeWeights>
@@ -53,17 +53,24 @@
       </li>
     </backstoryFilters>
     <leaderTitle>high chieftain</leaderTitle>
+	<fixedLeaderKinds>
+      <li>OrsimerTribal_ChiefMelee</li>
+    </fixedLeaderKinds>
     <caravanTraderKinds>
       <li>Caravan_Neolithic_BulkGoods</li>
       <li>Caravan_Neolithic_WarMerchant</li>
       <li>Caravan_Neolithic_ShamanMerchant</li>
+	  <!-- VE Medieval -->
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Armourer</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Weaponsmith</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Sellswords</li>
 	  <!--
-	  <li>Caravan_Orsimer_Smith</li>
 	  <li>Caravan_Orsimer_BeastTamer</li>
 	  -->
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
+		<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Visitor_Medieval_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
       <li>Base_Neolithic_Standard</li>
@@ -112,8 +119,8 @@
           <OrsimerTribal_Berserker>10</OrsimerTribal_Berserker>
           <OrsimerTribal_ChiefMelee>1.5</OrsimerTribal_ChiefMelee>
 		  
-          <MorrowRim_Welwa>2.5</MorrowRim_Welwa>
-		  <MorrowRim_TrollHill MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollHill>
+          <MorrowRim_Welwa>2</MorrowRim_Welwa>
+		  <MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">1</MorrowRim_Scamp>
         </options>
       </li>
       <li>
@@ -132,7 +139,8 @@
           <OrsimerTribal_Hunter>10</OrsimerTribal_Hunter>
           <OrsimerTribal_HeavyArcher>5</OrsimerTribal_HeavyArcher>
           <OrsimerTribal_Berserker>7</OrsimerTribal_Berserker>
-          <MorrowRim_Welwa>3</MorrowRim_Welwa>
+          <MorrowRim_Welwa>2</MorrowRim_Welwa>
+		  <MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">1</MorrowRim_Scamp>
         </guards>
       </li>
       <li>
@@ -147,6 +155,7 @@
 		  
 		  <MorrowRim_Welwa>3</MorrowRim_Welwa>
 		  <MorrowRim_TrollHill MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollHill>
+		  <MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">1</MorrowRim_Scamp>
         </options>
       </li>
     </pawnGroupMakers>

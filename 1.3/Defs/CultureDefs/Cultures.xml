@@ -37,7 +37,7 @@
     <styleItemTags>
 	  <li>
         <tag>TattooFaceOrsimer</tag>
-        <baseWeight>3</baseWeight>
+        <baseWeight>1</baseWeight>
         <weightFactor>1</weightFactor>
       </li>
 	  <li>

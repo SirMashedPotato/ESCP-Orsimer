@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+	<ThingStyleDef>
+		<defName>Hindu_SimpleHelmet</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/ApparelStyles/HelmetSimpleHindu/HelmetSimpleHindu</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/ApparelStyles/HelmetSimpleHindu/HelmetSimpleHindu</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	-->
+</Defs>

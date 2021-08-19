@@ -389,13 +389,15 @@
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
+							<drawnDesiccated>true</drawnDesiccated>
 							<hiddenUnderApparelFor>
 								  <li>FullHead</li>
 								  <li>Teeth</li>
 								  <li>Mouth</li>
-								  <li>MorrowRim_CoverOrsimerTusks</li>
 							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>MorrowRim_CoverOrsimerTusks</li>
+							</hiddenUnderApparelTag>
 							<!-- offsets -->
 							<offsets>
 								<south>
@@ -448,7 +450,7 @@
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
+							<drawnDesiccated>true</drawnDesiccated>
 							<hiddenUnderApparelFor>
 								  <li>FullHead</li>
 								  <li>Teeth</li>
@@ -505,11 +507,14 @@
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
+							<drawnDesiccated>true</drawnDesiccated>
 							<hiddenUnderApparelFor>
 								<li>FullHead</li>
 								<li>UpperHead</li>
 							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>MorrowRim_CoverOrsimerTusks</li>
+							</hiddenUnderApparelTag>
 							<!-- offsets -->
 							<offsets>
 								<south>

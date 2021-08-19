@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth - Aspen Forests</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- RG-W_Wasteland-->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RG-AF_AspenForest"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Echatere>0.3</MorrowRim_Echatere>
+						<MorrowRim_Welwa>0.05</MorrowRim_Welwa>
+					</value>			
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
+
