@@ -15,7 +15,7 @@
     <allowedPlaceTags>
       <li>OriginTribal</li>
     </allowedPlaceTags>
-    <iconPath>UI/OrsimerSettlement</iconPath>
+    <iconPath>World/WorldObjects/Expanding/OrsimerSettlement</iconPath>
     <preferredWeaponClasses>
       <noble>Melee</noble>
       <despised>Ranged</despised>

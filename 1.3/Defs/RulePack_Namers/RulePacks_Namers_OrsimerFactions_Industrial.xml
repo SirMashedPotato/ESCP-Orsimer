@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>MorrowRim_NamerFactionOrsimerRaider_Industrial</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FamilyList]'s Pirates</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>FamilyList->OrsimerNames/OrsimerFamily</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -4,7 +4,7 @@
   <StyleCategoryDef>
     <defName>MorrowRim_OrsimerStyle</defName>
     <label>Orsimer</label>
-    <iconPath>UI/OrsimerRaider</iconPath>
+    <iconPath>World/WorldObjects/Expanding/OrsimerRaider</iconPath>
 	<!--
     <soundOngoingRitual>RitualSustainer_Hindu</soundOngoingRitual>
     <ritualVisualEffectDef>Hindu</ritualVisualEffectDef>

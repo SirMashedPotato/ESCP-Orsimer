@@ -10,7 +10,7 @@
 			<operations>
 			
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/FactionDef[@Name="OrsimerTribeBase"]/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
+					<xpath>/Defs/FactionDef[@Name="MorrowRim_OrsimerOutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
 						<value>
 
 							<MorrowRim_Guar>5</MorrowRim_Guar>

@@ -17,7 +17,7 @@
 			</categories>
 		  </li>
 		</backstoryFilters>
-		<factionIconPath>UI/OrsimerSettlement</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/OrsimerSettlement</factionIconPath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
@@ -53,7 +53,7 @@
 			</categories>
 		  </li>
 		</backstoryFilters>
-		<factionIconPath>UI/OrsimerSettlement</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/OrsimerSettlement</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>MorrowRim_NamerFactionOrsimer</factionNameMaker>

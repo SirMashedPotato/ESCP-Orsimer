@@ -158,7 +158,7 @@
 						<!-- Trade -->
 						
 						<!-- Weapons -->
-						
+						<!--
 						<AchievementsExpanded.AchievementDef>
 							<defName>MorrowRim_OrsimerVolendrung</defName>
 							<label>Volendrung</label>
@@ -203,7 +203,7 @@
 							<texPath>Achievements/MorrowRim_OrsimerScourge</texPath>
 							<points>15</points>
 						</AchievementsExpanded.AchievementDef>
-
+						-->
 					</value>
 				</li>
 			</operations>

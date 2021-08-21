@@ -209,13 +209,11 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Bow_Short</thingDef>
-		  <stuff>WoodLog</stuff>
           <count>2</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Pila</thingDef>
-		  <stuff>WoodLog</stuff>
         </li>
         <li Class="ScenPart_StartingAnimal">
           <def>StartingAnimal</def>

@@ -2,47 +2,15 @@
 <Defs>
 
 	<ResearchProjectDef>
-		<defName>MorrowRim_OrsimerArmory</defName>
-		<label>orsimer armoury</label>
-		<description>Allows the construction of Orsimer weapons and armour at a forge.\n\nAs the Orsimer greatly prefer function over form, the equipment appears somewhat primitive and barbaric, especially when compared to equipment of Aldmeri design.\n\nOwing to this preference, the equipment is easier and cheaper to forge, and provides increased protection and damage, at the cost of increased weight and an end product that is rather ugly.</description>
-		<baseCost>700</baseCost>
-		<techLevel>Medieval</techLevel>
-		<researchViewX>5.00</researchViewX>
-		<researchViewY>5.00</researchViewY>
-		<tab>MorrowRim_Tab</tab>
-		<prerequisites>
-			<li>Smithing</li>
-		</prerequisites>
-		<tags>
-		  <li>OrsimerStart</li>
-		</tags>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef>
-		<defName>MorrowRim_OrsimerArmoryAdvanced</defName>
-		<label>orsimer heavy armoury</label>
-		<description>Allows the construction of heavy Orsimer weapons at a forge.\n\nWhile these weapons are capable of causing devastating damage, something about them makes the wielder act recklessly. Heavy weapons increase all damage taken by 10%, whilst dual weapons increase all damage taken by 15%.</description>
-		<baseCost>1000</baseCost>
-		<techLevel>Medieval</techLevel>
-		<researchViewX>5.00</researchViewX>
-		<researchViewY>6.00</researchViewY>
-		<tab>MorrowRim_Tab</tab>
-		<prerequisites>
-			<li>MorrowRim_OrsimerArmory</li>
-		</prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef>
 		<defName>MorrowRim_OrsimerTotems</defName>
 		<label>orsimer totems</label>
-		<description>Allows the construction of Orsimer totems at a forge. These totems are attached to the belt, and modify an Orsimers beserker rage.</description>
+		<description>Allows the construction of Orsimer totems at a forge. These totems are attached to the belt, and modify an Orsimers beserker rage.\n\nOnly Orsimer are capable of wearing these totems.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>6.00</researchViewX>
 		<researchViewY>6.00</researchViewY>
 		<tab>MorrowRim_Tab</tab>
 		<prerequisites>
-			<li>MorrowRim_OrsimerArmory</li>
 		</prerequisites>
 	</ResearchProjectDef>
 

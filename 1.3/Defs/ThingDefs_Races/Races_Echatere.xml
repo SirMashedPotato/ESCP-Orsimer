@@ -145,7 +145,7 @@
 		  <li>
 			<label>echalette</label>
 			<bodyGraphicData>
-			  <texPath>Things/Pawn/Animal/MorrowRim_Echatere/Echatere</texPath>
+			  <texPath>Things/Pawn/Animal/MorrowRim_Echatere/Echalette</texPath>
 			  <drawSize>1.5</drawSize>
 			  <shadowData>
 				<volume>(0.4, 0.3, 0.3)</volume>
@@ -153,7 +153,7 @@
 			  </shadowData>
 			</bodyGraphicData>
 			<dessicatedBodyGraphicData>
-			  <texPath>Things/Pawn/Animal/MorrowRim_Echatere/Dessicated_Echatere</texPath>
+			  <texPath>Things/Pawn/Animal/MorrowRim_Echatere/Dessicated_Echalette</texPath>
 			  <drawSize>1.5</drawSize>
 			</dessicatedBodyGraphicData>
 		  </li>
