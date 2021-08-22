@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 
+	Tags
+	Orsimer_Tribal 		[For tribal factions]
+	Orsimer_Offworld	[For industrial factions]
+	v Example v
+	-->
+	<!--
+	<AlienRace.BackstoryDef>
+		<defName>MorrowRim_OrsimerGourmandBackstory</defName>
+		<title>gourmand</title>
+		<titleShort>gourmand</titleShort>
+		<baseDescription>[PAWN_nameDef] likes food or something. [PAWN_pronoun] is a great cook...</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+		  <li>Orsimer_Tribal</li>
+		  <li>Orsimer_Offworld</li>
+		</spawnCategories>
+		<maleCommonality>0.5</maleCommonality>
+		<femaleCommonality>0.5</femaleCommonality>
+		<skillGains>
+			<li>
+				<defName>Cooking</defName>
+				<amount>8</amount>
+			</li>
+
+		</skillGains>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+			<li>Mining</li>
+		</workDisables>
+		<forcedItems>
+		</forcedItems>
+		<forcedTraits>
+			<li>
+				<defName>Gourmand</defName>
+				<chance>100</chance>
+			</li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
+	-->
+</Defs>

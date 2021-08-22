@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Combat -->
+
+  <RoyalTitlePermitDef>
+    <defName>MorrowRim_CallOrsimerMilitaryAidSmall</defName>
+    <label>call Orsimer champion squad</label>
+    <description>Call a group of 4 Orsimeri champions to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Acolyte</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,3)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>MorrowRim_OrsimerEmpire_Fighter_Champion</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>40</cooldownDays>
+  </RoyalTitlePermitDef>
+
+</Defs>

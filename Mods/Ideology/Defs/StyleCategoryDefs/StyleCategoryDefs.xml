@@ -10,16 +10,7 @@
     <ritualVisualEffectDef>Hindu</ritualVisualEffectDef>
 	-->
     <thingDefStyles>
-	<!--
-      <li>
-        <thingDef>Apparel_SimpleHelmet</thingDef>
-        <styleDef>Hindu_SimpleHelmet</styleDef>
-      </li>
-      <li>
-        <thingDef>Apparel_AdvancedHelmet</thingDef>
-        <styleDef>Hindu_AdvancedHelmet</styleDef>
-      </li>
-	 -->
+
     </thingDefStyles>
   </StyleCategoryDef>
 

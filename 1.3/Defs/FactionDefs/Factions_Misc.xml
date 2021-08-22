@@ -10,16 +10,17 @@
 		<li>MorrowRim_Orsimeri</li>
 		<li>Rustican</li>
 	</allowedCultures>
-    <structureMemeWeights>
-      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
-      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
-      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
-      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
-      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
-      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
-      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
-      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
-    </structureMemeWeights>
+	<!-- Don't enable unless there are actually backstories -->
+	<!--
+	<backstoryFilters>
+      <li>
+        <categories>
+          <li>Orsimer_Outlander</li>
+        </categories>
+        <commonality>0.95</commonality>
+      </li>
+    </backstoryFilters>
+	-->
     <raidLootMaker>MorrowRim_OrsimerOutlanderRaidLootMaker</raidLootMaker>
     <pawnGroupMakers Inherit="false">
       <li>
@@ -135,8 +136,8 @@
     <label>civil Orsimer union</label>
     <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behavior in high regard.</description>
     <colorSpectrum>
-      <li>(0.35, 0.30, 0.60)</li>
-      <li>(0.45, 0.40, 0.90)</li>
+      <li>(0.0, 0.7, 0.1)</li>
+      <li>(0.5, 0.3, 0.0)</li>
     </colorSpectrum>
     <classicIdeo>true</classicIdeo>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
@@ -148,8 +149,8 @@
     <label>rough Orsimer union</label>
     <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group has a streak of barbarity in them.</description>
     <colorSpectrum>
-      <li>(0, 0.4, 0.94)</li>
-      <li>(0.64, 0.8, 1)</li>
+      <li>(0.7, 0.6, 0.3)</li>
+      <li>(0.8, 0.4, 0.1)</li>
     </colorSpectrum>
     <factionIconPath>World/WorldObjects/Expanding/OrsimerSettlementAlt</factionIconPath>
     <naturalEnemy>true</naturalEnemy>

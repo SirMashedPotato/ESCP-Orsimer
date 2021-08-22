@@ -3,7 +3,7 @@
   
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>MorrowRim_OrsimerPlayerColony</defName>
-		<label>Orsimer Stowaways of the Azuras Dawn</label>
+		<label>Orsimer arrivals</label>
 		<description>A colony of Orsimer stowaways from the Azuras Dawn colonisation ship.</description>
 		<isPlayer>true</isPlayer>
 		<basicMemberKind>MorrowRim_OrsimerKind</basicMemberKind>
@@ -14,6 +14,7 @@
 		  <li>
 			<categories>
 			  <li>Offworld</li>
+			  <li>Orsimer_Offworld</li>
 			</categories>
 		  </li>
 		</backstoryFilters>
@@ -24,7 +25,7 @@
 		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
 		  <li>ClassicStart</li>
-		  <li>OrsimerStart</li>
+		  <li>OrsimerStart_Industrial</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
 		  <li>ClassicStart</li>
@@ -50,6 +51,7 @@
 		  <li>
 			<categories>
 			  <li>Tribal</li>
+			  <li>Orsimer_Tribal</li>
 			</categories>
 		  </li>
 		</backstoryFilters>
@@ -61,8 +63,8 @@
 		<geneticVariance>1</geneticVariance>
 		<forageabilityFactor>1.7</forageabilityFactor>
 		<startingResearchTags>
-		  <li>OrsimerStart</li>
 		  <li>TribalStart</li>
+		  <li>OrsimerStart_Tribal</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
 		  <li>TribalStart</li>

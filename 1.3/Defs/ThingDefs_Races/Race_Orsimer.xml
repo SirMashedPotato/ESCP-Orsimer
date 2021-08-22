@@ -228,6 +228,8 @@
 						<li>Male</li>
 						<li>Female</li>
 						<li>Hulk</li>
+						<li>Fat</li>
+						<li>Thin</li>
 					</alienbodytypes>
 					<useGenderedHeads>true</useGenderedHeads>
 					<useGenderedBodies>false</useGenderedBodies>
@@ -708,6 +710,10 @@
 					<li>MorrowRim_Apparel_TotemWroth</li>
 					<li>MorrowRim_Apparel_TotemFuror</li>
 				</apparelList>
+				<recipeList>
+					<li>Make_MorrowRim_MeleeWeapon_OrsimerWarhammer</li>
+					<li>Make_MorrowRim_MeleeWeapon_OrsimerBattleaxe</li>
+				</recipeList>
 			</raceRestriction>
 
 			<compatibility>

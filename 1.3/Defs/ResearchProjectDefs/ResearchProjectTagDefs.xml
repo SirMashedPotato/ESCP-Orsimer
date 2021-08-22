@@ -2,7 +2,15 @@
 <Defs>
 
   <ResearchProjectTagDef>
-    <defName>OrsimerStart</defName>
+    <defName>OrsimerStart_Tribal</defName>
+  </ResearchProjectTagDef>
+  
+  <ResearchProjectTagDef>
+    <defName>OrsimerStart_Medieval</defName>
+  </ResearchProjectTagDef>
+  
+  <ResearchProjectTagDef>
+    <defName>OrsimerStart_Industrial</defName>
   </ResearchProjectTagDef>
 
 </Defs>

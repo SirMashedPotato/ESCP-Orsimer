@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Adding new Orsimer pawns to pawn compositions -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+		<value>
+			<MorrowRim_OrsimerEmpire_Fighter_Champion>4</MorrowRim_OrsimerEmpire_Fighter_Champion>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Trader"]/traders</xpath>
+		<value>
+			<MorrowRim_OrsimerEmpire_Common_Trader>0.5</MorrowRim_OrsimerEmpire_Common_Trader>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
+		<value>
+			<MorrowRim_OrsimerEmpire_Fighter_Champion>5</MorrowRim_OrsimerEmpire_Fighter_Champion>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+		<value>
+			<MorrowRim_OrsimerEmpire_Fighter_Champion>2</MorrowRim_OrsimerEmpire_Fighter_Champion>
+		</value>
+	</Operation>
+	
+	<!-- Patching quests -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices/li[factionDef="Empire"]</xpath>
+		<value>
+			<li>MorrowRim_OrsimerEmpire_Common_Lodger</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+		<value>
+			<li>
+				<factionDef>MorrowRim_OrsimerOutlanderCivil</factionDef>
+                <pawnKinds>
+					<li>MorrowRim_OrsimerVillager</li>
+				</pawnKinds>
+            </li> 
+		</value>
+	</Operation>
+	
+</Patch>
+
