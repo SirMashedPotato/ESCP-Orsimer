@@ -427,6 +427,7 @@
 									</crownTypes>
 								</north>
 								<east>
+									<layerOffset>-0.332</layerOffset>
 									<bodyTypes>
 									</bodyTypes>
 									<crownTypes>
@@ -485,6 +486,7 @@
 									</crownTypes>
 								</north>
 								<east>
+									<layerOffset>-0.332</layerOffset>
 									<bodyTypes>
 									</bodyTypes>
 									<crownTypes>

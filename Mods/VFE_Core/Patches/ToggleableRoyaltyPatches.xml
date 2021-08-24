@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="VFECore.PatchOperationToggable">
+	<Operation Class="VFECore.PatchOperationToggableSequence">
 	  <enabled>False</enabled>
+	  <label>[MorrowRim - Orsimer] Make all Royalty stellic wardens Orsimer:</label>
 	  <mods>
 		<li>Royalty</li>
 	  </mods>
-	  <label>[MorrowRim - Orsimer] Make all Royalty stellic wardens Orsimer:</label>
-	  <match Class="PatchOperationSequence">
-		<operations>
+	  <operations>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
 				<value>
@@ -16,7 +15,6 @@
 				</value>
 			</li>
 		</operations>
-	  </match>
 	</Operation>
 	
 </Patch>

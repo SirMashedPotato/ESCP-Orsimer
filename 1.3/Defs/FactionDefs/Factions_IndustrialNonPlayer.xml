@@ -3,12 +3,13 @@
 
   <FactionDef ParentName="OutlanderFactionBase" Name="MorrowRim_OrsimerOutlanderFactionBase" Abstract="True">
     <leaderTitle>prime chief</leaderTitle>
-	<factionIconPath>World/WorldObjects/Expanding/OrsimerSettlement</factionIconPath>
+	<factionIconPath>World/WorldObjects/Expanding/OrsimerSettlementIndustrial</factionIconPath>
     <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+	<requiredCountAtGameStart>0</requiredCountAtGameStart>
+	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
     <allowedCultures>
 		<li>MorrowRim_Orsimeri</li>
-		<li>Rustican</li>
 	</allowedCultures>
 	<!-- Don't enable unless there are actually backstories -->
 	<!--
@@ -136,8 +137,8 @@
     <label>civil Orsimer union</label>
     <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behavior in high regard.</description>
     <colorSpectrum>
-      <li>(0.0, 0.7, 0.1)</li>
       <li>(0.5, 0.3, 0.0)</li>
+	  <li>(0.0, 0.7, 0.1)</li>
     </colorSpectrum>
     <classicIdeo>true</classicIdeo>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
@@ -149,10 +150,10 @@
     <label>rough Orsimer union</label>
     <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group has a streak of barbarity in them.</description>
     <colorSpectrum>
-      <li>(0.7, 0.6, 0.3)</li>
       <li>(0.8, 0.4, 0.1)</li>
+	  <li>(0.7, 0.6, 0.3)</li>
     </colorSpectrum>
-    <factionIconPath>World/WorldObjects/Expanding/OrsimerSettlementAlt</factionIconPath>
+    <factionIconPath>World/WorldObjects/Expanding/OrsimerSettlementIndustrialAlt</factionIconPath>
     <naturalEnemy>true</naturalEnemy>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
@@ -171,9 +172,11 @@
     <pawnSingular>pirate</pawnSingular>
     <pawnsPlural>pirates</pawnsPlural>
     <leaderTitle>war chief</leaderTitle>
-    <factionIconPath>World/WorldObjects/Expanding/OrsimerRaider</factionIconPath>
+    <factionIconPath>World/WorldObjects/Expanding/OrsimerPirate</factionIconPath>
     <factionNameMaker>MorrowRim_NamerFactionOrsimerRaider_Industrial</factionNameMaker>
     <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+	<requiredCountAtGameStart>0</requiredCountAtGameStart>
+	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
     <colorSpectrum>
       <li>(0.78, 0, 0.27)</li>
       <li>(1, 0.74, 0.83)</li>

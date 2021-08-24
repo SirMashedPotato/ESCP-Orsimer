@@ -10,6 +10,8 @@ using Verse.AI;
 using Verse.AI.Group;
 using System.Text;
 using UnityEngine;
+using System.Reflection.Emit;
+
 
 namespace MorrowRim_Orsimir
 {
@@ -48,7 +50,7 @@ namespace MorrowRim_Orsimir
                             thing.TryGetQuality(out QualityCategory qc);
                             if (qc != QualityCategory.Legendary)
                             {
-                                Log.Message("Increasing item quality by 1 level: " + thing);
+                                Log.Message("Increasing item quality by 1 level: " + thing); //TODO REMOVE once tested
                                 thing.TryGetComp<CompQuality>().SetQuality(qc + 1, new ArtGenerationContext());
                             }
                         }
