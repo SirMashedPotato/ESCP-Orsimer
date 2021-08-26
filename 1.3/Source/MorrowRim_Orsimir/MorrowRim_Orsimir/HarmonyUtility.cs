@@ -21,6 +21,22 @@ namespace MorrowRim_Orsimir
             return t != null && t.Stuff != null && t.Stuff == ThingDef.Named("ESCP_Orichalcum");
         }
 
+        public static bool RightSkill(RecipeDef recipe)
+        {
+            Log.Message("skill = " + recipe.workSkill);
+            return recipe.workSkill == SkillDefOf.Crafting;
+        }
+
+        public static QualityCategory CheckQualityIncrease(Pawn worker, QualityCategory initial, Thing thing, RecipeDef recipe)
+        {
+            if (IsOrsimer(worker) && MadeOfOrichalc(thing) && RightSkill(recipe) && initial != QualityCategory.Legendary)
+            {
+                Log.Message("Initial = " + initial);
+                return initial+1;
+            }
+            return initial;
+        }
+
         /* for taming patch */
         /*
         public static bool IsOrsimerTamable(Pawn p)

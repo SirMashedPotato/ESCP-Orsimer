@@ -30,7 +30,44 @@ namespace MorrowRim_Orsimir
      * Patch that checks for thing made of orichalcum and made by Orsimer
      * If thing is found, increase quality level by 1
      */
-
+    [HarmonyPatch(typeof(GenRecipe))]
+    [HarmonyPatch("PostProcessProduct")]
+    public static class GenRecipe_PostProcessProduct_Patch
+    {
+        [HarmonyTranspiler]
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            if (true) //for when a modSetting is added
+            {
+                var codes = new List<CodeInstruction>(instructions);
+                //used for checking for the right function call
+                var generateQuality = AccessTools.Method(typeof(QualityUtility), nameof(QualityUtility.GenerateQualityCreatedByPawn), new Type[] { typeof(Pawn), typeof(SkillDef)});
+                //function that is called to check quality
+                var orichalcCheck = AccessTools.Method(typeof(HarmonyUtility), nameof(HarmonyUtility.CheckQualityIncrease));
+                //find the right position in the stack
+                for (int i = 0; i < codes.Count; i++)
+                {
+                    if (codes[i].opcode == OpCodes.Call && codes[i].operand == generateQuality)
+                    {
+                        yield return codes[i];
+                        yield return new CodeInstruction(OpCodes.Stloc_2); // stores original quality
+                        yield return new CodeInstruction(OpCodes.Ldarg_2); // pawn
+                        yield return new CodeInstruction(OpCodes.Ldloc_2); // loads original quality
+                        yield return new CodeInstruction(OpCodes.Ldarg_0); // thing
+                        yield return new CodeInstruction(OpCodes.Ldarg_1); // recipe def
+                        codes[i] = new CodeInstruction(OpCodes.Call, orichalcCheck); // modify
+                        yield return codes[i]; // and return modifed
+                    } 
+                    else
+                    {
+                        yield return codes[i];
+                    }
+                }
+            }
+        }
+    }
+    /*
+     * Old code, boring postfix that mostly works
     [HarmonyPatch(typeof(QuestManager))]
     [HarmonyPatch("Notify_ThingsProduced")]
     public static class QuestManager_NotifyThingsProduced_Patch
@@ -39,7 +76,7 @@ namespace MorrowRim_Orsimir
         [HarmonyPriority(Priority.Last)]
         public static void CheckOrichalcum(Pawn worker, List<Thing> things)
         {
-            if (true) //TODO mod setting?
+            if (true)
             {
                 foreach (Thing thing in things)
                 {
@@ -50,7 +87,7 @@ namespace MorrowRim_Orsimir
                             thing.TryGetQuality(out QualityCategory qc);
                             if (qc != QualityCategory.Legendary)
                             {
-                                Log.Message("Increasing item quality by 1 level: " + thing); //TODO REMOVE once tested
+                                Log.Message("Increasing item quality by 1 level: " + thing);
                                 thing.TryGetComp<CompQuality>().SetQuality(qc + 1, new ArtGenerationContext());
                             }
                         }
@@ -59,10 +96,9 @@ namespace MorrowRim_Orsimir
             }
         }
     }
-
+    */
     /* 
      * Patch that checks if animal has tame boost from orsimer
      * If thing is so, increase tame chance by 10%
-     * Probably needs to use transpiler though...
      */
 }

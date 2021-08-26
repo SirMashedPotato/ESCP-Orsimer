@@ -5,7 +5,7 @@
 		<leaderTitle>high chieftain</leaderTitle>
 		<requiredCountAtGameStart>0</requiredCountAtGameStart>
 		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
-		<factionIconPath>World/WorldObjects/Expanding/OrsimerSettlement</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</factionIconPath>
 		<techLevel>Neolithic</techLevel>
 		<factionNameMaker>ESCP_NamerFactionOrsimer</factionNameMaker>
 		<settlementNameMaker>ESCP_NamerSettlementOrsimerHouse</settlementNameMaker>

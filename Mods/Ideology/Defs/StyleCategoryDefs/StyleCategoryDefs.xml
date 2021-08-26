@@ -3,8 +3,8 @@
 
   <StyleCategoryDef>
     <defName>ESCP_OrsimerStyle</defName>
-    <label>Orsimer</label>
-    <iconPath>World/WorldObjects/Expanding/OrsimerRaider</iconPath>
+    <label>Orsimeri</label>
+    <iconPath>World/WorldObjects/Expanding/ESCP_OrsimerRaider</iconPath>
 	<!--
     <soundOngoingRitual>RitualSustainer_Hindu</soundOngoingRitual>
     <ritualVisualEffectDef>Hindu</ritualVisualEffectDef>
