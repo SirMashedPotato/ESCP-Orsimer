@@ -13,7 +13,7 @@
 			<!-- increase the enchantability of stuff -->
 			
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "MorrowRim_Orichalcum"]/comps</xpath>
+				<xpath>/Defs/ThingDef[defName = "ESCP_Orichalcum"]/comps</xpath>
 				<value>
 					<li Class="TorannMagic.Enchantment.CompProperties_EnchantedStuff">
 						<isEnchanted>true</isEnchanted>
@@ -26,7 +26,7 @@
 			<!-- edit descriptions to reflect this -->
 			
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "MorrowRim_Orichalcum"]/description</xpath>
+				<xpath>/Defs/ThingDef[defName = "ESCP_Orichalcum"]/description</xpath>
 				<value>
 					<description>A rare metal, stronger and more durable than steel, though exceptionally time consuming to work with.\n\nOrsimer are masters of working orichalcum, and are considered one of the few races that truly understand the metal. As such, anything crafted from orichalcum will be one quality level higher when crafted by an Orsimer.\n\nAs orichalcum is exceptionally resistant to magic, any gear made of it will increase the wielders resistance to magic abilities. However any enchantments on this gear will only function at half strength.</description>
 				</value>

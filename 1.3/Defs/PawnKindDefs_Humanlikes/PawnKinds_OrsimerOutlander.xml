@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PawnKindDef Name="MorrowRim_OrsimerOutlanderBase" Abstract="True">
-    <race>MorrowRim_OrsimerRace</race>
-    <defaultFactionType>OutlanderCivil</defaultFactionType>
+  <PawnKindDef Name="ESCP_OrsimerOutlanderBase" Abstract="True">
+    <race>ESCP_OrsimerRace</race>
+    <defaultFactionType>ESCP_OrsimerOutlanderCivil</defaultFactionType>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
     <invNutrition>2.55</invNutrition>
@@ -13,8 +13,8 @@
     </apparelTags>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerOutlanderBase">
-    <defName>MorrowRim_OrsimerVillager</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase">
+    <defName>ESCP_OrsimerVillager</defName>
     <label>villager</label>
     <combatPower>45</combatPower>
     <itemQuality>Poor</itemQuality>
@@ -38,8 +38,8 @@
     <initialResistanceRange>10~17</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerOutlanderBase">
-    <defName>MorrowRim_OrsimerTown_Guard</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase">
+    <defName>ESCP_OrsimerTown_Guard</defName>
     <label>town guard</label>
     <combatPower>60</combatPower>
     <isFighter>true</isFighter>
@@ -47,7 +47,7 @@
     <apparelTags>
       <li>IndustrialMilitaryBasic</li>
       <li>BeltDefensePop</li>
-      <li>OrsimerTotem_Basic</li>
+      <li>ESCP_OrsimerTotem_Basic</li>
     </apparelTags>
     <apparelMoney>400~600</apparelMoney>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
@@ -66,8 +66,8 @@
     <initialResistanceRange>15~24</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerOutlanderBase">
-    <defName>MorrowRim_OrsimerTown_Trader</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase">
+    <defName>ESCP_OrsimerTown_Trader</defName>
     <label>town trader</label>
     <trader>true</trader>
     <combatPower>45</combatPower>
@@ -99,8 +99,8 @@
     <initialResistanceRange>12~20</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerOutlanderBase">
-    <defName>MorrowRim_OrsimerTown_Councilman</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase">
+    <defName>ESCP_OrsimerTown_Councilman</defName>
     <label>town councilman</label>
     <labelPlural>town councilmen</labelPlural>
     <combatPower>40</combatPower>
@@ -117,8 +117,8 @@
     <apparelTags>
       <li>IndustrialMilitaryBasic</li>
       <li>BeltDefensePop</li>
-	  <li>OrsimerTotem_Basic</li>
-	  <li>OrsimerTotem_Advanced</li>
+	  <li>ESCP_OrsimerTotem_Basic</li>
+	  <li>ESCP_OrsimerTotem_Advanced</li>
 	  <li>OrsimerTotem_Artifact</li>
     </apparelTags>
     <apparelRequired>

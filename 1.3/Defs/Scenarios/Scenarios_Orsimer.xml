@@ -2,14 +2,14 @@
 <Defs>
 
   <ScenarioDef>
-    <defName>MorrowRim_OrsimerTribe</defName>
+    <defName>ESCP_OrsimerTribe</defName>
     <label>Orsimer Tribe</label>
     <description>Your home was raided by the Aldmeri Dominion, leaving nothing behind. Some of you managed to escape. Now you wander, searching for a new home.\n\nNote: Since you'll start poor and lack technology, this is a difficult scenario.</description>
     <scenario>
       <summary>Five Orsimer attempt to find a new home. Difficult.</summary>
       <playerFaction>
         <def>PlayerFaction</def>
-        <factionDef>MorrowRim_OrsimerPlayerTribe</factionDef>
+        <factionDef>ESCP_OrsimerPlayerTribe</factionDef>
       </playerFaction>
       <parts>
 
@@ -73,7 +73,7 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>MeleeWeapon_Knife</thingDef>
-          <stuff>MorrowRim_Orichalcum</stuff>
+          <stuff>ESCP_Orichalcum</stuff>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -86,7 +86,7 @@
         </li>
         <li Class="ScenPart_StartingAnimal">
           <def>StartingAnimal</def>
-          <animalKind>MorrowRim_Echatere</animalKind>
+          <animalKind>ESCP_Echatere</animalKind>
           <count>2</count>
           <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
         </li>

@@ -2,9 +2,9 @@
 <Defs>
 
 	<PawnKindDef>
-		<defName>MorrowRim_OrsimerKind</defName>
+		<defName>ESCP_OrsimerKind</defName>
 		<label>Orsimer</label>
-		<race>MorrowRim_OrsimerRace</race>
+		<race>ESCP_OrsimerRace</race>
 		<backstoryCategories>
 		  <li>Outlander</li>
 		</backstoryCategories>	
@@ -34,9 +34,9 @@
 	</PawnKindDef>
 	
 	<PawnKindDef>
-		<defName>MorrowRim_OrsimerTribalKind</defName>
+		<defName>ESCP_OrsimerTribalKind</defName>
 		<label>Orsimer tribal</label>
-		<race>MorrowRim_OrsimerRace</race>
+		<race>ESCP_OrsimerRace</race>
 		<backstoryCategories>
 		  <li>Tribal</li>
 		</backstoryCategories>

@@ -3,8 +3,8 @@
 
   <!-- Miners -->
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalBase">
-    <defName>MorrowRim_OrsimerTribal_Miner</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
+    <defName>ESCP_OrsimerTribal_Miner</defName>
     <label>miner</label>
     <combatPower>35</combatPower>
     <backstoryFiltersOverride>
@@ -33,8 +33,8 @@
   </PawnKindDef>
 
   <!-- Loggers -->
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalBase">
-    <defName>MorrowRim_OrsimerTribal_Logger</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
+    <defName>ESCP_OrsimerTribal_Logger</defName>
     <label>logger</label>
     <combatPower>40</combatPower>
     <backstoryFiltersOverride>
@@ -66,8 +66,8 @@
   </PawnKindDef>
 
   <!-- Farmer -->
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalBase">
-    <defName>MorrowRim_OrsimerTribal_Farmer</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
+    <defName>ESCP_OrsimerTribal_Farmer</defName>
     <label>farmer</label>
     <combatPower>35</combatPower>
     <backstoryFiltersOverride>

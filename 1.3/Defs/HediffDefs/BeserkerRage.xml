@@ -2,7 +2,7 @@
 <Defs>
  
 	<HediffDef>
-		<defName>MorrowRim_BeserkerRage</defName>
+		<defName>ESCP_BeserkerRage</defName>
 		<label>beserker rage</label>
 		<description>Orsimer are able to enter an enraged state during moments of extreme danger, often caused by intense pain. This state increases moving, manipulation and greatly reduces pain, though fogs the mind, decreasing sight and hearing.\n\nOrsimer are left slightly drained after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while in a drained state, which will last 11 hours.</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -61,7 +61,7 @@
 	</HediffDef>
 
 	<HediffDef>
-		<defName>MorrowRim_BeserkerWroth</defName>
+		<defName>ESCP_BeserkerWroth</defName>
 		<label>beserker wroth</label>
 		<description>A modified version of beserker rage that sacrifices moving for manipulation, caused by wearing a totem of wroth.\n\nOrsimer are left slightly drained after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while in a drained state, which will last 11 hours.</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -126,7 +126,7 @@
 	</HediffDef>
 	
 	<HediffDef>
-		<defName>MorrowRim_BeserkerFury</defName>
+		<defName>ESCP_BeserkerFury</defName>
 		<label>beserker fury</label>
 		<description>A modified version of beserker rage that sacrifices manipulation for moving, caused by wearing a totem of fury.\n\nOrsimer are left slightly drained after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while in a drained state, which will last 11 hours.</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -191,7 +191,7 @@
 	</HediffDef>
 	
 	<HediffDef>
-		<defName>MorrowRim_BeserkerFuror</defName>
+		<defName>ESCP_BeserkerFuror</defName>
 		<label>beserker furor</label>
 		<description>A modified version of beserker rage that sacrifices manipulation and moving for resistance, caused by wearing a totem of furor.\n\nOrsimer are left slightly drained after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while in a drained state, which will last 11 hours.</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -254,7 +254,7 @@
 	</HediffDef>
 	
 	<HediffDef>
-		<defName>MorrowRim_ArchotechsRage</defName>
+		<defName>ESCP_ArchotechsRage</defName>
 		<label>archotech's rage</label>
 		<description>A modified version of beserker rage that fortifies durability, moving and manipulation. Caused by wearing a totem of the archotech.\n\nOrsimer are left slightly drained after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while in a drained state, which will last 11 hours.</description>
 		<hediffClass>HediffWithComps</hediffClass>

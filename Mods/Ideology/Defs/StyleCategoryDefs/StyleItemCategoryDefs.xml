@@ -4,8 +4,8 @@
   <!-- Categories -->
 
   <StyleItemCategoryDef>
-    <defName>MorrowRim_OrsimerStyle</defName>
-    <label>Orsimer</label>
+    <defName>ESCP_OrsimerStyle</defName>
+    <label>Orsimeri</label>
   </StyleItemCategoryDef>
 
 </Defs>

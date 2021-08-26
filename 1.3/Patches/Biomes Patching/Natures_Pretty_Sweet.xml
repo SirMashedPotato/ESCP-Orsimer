@@ -13,7 +13,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BiomeDef[defName="TKKN_RedwoodForest"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Echatere>0.2</MorrowRim_Echatere>
+						<ESCP_Echatere>0.2</ESCP_Echatere>
 					</value>			
 				</li>
 				
@@ -22,7 +22,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BiomeDef[defName="TKKN_Grasslands"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Welwa>0.05</MorrowRim_Welwa>
+						<ESCP_Welwa>0.05</ESCP_Welwa>
 					</value>			
 				</li>
 				
@@ -31,7 +31,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BiomeDef[defName="TKKN_Savanna"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Welwa>0.05</MorrowRim_Welwa>
+						<ESCP_Welwa>0.05</ESCP_Welwa>
 					</value>	
 				</li>
 		

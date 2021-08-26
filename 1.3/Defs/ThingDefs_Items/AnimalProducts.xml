@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="WoolBase">
-		<defName>MorrowRim_WoolEchatere</defName>
+		<defName>ESCP_WoolEchatere</defName>
 		<label>echatere wool</label>
 		<description>Soft, light and provides rather good insulation. Echatere wool clothes can keep the body warm even in rather cold conditions.</description>
 		<graphicData>

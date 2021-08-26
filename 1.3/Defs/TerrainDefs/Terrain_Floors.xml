@@ -2,7 +2,7 @@
 <Defs>
 
 	<TerrainDef ParentName="TileMetalBase">
-		<defName>MorrowRim_OrichalcumTile</defName>
+		<defName>ESCP_OrichalcumTile</defName>
 		<label>orichalcum tile</label>
 		<renderPrecedence>242</renderPrecedence>
 		<description>For a medieval but royal look, orichalcum tiles fit perfectly into luxurious rooms.</description>
@@ -13,7 +13,7 @@
 		  <Cleanliness>0.2</Cleanliness>
 		</statBases>
 		<costList>
-		  <MorrowRim_Orichalcum>7</MorrowRim_Orichalcum>
+		  <ESCP_Orichalcum>7</ESCP_Orichalcum>
 		</costList>
 		<designationHotKey>Misc3</designationHotKey>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>

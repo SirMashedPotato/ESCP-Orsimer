@@ -2,13 +2,15 @@
 <Defs>
 
   <RulePackDef>
-    <defName>MorrowRim_NamerFactionOrsimerRaider_Industrial</defName>
+    <defName>ESCP_NamerFactionOrsimerRaider_Industrial</defName>
     <rulePack>
       <rulesStrings>
         <li>r_name->[FamilyList]'s Pirates</li>
+        <li>r_name->[FamilyList]'s Gang</li>
+        <li>r_name->[FamilyList]'s Hansa</li>
       </rulesStrings>
 	  <rulesFiles>
-        <li>FamilyList->OrsimerNames/OrsimerFamily</li>
+        <li>FamilyList->ESCP_OrsimerNames/OrsimerFamily</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>

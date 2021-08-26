@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <FactionDef ParentName="OutlanderFactionBase" Name="MorrowRim_OrsimerOutlanderFactionBase" Abstract="True">
+  <FactionDef ParentName="OutlanderFactionBase" Name="ESCP_OrsimerOutlanderFactionBase" Abstract="True">
     <leaderTitle>prime chief</leaderTitle>
-	<factionIconPath>World/WorldObjects/Expanding/OrsimerSettlementIndustrial</factionIconPath>
+	<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlementIndustrial</factionIconPath>
     <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 	<requiredCountAtGameStart>0</requiredCountAtGameStart>
 	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
     <allowedCultures>
-		<li>MorrowRim_Orsimeri</li>
+		<li>ESCP_Orsimeri</li>
 	</allowedCultures>
 	<!-- Don't enable unless there are actually backstories -->
 	<!--
@@ -22,29 +22,29 @@
       </li>
     </backstoryFilters>
 	-->
-    <raidLootMaker>MorrowRim_OrsimerOutlanderRaidLootMaker</raidLootMaker>
+    <raidLootMaker>ESCP_OrsimerOutlanderRaidLootMaker</raidLootMaker>
     <pawnGroupMakers Inherit="false">
       <li>
         <!-- Normal fights, standard mix -->
         <kindDef>Combat</kindDef>
         <options>
-          <MorrowRim_OrsimerVillager>5</MorrowRim_OrsimerVillager>
-          <MorrowRim_OrsimerTown_Guard>10</MorrowRim_OrsimerTown_Guard>
-          <MorrowRim_OrsimerGrenadier_Destructive>1.5</MorrowRim_OrsimerGrenadier_Destructive>
-          <MorrowRim_OrsimerMercenary_Slasher>7</MorrowRim_OrsimerMercenary_Slasher>
-          <MorrowRim_OrsimerMercenary_Gunner>10</MorrowRim_OrsimerMercenary_Gunner>
-          <MorrowRim_OrsimerMercenary_Elite>10</MorrowRim_OrsimerMercenary_Elite>
-          <MorrowRim_OrsimerTown_Councilman>10</MorrowRim_OrsimerTown_Councilman>
-		  <MorrowRim_Welwa>2.5</MorrowRim_Welwa>
+          <ESCP_OrsimerVillager>5</ESCP_OrsimerVillager>
+          <ESCP_OrsimerTown_Guard>10</ESCP_OrsimerTown_Guard>
+          <ESCP_OrsimerGrenadier_Destructive>1.5</ESCP_OrsimerGrenadier_Destructive>
+          <ESCP_OrsimerMercenary_Slasher>7</ESCP_OrsimerMercenary_Slasher>
+          <ESCP_OrsimerMercenary_Gunner>10</ESCP_OrsimerMercenary_Gunner>
+          <ESCP_OrsimerMercenary_Elite>10</ESCP_OrsimerMercenary_Elite>
+          <ESCP_OrsimerTown_Councilman>10</ESCP_OrsimerTown_Councilman>
+		  <ESCP_Welwa>2.5</ESCP_Welwa>
 		  <MorrowRim_TrollHill MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollHill>
         </options>
       </li>
       <li>
         <kindDef>Peaceful</kindDef>
         <options>
-          <MorrowRim_OrsimerVillager>20</MorrowRim_OrsimerVillager>
-          <MorrowRim_OrsimerTown_Guard>10</MorrowRim_OrsimerTown_Guard>
-          <MorrowRim_OrsimerTown_Councilman>10</MorrowRim_OrsimerTown_Councilman>
+          <ESCP_OrsimerVillager>20</ESCP_OrsimerVillager>
+          <ESCP_OrsimerTown_Guard>10</ESCP_OrsimerTown_Guard>
+          <ESCP_OrsimerTown_Councilman>10</ESCP_OrsimerTown_Councilman>
 		  <MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">1</MorrowRim_Scamp>
         </options>
       </li>
@@ -54,32 +54,32 @@
           <Town_Trader>1</Town_Trader>
         </traders>
         <carriers>
-		  <MorrowRim_Echatere>10</MorrowRim_Echatere>
+		  <ESCP_Echatere>10</ESCP_Echatere>
           <Muffalo>6</Muffalo>
           <Dromedary>5</Dromedary>
           <Alpaca>2</Alpaca>
           <Elephant>1</Elephant>
         </carriers>
         <guards>
-          <MorrowRim_OrsimerVillager>3</MorrowRim_OrsimerVillager>
-          <MorrowRim_OrsimerTown_Guard>10</MorrowRim_OrsimerTown_Guard>
-          <MorrowRim_OrsimerGrenadier_Destructive>1.5</MorrowRim_OrsimerGrenadier_Destructive>
-          <MorrowRim_OrsimerMercenary_Slasher>7</MorrowRim_OrsimerMercenary_Slasher>
-          <MorrowRim_OrsimerMercenary_Gunner>10</MorrowRim_OrsimerMercenary_Gunner>
-          <MorrowRim_OrsimerMercenary_Elite>10</MorrowRim_OrsimerMercenary_Elite>
+          <ESCP_OrsimerVillager>3</ESCP_OrsimerVillager>
+          <ESCP_OrsimerTown_Guard>10</ESCP_OrsimerTown_Guard>
+          <ESCP_OrsimerGrenadier_Destructive>1.5</ESCP_OrsimerGrenadier_Destructive>
+          <ESCP_OrsimerMercenary_Slasher>7</ESCP_OrsimerMercenary_Slasher>
+          <ESCP_OrsimerMercenary_Gunner>10</ESCP_OrsimerMercenary_Gunner>
+          <ESCP_OrsimerMercenary_Elite>10</ESCP_OrsimerMercenary_Elite>
 		  <MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">1</MorrowRim_Scamp>
         </guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <MorrowRim_OrsimerVillager>10</MorrowRim_OrsimerVillager>
-          <MorrowRim_OrsimerTown_Guard>10</MorrowRim_OrsimerTown_Guard>
-          <MorrowRim_OrsimerGrenadier_Destructive>1.5</MorrowRim_OrsimerGrenadier_Destructive>
-          <MorrowRim_OrsimerMercenary_Slasher>7</MorrowRim_OrsimerMercenary_Slasher>
-          <MorrowRim_OrsimerMercenary_Gunner>10</MorrowRim_OrsimerMercenary_Gunner>
-          <MorrowRim_OrsimerMercenary_Elite>10</MorrowRim_OrsimerMercenary_Elite>
-          <MorrowRim_OrsimerTown_Councilman>10</MorrowRim_OrsimerTown_Councilman>
+          <ESCP_OrsimerVillager>10</ESCP_OrsimerVillager>
+          <ESCP_OrsimerTown_Guard>10</ESCP_OrsimerTown_Guard>
+          <ESCP_OrsimerGrenadier_Destructive>1.5</ESCP_OrsimerGrenadier_Destructive>
+          <ESCP_OrsimerMercenary_Slasher>7</ESCP_OrsimerMercenary_Slasher>
+          <ESCP_OrsimerMercenary_Gunner>10</ESCP_OrsimerMercenary_Gunner>
+          <ESCP_OrsimerMercenary_Elite>10</ESCP_OrsimerMercenary_Elite>
+          <ESCP_OrsimerTown_Councilman>10</ESCP_OrsimerTown_Councilman>
 		  <MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">1</MorrowRim_Scamp>
         </options>
       </li>
@@ -87,35 +87,35 @@
         <kindDef>Miners</kindDef>
         <commonality>1</commonality>
         <options>
-          <MorrowRim_OrsimerMiner>1</MorrowRim_OrsimerMiner>
+          <ESCP_OrsimerMiner>1</ESCP_OrsimerMiner>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
         <kindDef>Hunters</kindDef>
         <commonality>1</commonality>
         <options>
-          <MorrowRim_OrsimerHunter>1</MorrowRim_OrsimerHunter>
+          <ESCP_OrsimerHunter>1</ESCP_OrsimerHunter>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
         <kindDef>Loggers</kindDef>
         <commonality>1</commonality>
         <options>
-          <MorrowRim_OrsimerLogger>1</MorrowRim_OrsimerLogger>
+          <ESCP_OrsimerLogger>1</ESCP_OrsimerLogger>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
         <kindDef>Farmers</kindDef>
         <commonality>1</commonality>
         <options>
-          <MorrowRim_OrsimerFarmer>1</MorrowRim_OrsimerFarmer>
+          <ESCP_OrsimerFarmer>1</ESCP_OrsimerFarmer>
         </options>
       </li>
     </pawnGroupMakers>
   </FactionDef>
   
   <ThingSetMakerDef>
-    <defName>MorrowRim_OrsimerOutlanderRaidLootMaker</defName>
+    <defName>ESCP_OrsimerOutlanderRaidLootMaker</defName>
     <root Class="ThingSetMaker_MarketValue">
       <fixedParams>
         <filter>
@@ -125,15 +125,15 @@
             <li>ComponentIndustrial</li>
             <li>MealSurvivalPack</li>
             <li>Neutroamine</li>
-            <li>MorrowRim_Orichalcum</li>
+            <li>ESCP_Orichalcum</li>
           </thingDefs>
         </filter>
       </fixedParams>
     </root>
   </ThingSetMakerDef>
   
-  <FactionDef ParentName="MorrowRim_OrsimerOutlanderFactionBase">
-    <defName>MorrowRim_OrsimerOutlanderCivil</defName>
+  <FactionDef ParentName="ESCP_OrsimerOutlanderFactionBase">
+    <defName>ESCP_OrsimerOutlanderCivil</defName>
     <label>civil Orsimer union</label>
     <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behavior in high regard.</description>
     <colorSpectrum>
@@ -145,15 +145,15 @@
     <configurationListOrderPriority>10</configurationListOrderPriority>
   </FactionDef>
 
-  <FactionDef ParentName="MorrowRim_OrsimerOutlanderFactionBase">
-    <defName>MorrowRim_OrsimerOutlanderRough</defName>
+  <FactionDef ParentName="ESCP_OrsimerOutlanderFactionBase">
+    <defName>ESCP_OrsimerOutlanderRough</defName>
     <label>rough Orsimer union</label>
     <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group has a streak of barbarity in them.</description>
     <colorSpectrum>
       <li>(0.8, 0.4, 0.1)</li>
 	  <li>(0.7, 0.6, 0.3)</li>
     </colorSpectrum>
-    <factionIconPath>World/WorldObjects/Expanding/OrsimerSettlementIndustrialAlt</factionIconPath>
+    <factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlementIndustrialAlt</factionIconPath>
     <naturalEnemy>true</naturalEnemy>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
@@ -165,15 +165,15 @@
 
 	<!-- Yar -->
 
-  <FactionDef Name="MorrowRim_OrsimerPirateBandBase" ParentName="PirateBandBase">
-    <defName>MorrowRim_OrsimerPirate</defName>
+  <FactionDef Name="ESCP_OrsimerPirateBandBase" ParentName="PirateBandBase">
+    <defName>ESCP_OrsimerPirate</defName>
     <label>Orsimer pirate gang</label>
     <description>A loose confederation of pirate gangs who've agreed to mostly fight outsiders instead of fighting each other.\n\nPirates don't sow, they don't build, and they rarely trade. Driven by a blood-and-honor culture that values personal strength and ruthlessness, they enrich themselves by raiding and robbing their more productive neighbors.\n\nTheir technology level depends mostly on who they've managed to steal from recently. Mostly they carry gunpowder weapons, though some prefer to stab victims at close range.</description>
     <pawnSingular>pirate</pawnSingular>
     <pawnsPlural>pirates</pawnsPlural>
     <leaderTitle>war chief</leaderTitle>
-    <factionIconPath>World/WorldObjects/Expanding/OrsimerPirate</factionIconPath>
-    <factionNameMaker>MorrowRim_NamerFactionOrsimerRaider_Industrial</factionNameMaker>
+    <factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerPirate</factionIconPath>
+    <factionNameMaker>ESCP_NamerFactionOrsimerRaider_Industrial</factionNameMaker>
     <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 	<requiredCountAtGameStart>0</requiredCountAtGameStart>
 	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
@@ -184,13 +184,13 @@
     <permanentEnemy>true</permanentEnemy>
     <techLevel>Spacer</techLevel>
     <allowedCultures>
-		<li>MorrowRim_Orsimeri</li>
+		<li>ESCP_Orsimeri</li>
 		<li>Kriminul</li>
 	</allowedCultures>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
     </requiredMemes>
-    <raidLootMaker>MorrowRim_OrsimerPirateRaidLootMaker</raidLootMaker>
+    <raidLootMaker>ESCP_OrsimerPirateRaidLootMaker</raidLootMaker>
     <pawnGroupMakers Inherit="false">
       <li>
         <!-- Normal fights, ranged with melee mix-ins -->
@@ -198,18 +198,18 @@
         <commonality>100</commonality>
         <options>
           <Drifter>10</Drifter>
-          <MorrowRim_OrsimerThrasher>3</MorrowRim_OrsimerThrasher>
-          <MorrowRim_OrsimerScavenger>10</MorrowRim_OrsimerScavenger>
-          <MorrowRim_OrsimerPirate>10</MorrowRim_OrsimerPirate>
-          <MorrowRim_OrsimerGrenadier_EMP>0.25</MorrowRim_OrsimerGrenadier_EMP>
-          <MorrowRim_OrsimerGrenadier_Smoke>0.25</MorrowRim_OrsimerGrenadier_Smoke>
-          <MorrowRim_OrsimerGrenadier_Destructive>2</MorrowRim_OrsimerGrenadier_Destructive>
-          <MorrowRim_OrsimerMercenary_Gunner>10</MorrowRim_OrsimerMercenary_Gunner>
-          <MorrowRim_OrsimerMercenary_Heavy>6</MorrowRim_OrsimerMercenary_Heavy>
-          <MorrowRim_OrsimerMercenary_Slasher>3</MorrowRim_OrsimerMercenary_Slasher>
-          <MorrowRim_OrsimerMercenary_Sniper>7</MorrowRim_OrsimerMercenary_Sniper>
-          <MorrowRim_OrsimerMercenary_Elite>10</MorrowRim_OrsimerMercenary_Elite>
-          <MorrowRim_OrsimerPirateBoss>5</MorrowRim_OrsimerPirateBoss>
+          <ESCP_OrsimerThrasher>3</ESCP_OrsimerThrasher>
+          <ESCP_OrsimerScavenger>10</ESCP_OrsimerScavenger>
+          <ESCP_OrsimerPirate>10</ESCP_OrsimerPirate>
+          <ESCP_OrsimerGrenadier_EMP>0.25</ESCP_OrsimerGrenadier_EMP>
+          <ESCP_OrsimerGrenadier_Smoke>0.25</ESCP_OrsimerGrenadier_Smoke>
+          <ESCP_OrsimerGrenadier_Destructive>2</ESCP_OrsimerGrenadier_Destructive>
+          <ESCP_OrsimerMercenary_Gunner>10</ESCP_OrsimerMercenary_Gunner>
+          <ESCP_OrsimerMercenary_Heavy>6</ESCP_OrsimerMercenary_Heavy>
+          <ESCP_OrsimerMercenary_Slasher>3</ESCP_OrsimerMercenary_Slasher>
+          <ESCP_OrsimerMercenary_Sniper>7</ESCP_OrsimerMercenary_Sniper>
+          <ESCP_OrsimerMercenary_Elite>10</ESCP_OrsimerMercenary_Elite>
+          <ESCP_OrsimerPirateBoss>5</ESCP_OrsimerPirateBoss>
         </options>
       </li>
       <li>
@@ -220,9 +220,9 @@
           <li>Siege</li>
         </disallowedStrategies>
         <options>
-          <MorrowRim_OrsimerThrasher>10</MorrowRim_OrsimerThrasher>
-          <MorrowRim_OrsimerMercenary_Slasher>10</MorrowRim_OrsimerMercenary_Slasher>
-          <MorrowRim_OrsimerPirateBoss>5</MorrowRim_OrsimerPirateBoss>
+          <ESCP_OrsimerThrasher>10</ESCP_OrsimerThrasher>
+          <ESCP_OrsimerMercenary_Slasher>10</ESCP_OrsimerMercenary_Slasher>
+          <ESCP_OrsimerPirateBoss>5</ESCP_OrsimerPirateBoss>
         </options>
       </li>
       <li>
@@ -230,16 +230,16 @@
         <kindDef>Combat</kindDef>
         <commonality>20</commonality>
         <options>
-          <MorrowRim_OrsimerScavenger>10</MorrowRim_OrsimerScavenger>
-          <MorrowRim_OrsimerPirate>10</MorrowRim_OrsimerPirate>
-          <MorrowRim_OrsimerGrenadier_EMP>0.25</MorrowRim_OrsimerGrenadier_EMP>
-          <MorrowRim_OrsimerGrenadier_Smoke>0.25</MorrowRim_OrsimerGrenadier_Smoke>
-          <MorrowRim_OrsimerGrenadier_Destructive>2</MorrowRim_OrsimerGrenadier_Destructive>
-          <MorrowRim_OrsimerMercenary_Gunner>10</MorrowRim_OrsimerMercenary_Gunner>
-          <MorrowRim_OrsimerMercenary_Heavy>6</MorrowRim_OrsimerMercenary_Heavy>
-          <MorrowRim_OrsimerMercenary_Sniper>7</MorrowRim_OrsimerMercenary_Sniper>
-          <MorrowRim_OrsimerMercenary_Elite>10</MorrowRim_OrsimerMercenary_Elite>
-          <MorrowRim_OrsimerPirateBoss>5</MorrowRim_OrsimerPirateBoss>
+          <ESCP_OrsimerScavenger>10</ESCP_OrsimerScavenger>
+          <ESCP_OrsimerPirate>10</ESCP_OrsimerPirate>
+          <ESCP_OrsimerGrenadier_EMP>0.25</ESCP_OrsimerGrenadier_EMP>
+          <ESCP_OrsimerGrenadier_Smoke>0.25</ESCP_OrsimerGrenadier_Smoke>
+          <ESCP_OrsimerGrenadier_Destructive>2</ESCP_OrsimerGrenadier_Destructive>
+          <ESCP_OrsimerMercenary_Gunner>10</ESCP_OrsimerMercenary_Gunner>
+          <ESCP_OrsimerMercenary_Heavy>6</ESCP_OrsimerMercenary_Heavy>
+          <ESCP_OrsimerMercenary_Sniper>7</ESCP_OrsimerMercenary_Sniper>
+          <ESCP_OrsimerMercenary_Elite>10</ESCP_OrsimerMercenary_Elite>
+          <ESCP_OrsimerPirateBoss>5</ESCP_OrsimerPirateBoss>
         </options>
       </li>
       <li>
@@ -250,13 +250,13 @@
           <li>Siege</li>
         </disallowedStrategies>
         <options>
-          <MorrowRim_OrsimerGrenadier_EMP>0.5</MorrowRim_OrsimerGrenadier_EMP>
-          <MorrowRim_OrsimerGrenadier_Smoke>0.5</MorrowRim_OrsimerGrenadier_Smoke>
-          <MorrowRim_OrsimerGrenadier_Destructive>10</MorrowRim_OrsimerGrenadier_Destructive>
-          <MorrowRim_OrsimerMercenary_Gunner>1</MorrowRim_OrsimerMercenary_Gunner>
-          <MorrowRim_OrsimerMercenary_Heavy>10</MorrowRim_OrsimerMercenary_Heavy>
-          <MorrowRim_OrsimerMercenary_Elite>1</MorrowRim_OrsimerMercenary_Elite>
-          <MorrowRim_OrsimerPirateBoss>1</MorrowRim_OrsimerPirateBoss>
+          <ESCP_OrsimerGrenadier_EMP>0.5</ESCP_OrsimerGrenadier_EMP>
+          <ESCP_OrsimerGrenadier_Smoke>0.5</ESCP_OrsimerGrenadier_Smoke>
+          <ESCP_OrsimerGrenadier_Destructive>10</ESCP_OrsimerGrenadier_Destructive>
+          <ESCP_OrsimerMercenary_Gunner>1</ESCP_OrsimerMercenary_Gunner>
+          <ESCP_OrsimerMercenary_Heavy>10</ESCP_OrsimerMercenary_Heavy>
+          <ESCP_OrsimerMercenary_Elite>1</ESCP_OrsimerMercenary_Elite>
+          <ESCP_OrsimerPirateBoss>1</ESCP_OrsimerPirateBoss>
         </options>
       </li>
       <li>
@@ -264,7 +264,7 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <MorrowRim_OrsimerMercenary_Sniper>10</MorrowRim_OrsimerMercenary_Sniper>
+          <ESCP_OrsimerMercenary_Sniper>10</ESCP_OrsimerMercenary_Sniper>
         </options>
       </li>
       <li>
@@ -273,21 +273,21 @@
         <commonality>2.5</commonality>
         <maxTotalPoints>1000</maxTotalPoints>
         <options>
-          <Drifter>10</Drifter>
+          <ESCP_OrsimerDrifter>10</ESCP_OrsimerDrifter>
         </options>
       </li>
       <li>
         <!-- Base defense, mainly ranged with melee mix-ins -->
         <kindDef>Settlement</kindDef>
         <options>
-          <MorrowRim_OrsimerThrasher>3</MorrowRim_OrsimerThrasher>
-          <MorrowRim_OrsimerPirate>10</MorrowRim_OrsimerPirate>
-          <MorrowRim_OrsimerGrenadier_Destructive>2</MorrowRim_OrsimerGrenadier_Destructive>
-          <MorrowRim_OrsimerMercenary_Slasher>3</MorrowRim_OrsimerMercenary_Slasher>
-          <MorrowRim_OrsimerMercenary_Sniper>10</MorrowRim_OrsimerMercenary_Sniper>
-          <MorrowRim_OrsimerMercenary_Gunner>10</MorrowRim_OrsimerMercenary_Gunner>
-          <MorrowRim_OrsimerMercenary_Elite>10</MorrowRim_OrsimerMercenary_Elite>
-          <MorrowRim_OrsimerPirateBoss>10</MorrowRim_OrsimerPirateBoss>
+          <ESCP_OrsimerThrasher>3</ESCP_OrsimerThrasher>
+          <ESCP_OrsimerPirate>10</ESCP_OrsimerPirate>
+          <ESCP_OrsimerGrenadier_Destructive>2</ESCP_OrsimerGrenadier_Destructive>
+          <ESCP_OrsimerMercenary_Slasher>3</ESCP_OrsimerMercenary_Slasher>
+          <ESCP_OrsimerMercenary_Sniper>10</ESCP_OrsimerMercenary_Sniper>
+          <ESCP_OrsimerMercenary_Gunner>10</ESCP_OrsimerMercenary_Gunner>
+          <ESCP_OrsimerMercenary_Elite>10</ESCP_OrsimerMercenary_Elite>
+          <ESCP_OrsimerPirateBoss>10</ESCP_OrsimerPirateBoss>
         </options>
       </li>
     </pawnGroupMakers>
@@ -297,7 +297,7 @@
   </FactionDef>
 
   <ThingSetMakerDef>
-    <defName>MorrowRim_OrsimerPirateRaidLootMaker</defName>
+    <defName>ESCP_OrsimerPirateRaidLootMaker</defName>
     <root Class="ThingSetMaker_MarketValue">
       <fixedParams>
         <filter>
@@ -311,7 +311,7 @@
             <li>WakeUp</li>
             <li>SmokeleafJoint</li>
             <li>Luciferium</li>
-            <li>MorrowRim_Orichalcum</li>
+            <li>ESCP_Orichalcum</li>
           </thingDefs>
         </filter>
       </fixedParams>

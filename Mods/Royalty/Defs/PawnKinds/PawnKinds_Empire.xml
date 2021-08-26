@@ -4,9 +4,9 @@
   <!--===================== Imperial civilians =========================-->
 
   <PawnKindDef ParentName="EmpireCommonerBase">
-    <defName>MorrowRim_OrsimerEmpire_Common_Lodger</defName>
+    <defName>ESCP_OrsimerEmpire_Common_Lodger</defName>
     <label>imperial citizen</label>
-    <race>MorrowRim_OrsimerRace</race>
+    <race>ESCP_OrsimerRace</race>
     <defaultFactionType>Empire</defaultFactionType>
     <minTitleRequired>Freeholder</minTitleRequired>
     <maxGenerationAge>65</maxGenerationAge>
@@ -46,9 +46,9 @@
   </PawnKindDef>
 
   <PawnKindDef  ParentName="EmpireCommonerBase">
-    <defName>MorrowRim_OrsimerEmpire_Common_Trader</defName>
+    <defName>ESCP_OrsimerEmpire_Common_Trader</defName>
     <label>imperial trader</label>
-    <race>MorrowRim_OrsimerRace</race>
+    <race>ESCP_OrsimerRace</race>
     <defaultFactionType>Empire</defaultFactionType>
     <minTitleRequired>Freeholder</minTitleRequired>
     <maxGenerationAge>65</maxGenerationAge>
@@ -104,9 +104,9 @@
   <!-- Champion -->
 
   <PawnKindDef ParentName="ImperialFighterBase">
-    <defName>MorrowRim_OrsimerEmpire_Fighter_Champion</defName>
+    <defName>ESCP_OrsimerEmpire_Fighter_Champion</defName>
     <label>champion</label>
-	<race>MorrowRim_OrsimerRace</race>
+	<race>ESCP_OrsimerRace</race>
     <maxGenerationAge>40</maxGenerationAge>
     <combatPower>100</combatPower>
     <weaponTags>

@@ -2,7 +2,7 @@
 <Defs>
 	
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>MorrowRim_Welwa</defName>
+		<defName>ESCP_Welwa</defName>
 		<label>welwa</label>
 		<description>A stange four-eyed bear-like beast, covered in a thick pelt and armed with sharp claws. The welwa is a pack hunter, and can sometimes be found in temperate and semi-arid biomes, though are most often found accompanied by their Orsimer tamers.</description>
 		<statBases>
@@ -76,7 +76,7 @@
 		  </li>
 		</tools>
 		<race>
-		  <body>MorrowRim_QuadrupedAnimalWithFourEyes</body>
+		  <body>ESCP_QuadrupedAnimalWithFourEyes</body>
 		  <predator>true</predator>
 		  <maxPreyBodySize>1.5</maxPreyBodySize>
 		  <petness>0.5</petness>
@@ -135,9 +135,9 @@
 	</ThingDef>
 	  
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>MorrowRim_Welwa</defName>
+		<defName>ESCP_Welwa</defName>
 		<label>welwa</label>
-		<race>MorrowRim_Welwa</race>
+		<race>ESCP_Welwa</race>
 		<combatPower>140</combatPower>
 		<ecoSystemWeight>0.45</ecoSystemWeight>
 		<wildGroupSize>3~5</wildGroupSize>
@@ -153,18 +153,18 @@
 			<label>welwa cub</label>
 			<labelPlural>welwa cubs</labelPlural>
 			<bodyGraphicData>
-			  <texPath>Things/Pawn/Animal/MorrowRim_Welwa/Welwa</texPath>
+			  <texPath>Things/Pawn/Animal/ESCP_Welwa/Welwa</texPath>
 			  <drawSize>0.85</drawSize>
 			  <color>(72,55,48)</color>
 			</bodyGraphicData>
 			<dessicatedBodyGraphicData>
-			  <texPath>Things/Pawn/Animal/MorrowRim_Welwa/Dessicated_Welwa</texPath>
+			  <texPath>Things/Pawn/Animal/ESCP_Welwa/Dessicated_Welwa</texPath>
 			  <drawSize>0.85</drawSize>
 			</dessicatedBodyGraphicData>
 		  </li>
 		  <li>
 			<bodyGraphicData>
-			  <texPath>Things/Pawn/Animal/MorrowRim_Welwa/Welwa</texPath>
+			  <texPath>Things/Pawn/Animal/ESCP_Welwa/Welwa</texPath>
 			  <drawSize>1.4</drawSize>
 			  <color>(72,55,48)</color>
 			  <shadowData>
@@ -173,13 +173,13 @@
 			  </shadowData>
 			</bodyGraphicData>
 			<dessicatedBodyGraphicData>
-			  <texPath>Things/Pawn/Animal/MorrowRim_Welwa/Dessicated_Welwa</texPath>
+			  <texPath>Things/Pawn/Animal/ESCP_Welwa/Dessicated_Welwa</texPath>
 			  <drawSize>1.4</drawSize>
 			</dessicatedBodyGraphicData>
 		  </li>
 		  <li>
 			<bodyGraphicData>
-			  <texPath>Things/Pawn/Animal/MorrowRim_Welwa/Welwa</texPath>
+			  <texPath>Things/Pawn/Animal/ESCP_Welwa/Welwa</texPath>
 			  <drawSize>1.75</drawSize>
 			  <color>(72,55,48)</color>
 			  <shadowData>
@@ -188,7 +188,7 @@
 			  </shadowData>
 			</bodyGraphicData>
 			<dessicatedBodyGraphicData>
-			  <texPath>Things/Pawn/Animal/MorrowRim_Welwa/Dessicated_Welwa</texPath>
+			  <texPath>Things/Pawn/Animal/ESCP_Welwa/Dessicated_Welwa</texPath>
 			  <drawSize>1.75</drawSize>
 			</dessicatedBodyGraphicData>
 		  </li>

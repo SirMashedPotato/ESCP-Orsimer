@@ -2,7 +2,7 @@
 <Defs>
 	
 	<ThingDef ParentName="LeatherBase">
-		<defName>MorrowRim_LeatherOrsimer</defName>
+		<defName>ESCP_LeatherOrsimer</defName>
 		<label>Orsimer leather</label>
 		<description>Tanned, dried, scraped Orsimer skin. Most people find this material horrifying. Some find it fascinating.</description>
 		<graphicData>
@@ -22,9 +22,9 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="LeatherBase">
-		<defName>MorrowRim_EchaterePelt</defName>
+		<defName>ESCP_EchaterePelt</defName>
 		<label>echatere pelt</label>
-		<description>The thick pelt of echatere. Relatively good at temperature regulation in cold climates, and provides a slight boost to armor.</description>
+		<description>The thick pelt of echatere. Relatively good at temperature regulation in cold climates, and provides a slight boost to armour.</description>
 		<graphicData>
 		  <color>(92,78,71)</color>
 		</graphicData>

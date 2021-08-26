@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>MorrowRim - Orsimer</name>
-	<packageId>SirMashedPotato.MorrowRim.Orsimer</packageId>
+	<name>ESCP - Orsimer</name>
+	<packageId>SirMashedPotato.ESCP.Orsimer</packageId>
 	<author>SirMashedPotato</author>
 	<supportedVersions>
     	<li>1.3</li>

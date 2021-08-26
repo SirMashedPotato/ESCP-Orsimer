@@ -13,7 +13,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BiomeDef[defName="AB_GallatrossGraveyard"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Welwa>0.05</MorrowRim_Welwa>
+						<ESCP_Welwa>0.05</ESCP_Welwa>
 					</value>			
 				</li>	
 

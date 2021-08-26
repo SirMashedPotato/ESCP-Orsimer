@@ -2,11 +2,11 @@
 <Defs>
   
 	<FactionDef ParentName="PlayerFactionBase">
-		<defName>MorrowRim_OrsimerPlayerColony</defName>
+		<defName>ESCP_OrsimerPlayerColony</defName>
 		<label>Orsimer arrivals</label>
 		<description>A colony of Orsimer stowaways from the Azuras Dawn colonisation ship.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>MorrowRim_OrsimerKind</basicMemberKind>
+		<basicMemberKind>ESCP_OrsimerKind</basicMemberKind>
 		<pawnSingular>Orsimer offworlder</pawnSingular>
 		<pawnsPlural>Orsimer offworlders</pawnsPlural>
 		<techLevel>Industrial</techLevel>
@@ -14,18 +14,18 @@
 		  <li>
 			<categories>
 			  <li>Offworld</li>
-			  <li>Orsimer_Offworld</li>
+			  <li>ESCP_OrsimerOffworld</li>
 			</categories>
 		  </li>
 		</backstoryFilters>
-		<factionIconPath>World/WorldObjects/Expanding/OrsimerSettlementIndustrial</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlementIndustrial</factionIconPath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
 		  <li>ClassicStart</li>
-		  <li>OrsimerStart_Industrial</li>
+		  <li>ESCP_OrsimerStart_Industrial</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
 		  <li>ClassicStart</li>
@@ -39,32 +39,32 @@
 	</FactionDef>
 	
 	<FactionDef ParentName="PlayerFactionBase">
-		<defName>MorrowRim_OrsimerPlayerTribe</defName>
+		<defName>ESCP_OrsimerPlayerTribe</defName>
 		<label>New Orsimer Tribe</label>
 		<description>A small orsimer tribe.</description>
 		<isPlayer>true</isPlayer>
 		<pawnSingular>orsimer tribseman</pawnSingular>
 		<pawnsPlural>orsimer tribsepeople</pawnsPlural>
-		<basicMemberKind>MorrowRim_OrsimerTribalKind</basicMemberKind>
+		<basicMemberKind>ESCP_OrsimerTribalKind</basicMemberKind>
 		<techLevel>Neolithic</techLevel>
 		<backstoryFilters>
 		  <li>
 			<categories>
 			  <li>Tribal</li>
-			  <li>Orsimer_Tribal</li>
+			  <li>ESCP_OrsimerTribal</li>
 			</categories>
 		  </li>
 		</backstoryFilters>
-		<factionIconPath>World/WorldObjects/Expanding/OrsimerSettlement</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>MorrowRim_NamerFactionOrsimer</factionNameMaker>
-		<settlementNameMaker>MorrowRim_NamerSettlementOrsimerHouse</settlementNameMaker>
+		<factionNameMaker>ESCP_NamerFactionOrsimer</factionNameMaker>
+		<settlementNameMaker>ESCP_NamerSettlementOrsimerHouse</settlementNameMaker>
 		<geneticVariance>1</geneticVariance>
 		<forageabilityFactor>1.7</forageabilityFactor>
 		<startingResearchTags>
 		  <li>TribalStart</li>
-		  <li>OrsimerStart_Tribal</li>
+		  <li>ESCP_OrsimerStart_Tribal</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
 		  <li>TribalStart</li>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>MorrowRim_NamerPersonOrsimerMale</defName>
+		<defName>ESCP_NamerPersonOrsimerMale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name(p=5)->[MaleList] gro-[FamilyList]</li>
@@ -13,22 +13,22 @@
 			<rulesRaw>
 				<li Class="Rule_File">
 					<keyword>MaleList</keyword>
-					<path>OrsimerNames/OrsimerMale</path>
+					<path>ESCP_OrsimerNames/OrsimerMale</path>
 				</li>
 				<li Class="Rule_File">
 					<keyword>FemaleList</keyword>
-					<path>OrsimerNames/OrsimerFemale</path>
+					<path>ESCP_OrsimerNames/OrsimerFemale</path>
 				</li>
 				<li Class="Rule_File">
 					<keyword>FamilyList</keyword>
-					<path>OrsimerNames/OrsimerFamily</path>
+					<path>ESCP_OrsimerNames/OrsimerFamily</path>
 				</li>
 			</rulesRaw>
 		</rulePack>
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>MorrowRim_NamerPersonOrsimerFemale</defName>
+		<defName>ESCP_NamerPersonOrsimerFemale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name(p=5)->[FemaleList] gra-[FamilyList]</li>
@@ -38,22 +38,22 @@
 			<rulesRaw>
 				<li Class="Rule_File">
 					<keyword>MaleList</keyword>
-					<path>OrsimerNames/OrsimerMale</path>
+					<path>ESCP_OrsimerNames/OrsimerMale</path>
 				</li>
 				<li Class="Rule_File">
 					<keyword>FemaleList</keyword>
-					<path>OrsimerNames/OrsimerFemale</path>
+					<path>ESCP_OrsimerNames/OrsimerFemale</path>
 				</li>
 				<li Class="Rule_File">
 					<keyword>FamilyList</keyword>
-					<path>OrsimerNames/OrsimerFamily</path>
+					<path>ESCP_OrsimerNames/OrsimerFamily</path>
 				</li>
 			</rulesRaw>
 		</rulePack>
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>MorrowRim_NamerEchatere</defName>
+		<defName>ESCP_NamerEchatere</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[a]-[c]</li>
@@ -74,19 +74,19 @@
 			<rulesRaw>
 				<li Class="Rule_File">
 					<keyword>a</keyword>
-					<path>EchatereNames/a</path>
+					<path>ESCP_EchatereNames/a</path>
 				</li>
 				<li Class="Rule_File">
 					<keyword>b</keyword>
-					<path>EchatereNames/b</path>
+					<path>ESCP_EchatereNames/b</path>
 				</li>
 				<li Class="Rule_File">
 					<keyword>c</keyword>
-					<path>EchatereNames/c</path>
+					<path>ESCP_EchatereNames/c</path>
 				</li>
 				<li Class="Rule_File">
 					<keyword>d</keyword>
-					<path>EchatereNames/d</path>
+					<path>ESCP_EchatereNames/d</path>
 				</li>
 			</rulesRaw>
 		</rulePack>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PawnKindDef Name="MorrowRim_OrsimerRefugeeBase" Abstract="True">
-    <race>MorrowRim_OrsimerRace</race>
+  <PawnKindDef Name="ESCP_OrsimerRefugeeBase" Abstract="True">
+    <race>ESCP_OrsimerRace</race>
     <defaultFactionType>OutlanderRefugee</defaultFactionType>
     <chemicalAddictionChance>0.12</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
@@ -11,8 +11,8 @@
   </PawnKindDef>
 
   <!-- Refugee -->
-  <PawnKindDef ParentName="MorrowRim_OrsimerRefugeeBase">
-    <defName>MorrowRim_OrsimerRefugee</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerRefugeeBase">
+    <defName>ESCP_OrsimerRefugee</defName>
     <label>refugee</label>
     <combatPower>35</combatPower>
     <invNutrition>0</invNutrition>

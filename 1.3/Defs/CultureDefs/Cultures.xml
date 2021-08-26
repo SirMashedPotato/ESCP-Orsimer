@@ -3,7 +3,7 @@
 
 
   <CultureDef>
-    <defName>MorrowRim_Orsimeri</defName>
+    <defName>ESCP_Orsimeri</defName>
     <label>Orsimeri</label>
     <description>An ancient culture common among Orsimer tribes.</description>
     <pawnNameMaker>NamerPersonCorunan</pawnNameMaker>
@@ -11,18 +11,18 @@
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
-    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Orsimeri</leaderTitleMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_LeaderTitleMaker_Orsimeri</leaderTitleMaker>
     <allowedPlaceTags>
       <li>OriginTribal</li>
     </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/OrsimerSettlement</iconPath>
+    <iconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</iconPath>
     <preferredWeaponClasses>
       <noble>Melee</noble>
       <despised>Ranged</despised>
     </preferredWeaponClasses>
     <thingStyleCategories>
       <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>MorrowRim_OrsimerStyle</category>
+        <category>ESCP_OrsimerStyle</category>
         <priority>2</priority>
       </li>
 	  <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -36,7 +36,7 @@
     </thingStyleCategories>
     <styleItemTags>
 	  <li>
-        <tag>TattooFaceOrsimer</tag>
+        <tag>ESCP_TattooFaceOrsimer</tag>
         <baseWeight>1</baseWeight>
         <weightFactor>1</weightFactor>
       </li>

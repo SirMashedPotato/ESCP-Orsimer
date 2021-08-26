@@ -14,8 +14,8 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BiomeDef[defName="RG-AF_AspenForest"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Echatere>0.3</MorrowRim_Echatere>
-						<MorrowRim_Welwa>0.05</MorrowRim_Welwa>
+						<ESCP_Echatere>0.3</ESCP_Echatere>
+						<ESCP_Welwa>0.05</ESCP_Welwa>
 					</value>			
 				</li>
 

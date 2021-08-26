@@ -3,7 +3,7 @@
 <Defs>
 
 	<BodyDef>
-		<defName>MorrowRim_QuadrupedAnimalWithFourEyes</defName>
+		<defName>ESCP_QuadrupedAnimalWithFourEyes</defName>
 		<label>quadruped animal with four eyes</label>
 		<corePart>
 		  <def>Body</def>
@@ -190,7 +190,7 @@
 	</BodyDef>
 
   <BodyDef>
-    <defName>MorrowRim_SixLeggedAnimal</defName>
+    <defName>ESCP_SixLeggedAnimal</defName>
     <label>six legged animal</label>
     <corePart>
       <def>Body</def>

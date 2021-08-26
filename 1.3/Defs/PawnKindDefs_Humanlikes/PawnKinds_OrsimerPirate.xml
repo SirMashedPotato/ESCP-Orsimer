@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PawnKindDef Name="MorrowRim_OrsimerPirateBase" Abstract="True">
-    <race>MorrowRim_OrsimerRace</race>
-    <defaultFactionType>Pirate</defaultFactionType>
+  <PawnKindDef Name="ESCP_OrsimerPirateBase" Abstract="True">
+    <race>ESCP_OrsimerRace</race>
+    <defaultFactionType>ESCP_OrsimerPirate</defaultFactionType>
     <chemicalAddictionChance>0.12</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
     <invNutrition>2.55</invNutrition>
@@ -12,8 +12,8 @@
 
   <!-- Povery tier - drifter -->
   
-  <PawnKindDef ParentName="MorrowRim_OrsimerPirateBase">
-    <defName>MorrowRim_OrsimerDrifter</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerPirateBase">
+    <defName>ESCP_OrsimerDrifter</defName>
     <label>drifter</label>
     <combatPower>35</combatPower>
     <invNutrition>0</invNutrition>
@@ -49,7 +49,7 @@
 
   <!-- Low tier - scavenger, thrasher -->
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerPirateBase" Name="MorrowRim_OrsimerPirateScavTierBase" Abstract="True">
+  <PawnKindDef ParentName="ESCP_OrsimerPirateBase" Name="ESCP_OrsimerPirateScavTierBase" Abstract="True">
     <combatPower>50</combatPower>
     <initialWillRange>1~3</initialWillRange>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
@@ -76,8 +76,8 @@
     </inventoryOptions>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="MorrowRim_OrsimerPirateScavTierBase">
-    <defName>MorrowRim_OrsimerScavenger</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerPirateScavTierBase">
+    <defName>ESCP_OrsimerScavenger</defName>
     <label>scavenger gunner</label>
     <apparelMoney>300~500</apparelMoney>
     <weaponMoney>200~300</weaponMoney>
@@ -87,15 +87,15 @@
     <initialResistanceRange>17~26</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerPirateScavTierBase">
-    <defName>MorrowRim_OrsimerThrasher</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerPirateScavTierBase">
+    <defName>ESCP_OrsimerThrasher</defName>
     <label>scavenger thrasher</label>
-    <race>MorrowRim_OrsimerRace</race>
+    <race>ESCP_OrsimerRace</race>
     <canBeSapper>true</canBeSapper>
     <apparelMoney>300~800</apparelMoney>
     <apparelTags>
       <li>Outlander</li>
-	  <li>OrsimerTotem_Basic</li>
+	  <li>ESCP_OrsimerTotem_Basic</li>
     </apparelTags>
     <weaponMoney>100~160</weaponMoney>
     <weaponTags>
@@ -108,10 +108,10 @@
 
   <!-- Mid tier - pirate -->
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerPirateBase">
-    <defName>MorrowRim_OrsimerPirate</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerPirateBase">
+    <defName>ESCP_OrsimerPirate</defName>
     <label>pirate gunner</label>
-    <race>MorrowRim_OrsimerRace</race>
+    <race>ESCP_OrsimerRace</race>
     <combatPower>65</combatPower>
     <maxGenerationAge>65</maxGenerationAge>
     <gearHealthRange>0.7~2.3</gearHealthRange>
@@ -121,8 +121,8 @@
       <li>IndustrialAdvanced</li>
       <li>IndustrialMilitaryBasic</li>
       <li>IndustrialMilitaryAdvanced</li>
-	  <li>OrsimerTotem_Basic</li>
-	  <li>OrsimerTotem_Advanced</li>
+	  <li>ESCP_OrsimerTotem_Basic</li>
+	  <li>ESCP_OrsimerTotem_Advanced</li>
     </apparelTags>
     <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     <weaponMoney>250~345</weaponMoney>

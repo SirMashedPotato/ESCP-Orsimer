@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="ApparelBase" Name="MorrowRimTotemBase" Abstract="True">
+	<ThingDef ParentName="ApparelBase" Name="ESCP_OrsimerTotemBase" Abstract="True">
 	    <techLevel>Medieval</techLevel>
 		<graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -55,7 +55,7 @@
 		</apparel>
 	</ThingDef>
 	
-	<ThingDef ParentName="MorrowRimTotemBase" Name="MorrowRimTotemCraftableBase" Abstract="True">
+	<ThingDef ParentName="ESCP_OrsimerTotemBase" Name="ESCP_OrsimerTotemCraftableBase" Abstract="True">
 		<recipeMaker>
 		  <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
 		  <recipeUsers>
@@ -82,62 +82,62 @@
 	
 	<!-- -->
 
-	<ThingDef ParentName="MorrowRimTotemCraftableBase">
-		<defName>MorrowRim_Apparel_TotemWroth</defName>
+	<ThingDef ParentName="ESCP_OrsimerTotemCraftableBase">
+		<defName>ESCP_Apparel_TotemWroth</defName>
 		<label>totem of wroth</label>
 		<descriptionHyperlinks>
-			<HediffDef>MorrowRim_BeserkerWroth</HediffDef>
+			<HediffDef>ESCP_BeserkerWroth</HediffDef>
 		</descriptionHyperlinks>
 		<description>An Orsimer totem, attached to the belt. Augments an Orsimer's beserker rage, increasing manipulation, at the cost of moving.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_TotemWroth/OrcishTotem_Wroth_east</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/ESCP_TotemWroth/OrcishTotem_Wroth_east</texPath>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_TotemWroth/OrcishTotem_Wroth</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_TotemWroth/OrcishTotem_Wroth</wornGraphicPath>
 			<tags>
-				<li>OrsimerTotem_Basic</li>
+				<li>ESCP_OrsimerTotem_Basic</li>
 			</tags>
 		</apparel>
 	</ThingDef>
 	
-	<ThingDef ParentName="MorrowRimTotemCraftableBase">
-		<defName>MorrowRim_Apparel_TotemFury</defName>
+	<ThingDef ParentName="ESCP_OrsimerTotemCraftableBase">
+		<defName>ESCP_Apparel_TotemFury</defName>
 		<label>totem of fury</label>
 		<descriptionHyperlinks>
-			<HediffDef>MorrowRim_BeserkerFury</HediffDef>
+			<HediffDef>ESCP_BeserkerFury</HediffDef>
 		</descriptionHyperlinks>
 		<description>An Orsimer totem, attached to the belt. Augments an Orsimer's beserker rage, increasing moving, at the cost of manipulation.</description>
 		<graphicData>
-		  <texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_TotemFury/OrcishTotem_Fury_east</texPath>
+		  <texPath>Things/Pawn/Humanlike/Apparel/ESCP_TotemFury/OrcishTotem_Fury_east</texPath>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_TotemFury/OrcishTotem_Fury</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_TotemFury/OrcishTotem_Fury</wornGraphicPath>
 			<tags>
-				<li>OrsimerTotem_Basic</li>
+				<li>ESCP_OrsimerTotem_Basic</li>
 			</tags>
 		</apparel>
 	</ThingDef>
 	
-	<ThingDef ParentName="MorrowRimTotemCraftableBase">
-		<defName>MorrowRim_Apparel_TotemFuror</defName>
+	<ThingDef ParentName="ESCP_OrsimerTotemCraftableBase">
+		<defName>ESCP_Apparel_TotemFuror</defName>
 		<label>totem of furor</label>
 		<descriptionHyperlinks>
-			<HediffDef>MorrowRim_BeserkerFuror</HediffDef>
+			<HediffDef>ESCP_BeserkerFuror</HediffDef>
 		</descriptionHyperlinks>
 		<description>An Orsimer totem, attached to the belt. Augments an Orsimer's beserker rage, increasing durability, at the cost of moving and manipulation.</description>
 		<graphicData>
-		  <texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_TotemFuror/OrcishTotem_Furor_east</texPath>
+		  <texPath>Things/Pawn/Humanlike/Apparel/ESCP_TotemFuror/OrcishTotem_Furor_east</texPath>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_TotemFuror/OrcishTotem_Furor</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_TotemFuror/OrcishTotem_Furor</wornGraphicPath>
 			<tags>
-				<li>OrsimerTotem_Basic</li>
+				<li>ESCP_OrsimerTotem_Basic</li>
 			</tags>
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="MorrowRimTotemBase">
-		<defName>MorrowRim_Apparel_TotemArchotech</defName>
+	<ThingDef ParentName="ESCP_OrsimerTotemBase">
+		<defName>ESCP_Apparel_TotemArchotech</defName>
 		<label>totem of the archotech</label>
 		<techLevel>Archotech</techLevel>
 		<tradeTags>
@@ -145,16 +145,16 @@
 		</tradeTags>
 		<thingSetMakerTags><li>RewardStandardMedFreq</li></thingSetMakerTags>
 		<descriptionHyperlinks>
-			<HediffDef>MorrowRim_ArchotechsRage</HediffDef>
+			<HediffDef>ESCP_ArchotechsRage</HediffDef>
 		</descriptionHyperlinks>
 		<description>An Orsimer totem, attached to the belt. Augments an Orsimer's beserker rage, increasing durability, moving and manipulation.</description>
 		<graphicData>
-		  <texPath>Things/Pawn/Humanlike/Apparel/MorrowRim_TotemArchotech/OrcishTotem_Archotech_east</texPath>
+		  <texPath>Things/Pawn/Humanlike/Apparel/ESCP_TotemArchotech/OrcishTotem_Archotech_east</texPath>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MorrowRim_TotemArchotech/OrcishTotem_Archotech</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_TotemArchotech/OrcishTotem_Archotech</wornGraphicPath>
 			<tags>
-				<li>OrsimerTotem_Artifact</li>
+				<li>ESCP_OrsimerTotem_Artifact</li>
 			</tags>
 		</apparel>
 		<statBases>

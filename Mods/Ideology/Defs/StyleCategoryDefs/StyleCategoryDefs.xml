@@ -2,7 +2,7 @@
 <Defs>
 
   <StyleCategoryDef>
-    <defName>MorrowRim_OrsimerStyle</defName>
+    <defName>ESCP_OrsimerStyle</defName>
     <label>Orsimer</label>
     <iconPath>World/WorldObjects/Expanding/OrsimerRaider</iconPath>
 	<!--

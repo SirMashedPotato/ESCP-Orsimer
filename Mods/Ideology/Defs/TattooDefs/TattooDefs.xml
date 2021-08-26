@@ -6,9 +6,9 @@
 	<TattooDef>
 		<defName>Face_Orsimer1</defName>
 		<label>Orsimer 1</label>
-		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Orsimer1/Face_Orsimer1</texPath>
+		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Orsimer1/Face_Orsimer1</texPath>
 		<tattooType>Face</tattooType>
-		<category>MorrowRim_OrsimerStyle</category>
+		<category>ESCP_OrsimerStyle</category>
 		<visibleNorth>false</visibleNorth>
 		<styleTags>
 			<li>TattooFaceOrsimer</li>
@@ -18,9 +18,9 @@
 	<TattooDef>
 		<defName>Face_Orsimer2</defName>
 		<label>Orsimer 2</label>
-		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Orsimer2/Face_Orsimer2</texPath>
+		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Orsimer2/Face_Orsimer2</texPath>
 		<tattooType>Face</tattooType>
-		<category>MorrowRim_OrsimerStyle</category>
+		<category>ESCP_OrsimerStyle</category>
 		<visibleNorth>false</visibleNorth>
 		<styleTags>
 			<li>TattooFaceOrsimer</li>
@@ -30,9 +30,9 @@
 	<TattooDef>
 		<defName>Face_Orsimer3</defName>
 		<label>Orsimer 3</label>
-		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Orsimer3/Face_Orsimer3</texPath>
+		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Orsimer3/Face_Orsimer3</texPath>
 		<tattooType>Face</tattooType>
-		<category>MorrowRim_OrsimerStyle</category>
+		<category>ESCP_OrsimerStyle</category>
 		<visibleNorth>false</visibleNorth>
 		<styleTags>
 			<li>TattooFaceOrsimer</li>
@@ -42,9 +42,9 @@
 	<TattooDef>
 		<defName>Face_Orsimer4</defName>
 		<label>Orsimer 4</label>
-		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Orsimer4/Face_Orsimer4</texPath>
+		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Orsimer4/Face_Orsimer4</texPath>
 		<tattooType>Face</tattooType>
-		<category>MorrowRim_OrsimerStyle</category>
+		<category>ESCP_OrsimerStyle</category>
 		<visibleNorth>false</visibleNorth>
 		<styleTags>
 			<li>TattooFaceOrsimer</li>
@@ -54,9 +54,9 @@
 	<TattooDef>
 		<defName>Face_Orsimer5</defName>
 		<label>Orsimer 5</label>
-		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Orsimer5/Face_Orsimer5</texPath>
+		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Orsimer5/Face_Orsimer5</texPath>
 		<tattooType>Face</tattooType>
-		<category>MorrowRim_OrsimerStyle</category>
+		<category>ESCP_OrsimerStyle</category>
 		<visibleNorth>false</visibleNorth>
 		<styleTags>
 			<li>TattooFaceOrsimer</li>

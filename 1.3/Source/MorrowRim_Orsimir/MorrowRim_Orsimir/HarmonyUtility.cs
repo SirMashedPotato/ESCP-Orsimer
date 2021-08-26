@@ -13,19 +13,19 @@ namespace MorrowRim_Orsimir
         /* For qulity patch */
         public static bool IsOrsimer(Pawn p)
         {
-            return p != null && p.def == ThingDef.Named("MorrowRim_OrsimerRace");
+            return p != null && p.def == ThingDef.Named("ESCP_OrsimerRace");
         }
 
         public static bool MadeOfOrichalc(Thing t)
         {
-            return t != null && t.Stuff != null && t.Stuff == ThingDef.Named("MorrowRim_Orichalcum");
+            return t != null && t.Stuff != null && t.Stuff == ThingDef.Named("ESCP_Orichalcum");
         }
 
         /* for taming patch */
         /*
         public static bool IsOrsimerTamable(Pawn p)
         {
-            return p != null && (p.def == ThingDef.Named("MorrowRim_Echatere") || p.def == ThingDef.Named("MorrowRim_Welwa"));
+            return p != null && (p.def == ThingDef.Named("ESCP_Echatere") || p.def == ThingDef.Named("ESCP_Welwa"));
         }
         */
     }

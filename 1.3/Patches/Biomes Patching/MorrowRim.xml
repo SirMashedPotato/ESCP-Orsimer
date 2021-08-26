@@ -14,12 +14,12 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands"]/wildAnimals</xpath>
 					<value>
-						<MorrowRim_Welwa>0.05</MorrowRim_Welwa>
+						<ESCP_Welwa>0.05</ESCP_Welwa>
 					</value>			
 				</li>
 				
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName="MorrowRim_Welwa"]</xpath>
+					<xpath>/Defs/ThingDef[defName="ESCP_Welwa"]</xpath>
 					<value>
 						<li Class="MorrowRim.ExtendedRaceProperties">
 							<ashResistant>Resistant</ashResistant>

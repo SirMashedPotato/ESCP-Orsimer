@@ -9,8 +9,8 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
 			<value>
-				<li>MorrowRim_OrsimerPlayerColony</li>
-				<li>MorrowRim_OrsimerPlayerTribe</li>
+				<li>ESCP_OrsimerPlayerColony</li>
+				<li>ESCP_OrsimerPlayerTribe</li>
 			</value>
 		</match>
 	</Operation>

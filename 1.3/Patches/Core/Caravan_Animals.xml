@@ -4,7 +4,7 @@
 	<Operation Class="PatchOperationAdd"> 
 		<xpath>/Defs/BiomeDef[defName="BorealForest" or "Tundra" or "ColdBog" or "ColdBog" or "IceSheet" or "SeaIce" or "TemperateForest" or "TemperateSwamp" or "TropicalRainforest" or "TropicalSwamp" or "AridShrubland" or "Desert" or "ExtremeDesert"]/allowedPackAnimals</xpath>
 			<value>
-				<li>MorrowRim_Echatere</li>
+				<li>ESCP_Echatere</li>
 			</value>
 	</Operation>
 	
@@ -19,7 +19,64 @@
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands" or "MorrowRim_BlightedAshlands"]/allowedPackAnimals</xpath>
 						<value>
-							<li>MorrowRim_Echatere</li>
+							<li>ESCP_Echatere</li>
+						</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Ashlands Swamp</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_AshSwamp"]/allowedPackAnimals</xpath>
+						<value>
+							<li>ESCP_Echatere</li>
+						</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Grazelands</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_Grazelands"]/allowedPackAnimals</xpath>
+						<value>
+							<li>ESCP_Echatere</li>
+						</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Volcanic Ashlands</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_VolcanicAshlands"]/allowedPackAnimals</xpath>
+						<value>
+							<li>ESCP_Echatere</li>
 						</value>
 				</li>
 			

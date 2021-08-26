@@ -3,7 +3,7 @@
 
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 	  <enabled>False</enabled>
-	  <label>[MorrowRim - Orsimer] Make all Royalty stellic wardens Orsimer:</label>
+	  <label>[ESCP - Orsimer] Make all Royalty stellic wardens Orsimer:</label>
 	  <mods>
 		<li>Royalty</li>
 	  </mods>
@@ -11,7 +11,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
 				<value>
-					<race>MorrowRim_OrsimerRace</race>
+					<race>ESCP_OrsimerRace</race>
 				</value>
 			</li>
 		</operations>

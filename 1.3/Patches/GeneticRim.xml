@@ -14,7 +14,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
-						<li>MorrowRim_Echatere</li>
+						<li>ESCP_Echatere</li>
 					</value>
 				</li>
 

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PawnKindDef Name="MorrowRim_OrsimerTribalBase" Abstract="True">
-    <race>MorrowRim_OrsimerRace</race>
-    <defaultFactionType>MorrowRim_OrsimerTribeCivil</defaultFactionType>
+  <PawnKindDef Name="ESCP_OrsimerTribalBase" Abstract="True">
+    <race>ESCP_OrsimerRace</race>
+    <defaultFactionType>ESCP_OrsimerTribeCivil</defaultFactionType>
     <maxGenerationAge>60</maxGenerationAge>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <invNutrition>2.55</invNutrition>
     <invFoodDef>Pemmican</invFoodDef>
     <apparelTags>
       <li>Neolithic</li>
-	  <li>OrsimerTotem_Basic</li>
+	  <li>ESCP_OrsimerTotem_Basic</li>
     </apparelTags>
   </PawnKindDef>
 
   <!-- Poverty tier - penitent -->
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalBase">
-    <defName>MorrowRim_OrsimerTribal_Penitent</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
+    <defName>ESCP_OrsimerTribal_Penitent</defName>
     <label>penitent</label>
     <combatPower>40</combatPower>
     <chemicalAddictionChance>0.10</chemicalAddictionChance>
@@ -40,8 +40,8 @@
 
   <!-- Low tier - archer -->
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalBase">
-    <defName>MorrowRim_OrsimerTribal_Archer</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
+    <defName>ESCP_OrsimerTribal_Archer</defName>
     <label>archer</label>
     <combatPower>45</combatPower>
     <itemQuality>Poor</itemQuality>
@@ -65,8 +65,8 @@
 
   <!-- Mid tier - warrior, breacher, hunter, trader -->
   
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalBase">
-    <defName>MorrowRim_OrsimerTribal_Warrior</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
+    <defName>ESCP_OrsimerTribal_Warrior</defName>
     <label>warrior</label>
     <combatPower>50</combatPower>
     <itemQuality>Poor</itemQuality>
@@ -83,9 +83,30 @@
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>5~9</initialResistanceRange>
   </PawnKindDef>
+  
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
+    <defName>ESCP_OrsimerTribal_Breacher</defName>
+    <label>breacher</label>
+    <combatPower>55</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>200~300</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarVeil</li>
+	  <li>ESCP_Apparel_TotemFuror</li>
+    </apparelRequired>
+    <weaponMoney>150~150</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeDestructive</li>
+    </weaponTags>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>12~19</initialResistanceRange>
+  </PawnKindDef>
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalBase" Name="MorrowRim_OrsimerTribal_Hunter">
-    <defName>MorrowRim_OrsimerTribal_Hunter</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase" Name="ESCP_OrsimerTribal_Hunter">
+    <defName>ESCP_OrsimerTribal_Hunter</defName>
     <label>hunter</label>
     <combatPower>60</combatPower>
     <backstoryFiltersOverride>
@@ -111,8 +132,8 @@
     <initialResistanceRange>10~16</initialResistanceRange>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribal_Hunter">
-    <defName>MorrowRim_OrsimerTribal_Trader</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribal_Hunter">
+    <defName>ESCP_OrsimerTribal_Trader</defName>
     <label>trader</label>
     <trader>true</trader>
     <apparelRequired Inherit="False">
@@ -123,37 +144,16 @@
   </PawnKindDef>
 
   <!-- High tier - berserker, heavy archer, chief melee, chief ranged -->
-  
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalBase">
-    <defName>MorrowRim_OrsimerTribal_Breacher</defName>
-    <label>breacher</label>
-    <combatPower>55</combatPower>
-    <itemQuality>Poor</itemQuality>
-    <canBeSapper>true</canBeSapper>
-    <isGoodBreacher>true</isGoodBreacher>
-    <gearHealthRange>0.5~1.8</gearHealthRange>
-    <apparelMoney>200~300</apparelMoney>
-    <apparelRequired>
-      <li>Apparel_WarVeil</li>
-	  <li>MorrowRim_Apparel_TotemFuror</li>
-    </apparelRequired>
-    <weaponMoney>150~150</weaponMoney>
-    <weaponTags>
-      <li>NeolithicMeleeDestructive</li>
-    </weaponTags>
-    <initialWillRange>1~3</initialWillRange>
-    <initialResistanceRange>12~19</initialResistanceRange>
-  </PawnKindDef>
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalBase">
-    <defName>MorrowRim_OrsimerTribal_Berserker</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
+    <defName>ESCP_OrsimerTribal_Berserker</defName>
     <label>berserker</label>
     <combatPower>65</combatPower>
     <canBeSapper>true</canBeSapper>
     <apparelMoney>200~550</apparelMoney>
     <apparelRequired>
       <li>Apparel_WarMask</li>
-	  <li>MorrowRim_Apparel_TotemWroth</li>
+	  <li>ESCP_Apparel_TotemWroth</li>
     </apparelRequired>
     <weaponMoney>300~300</weaponMoney>
     <weaponTags>
@@ -162,15 +162,33 @@
     <initialWillRange>2~4</initialWillRange>
     <initialResistanceRange>13~20</initialResistanceRange>
   </PawnKindDef>
+  
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
+    <defName>ESCP_OrsimerTribal_Elite</defName>
+    <label>elite warrior</label>
+    <combatPower>65</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>200~550</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarMask</li>
+	  <li>ESCP_Apparel_TotemFuror</li>
+    </apparelRequired>
+    <weaponMoney>300~500</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+	<initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>13~20</initialResistanceRange>
+  </PawnKindDef>
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalBase">
-    <defName>MorrowRim_OrsimerTribal_HeavyArcher</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
+    <defName>ESCP_OrsimerTribal_HeavyArcher</defName>
     <label>heavy archer</label>
     <combatPower>75</combatPower>
     <apparelMoney>200~550</apparelMoney>
     <apparelRequired>
       <li>Apparel_WarMask</li>
-	  <li>MorrowRim_Apparel_TotemFury</li>
+	  <li>ESCP_Apparel_TotemFury</li>
     </apparelRequired>
     <weaponMoney>250~250</weaponMoney>
     <weaponTags>
@@ -183,8 +201,8 @@
     <initialResistanceRange>14~22</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalBase" Name="MorrowRim_OrsimerTribalChiefBase" Abstract="True">
-    <defName>MorrowRim_OrsimerTribal_ChiefMelee</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase" Name="ESCP_OrsimerTribalChiefBase" Abstract="True">
+    <defName>ESCP_OrsimerTribal_ChiefMelee</defName>
     <combatPower>85</combatPower>
     <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
     <minGenerationAge>30</minGenerationAge>
@@ -202,15 +220,15 @@
     <initialResistanceRange>19~30</initialResistanceRange>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="MorrowRim_OrsimerTribalChiefBase">
-    <defName>MorrowRim_OrsimerTribal_ChiefMelee</defName>
+  <PawnKindDef ParentName="ESCP_OrsimerTribalChiefBase">
+    <defName>ESCP_OrsimerTribal_ChiefMelee</defName>
     <label>berserker chief</label>
     <weaponTags>
       <li>NeolithicMeleeAdvanced</li>
       <li>MedievalMeleeAdvanced</li>
     </weaponTags>
 	<apparelTags>
-      <li>OrsimerTotem_Advanced</li>
+      <li>ESCP_OrsimerTotem_Advanced</li>
     </apparelTags>
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>

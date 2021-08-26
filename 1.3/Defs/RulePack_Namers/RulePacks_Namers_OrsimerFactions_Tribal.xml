@@ -2,7 +2,7 @@
 <Defs>
 
   <RulePackDef>
-    <defName>MorrowRim_NamerSettlementOrsimerHouse</defName>
+    <defName>ESCP_NamerSettlementOrsimerHouse</defName>
     <rulePack>
       <rulesStrings>
         <li>r_name->[OrsimerCities]</li>
@@ -11,14 +11,14 @@
         <li>r_name->[FamilyList] Camp</li>
       </rulesStrings>
 	  <rulesFiles>
-        <li>OrsimerCities->OrsimerNames/OrsimerCities</li>
-        <li>FamilyList->OrsimerNames/OrsimerFamily</li>
+        <li>OrsimerCities->ESCP_OrsimerNames/OrsimerCities</li>
+        <li>FamilyList->ESCP_OrsimerNames/OrsimerFamily</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>
   
   <RulePackDef>
-    <defName>MorrowRim_NamerFactionOrsimer</defName>
+    <defName>ESCP_NamerFactionOrsimer</defName>
 	<include>
       <li>TribalWordUtility</li>
     </include>
@@ -33,7 +33,7 @@
   </RulePackDef>
   
   <RulePackDef>
-    <defName>MorrowRim_NamerFactionOrsimerRaider</defName>
+    <defName>ESCP_NamerFactionOrsimerRaider</defName>
 	<include>
       <li>TribalWordUtility</li>
     </include>
@@ -41,9 +41,14 @@
       <rulesStrings>
         <li>r_name->The [Color] [TerrainFeature] Ravagers</li>
         <li>r_name->[FamilyList]'s Ravagers</li>
+        <li>r_name->[OrsimerCities] Ravagers</li>
+		<li>r_name->The [Color] [TerrainFeature] Raiders</li>
+        <li>r_name->[FamilyList]'s Raiders</li>
+        <li>r_name->[OrsimerCities] Raiders</li>
       </rulesStrings>
 	  <rulesFiles>
-        <li>FamilyList->OrsimerNames/OrsimerFamily</li>
+	    <li>OrsimerCities->ESCP_OrsimerNames/OrsimerCities</li>
+        <li>FamilyList->ESCP_OrsimerNames/OrsimerFamily</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>

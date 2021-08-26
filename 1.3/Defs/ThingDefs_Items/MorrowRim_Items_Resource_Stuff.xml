@@ -2,11 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="ResourceBase">
-		<defName>MorrowRim_Orichalcum</defName>
+		<defName>ESCP_Orichalcum</defName>
 		<label>orichalcum</label>
 		<description>A rare metal, stronger and more durable than steel, though exceptionally time consuming to work with.\n\nOrsimer are masters of working orichalcum, and are considered one of the few races that truly understand the metal. As such, anything crafted from orichalcum will be one quality level higher when crafted by an Orsimer.</description>
 		<graphicData>
-		  <texPath>Things/Item/Resource/MorrowRim_Orichalcum</texPath>
+		  <texPath>Things/Item/Resource/ESCP_RawOrichalcum</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<soundInteract>Metal_Drop</soundInteract>
