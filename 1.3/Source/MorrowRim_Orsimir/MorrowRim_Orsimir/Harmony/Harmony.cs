@@ -1,15 +1,9 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using RimWorld.Planet;
 using System.Reflection;
 using Verse;
 using System;
-using System.Linq;
 using System.Collections.Generic;
-using Verse.AI;
-using Verse.AI.Group;
-using System.Text;
-using UnityEngine;
 using System.Reflection.Emit;
 
 
@@ -37,7 +31,7 @@ namespace MorrowRim_Orsimir
         [HarmonyTranspiler]
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            if (true) //for when a modSetting is added
+            if (ESCP_Orsimer_Mod.ESCP_Orsimer_EnableOrichalcPatch())
             {
                 var codes = new List<CodeInstruction>(instructions);
                 //used for checking for the right function call
@@ -57,6 +51,7 @@ namespace MorrowRim_Orsimir
                         yield return new CodeInstruction(OpCodes.Ldarg_1); // recipe def
                         codes[i] = new CodeInstruction(OpCodes.Call, orichalcCheck); // modify
                         yield return codes[i]; // and return modifed
+                        if (ESCP_Orsimer_Mod.ESCP_Orsimer_Logging()) Log.Message("ESCP_Orsimer_ModName".Translate() + ", has succesfully patched GenRecipe.PostProcessProduct");
                     } 
                     else
                     {
@@ -97,6 +92,7 @@ namespace MorrowRim_Orsimir
         }
     }
     */
+
     /* 
      * Patch that checks if animal has tame boost from orsimer
      * If thing is so, increase tame chance by 10%

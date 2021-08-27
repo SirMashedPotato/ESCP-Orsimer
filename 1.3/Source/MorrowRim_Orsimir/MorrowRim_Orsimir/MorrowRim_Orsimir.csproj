@@ -59,10 +59,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompProperties_BeserkerRage.cs" />
-    <Compile Include="Comp_BeserkerRage.cs" />
-    <Compile Include="Harmony.cs" />
-    <Compile Include="HarmonyUtility.cs" />
+    <Compile Include="Comp\CompProperties_BeserkerRage.cs" />
+    <Compile Include="Comp\Comp_BeserkerRage.cs" />
+    <Compile Include="Harmony\Harmony.cs" />
+    <Compile Include="Harmony\HarmonyUtility.cs" />
+    <Compile Include="ModSettings\ESCP_Orsimer_Mod.cs" />
+    <Compile Include="ModSettings\ESCP_Orsimer_ModSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

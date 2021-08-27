@@ -23,15 +23,20 @@ namespace MorrowRim_Orsimir
 
         public static bool RightSkill(RecipeDef recipe)
         {
-            Log.Message("skill = " + recipe.workSkill);
             return recipe.workSkill == SkillDefOf.Crafting;
+        }
+
+        public static bool ChanceIncrease()
+        {
+            bool chance = Rand.Chance(ESCP_Orsimer_Mod.ESCP_Orsimer_EnableOrichalcPatchChance());
+            return chance;
         }
 
         public static QualityCategory CheckQualityIncrease(Pawn worker, QualityCategory initial, Thing thing, RecipeDef recipe)
         {
-            if (IsOrsimer(worker) && MadeOfOrichalc(thing) && RightSkill(recipe) && initial != QualityCategory.Legendary)
+            if (initial != QualityCategory.Legendary && RightSkill(recipe) && MadeOfOrichalc(thing) && IsOrsimer(worker) && ChanceIncrease())
             {
-                Log.Message("Initial = " + initial);
+                if (ESCP_Orsimer_Mod.ESCP_Orsimer_Logging()) Log.Message("Initial quality of  " + thing + " = " + initial + ", improved quality = " + initial+1); ;
                 return initial+1;
             }
             return initial;
