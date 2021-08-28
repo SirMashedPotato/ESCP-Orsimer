@@ -3,7 +3,7 @@
 
   <!-- Combat -->
 
-  <RoyalTitlePermitDef>
+  <RoyalTitlePermitDef MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_CallOrsimerMilitaryAidSmall</defName>
     <label>call Orsimer champion squad</label>
     <description>Call a group of 4 Orsimeri champions to aid you in battle.</description>

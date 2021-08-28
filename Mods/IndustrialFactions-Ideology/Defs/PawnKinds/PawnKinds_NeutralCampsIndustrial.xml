@@ -3,7 +3,7 @@
 
   <!-- Miners -->
 
-  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase">
+  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase" MayRequire="Ludeon.RimWorld.Ideology">
     <defName>ESCP_OrsimerMiner</defName>
     <label>miner</label>
     <combatPower>40</combatPower>
@@ -35,7 +35,7 @@
   </PawnKindDef>
 
   <!-- Hunters -->
-  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase">
+  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase" MayRequire="Ludeon.RimWorld.Ideology">
     <defName>ESCP_OrsimerHunter</defName>
     <label>hunter</label>
     <combatPower>52</combatPower>
@@ -71,7 +71,7 @@
 
   <!-- Loggers -->
 
-  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase">
+  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase" MayRequire="Ludeon.RimWorld.Ideology">
     <defName>ESCP_OrsimerLogger</defName>
     <label>logger</label>
     <combatPower>35</combatPower>
@@ -105,7 +105,7 @@
 
   <!-- Farmer -->
 
-  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase">
+  <PawnKindDef ParentName="ESCP_OrsimerOutlanderBase" MayRequire="Ludeon.RimWorld.Ideology">
     <defName>ESCP_OrsimerFarmer</defName>
     <label>farmer</label>
     <combatPower>35</combatPower>

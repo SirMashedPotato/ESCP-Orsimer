@@ -8,16 +8,16 @@
 				
 		<match Class="PatchOperationSequence">
 			<operations>
-
+			
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/FactionDef[@Name="ESCP_OrsimerTribeBase"]/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
+					<xpath>/Defs/FactionDef[@Name="ESCP_OrsimerOutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
 						<value>
 
 							<MorrowRim_Guar>5</MorrowRim_Guar>
 
 						</value>
 				</li>
-				
+
 			</operations>
 		</match>
 	</Operation>

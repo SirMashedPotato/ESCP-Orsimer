@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PawnKindDef Name="ESCP_OrsimerRefugeeBase" Abstract="True">
+  <PawnKindDef Name="ESCP_OrsimerRefugeeBase" Abstract="True" MayRequire="Ludeon.RimWorld.Royalty">
     <race>ESCP_OrsimerRace</race>
     <defaultFactionType>OutlanderRefugee</defaultFactionType>
     <chemicalAddictionChance>0.12</chemicalAddictionChance>
@@ -11,7 +11,7 @@
   </PawnKindDef>
 
   <!-- Refugee -->
-  <PawnKindDef ParentName="ESCP_OrsimerRefugeeBase">
+  <PawnKindDef ParentName="ESCP_OrsimerRefugeeBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_OrsimerRefugee</defName>
     <label>refugee</label>
     <combatPower>35</combatPower>
