@@ -61,40 +61,4 @@ namespace MorrowRim_Orsimir
             }
         }
     }
-    /*
-     * Old code, boring postfix that mostly works
-    [HarmonyPatch(typeof(QuestManager))]
-    [HarmonyPatch("Notify_ThingsProduced")]
-    public static class QuestManager_NotifyThingsProduced_Patch
-    {
-        [HarmonyPostfix]
-        [HarmonyPriority(Priority.Last)]
-        public static void CheckOrichalcum(Pawn worker, List<Thing> things)
-        {
-            if (true)
-            {
-                foreach (Thing thing in things)
-                {
-                    if (thing.def.CostStuffCount > 0 && HarmonyUtility.MadeOfOrichalc(thing) && HarmonyUtility.IsOrsimer(worker))
-                    {
-                        if (thing.def.comps.Any(x => x.compClass.Name == "CompQuality"))
-                        {
-                            thing.TryGetQuality(out QualityCategory qc);
-                            if (qc != QualityCategory.Legendary)
-                            {
-                                Log.Message("Increasing item quality by 1 level: " + thing);
-                                thing.TryGetComp<CompQuality>().SetQuality(qc + 1, new ArtGenerationContext());
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    */
-
-    /* 
-     * Patch that checks if animal has tame boost from orsimer
-     * If thing is so, increase tame chance by 10%
-     */
 }

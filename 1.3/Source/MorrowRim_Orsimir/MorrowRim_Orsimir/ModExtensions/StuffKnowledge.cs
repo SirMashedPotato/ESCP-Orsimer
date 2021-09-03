@@ -8,8 +8,10 @@ namespace MorrowRim_Orsimir
     class StuffKnowledge : DefModExtension
     {
         public List<string> stuffList;
-        //public List<ThingDef> stuffList = new List<ThingDef> { };
         public SkillDef skill;
+        public TraitDef requiredTrait = null;
+        public HediffDef requiredHediff = null;
+        public Backstory requiredBackstory = null;
 
         public static StuffKnowledge Get(Def def)
         {
