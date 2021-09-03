@@ -138,6 +138,14 @@
 		<descriptionHyperlinks>
 			<HediffDef>ESCP_BeserkerRage</HediffDef>
 		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="MorrowRim_Orsimir.StuffKnowledge">
+                <stuffList>
+					<li>ESCP_Orichalcum</li>
+				</stuffList>
+				<skill>Crafting</skill>
+            </li>
+		</modExtensions>
 		<statBases>
 			  <MarketValue>1900</MarketValue>
 			  <MoveSpeed>4.4</MoveSpeed>

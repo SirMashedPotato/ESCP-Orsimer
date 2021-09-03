@@ -11,19 +11,14 @@ namespace MorrowRim_Orsimir
     public static class HarmonyUtility
     {
         /* For qulity patch */
-        public static bool IsOrsimer(Pawn p)
+        public static bool MadeOfStuff(Thing t, List<string> stuffList)
         {
-            return p != null && p.def == ThingDef.Named("ESCP_OrsimerRace");
+            return t != null && t.Stuff != null && stuffList.Contains(t.Stuff.ToString());
         }
 
-        public static bool MadeOfOrichalc(Thing t)
+        public static bool RightSkill(RecipeDef recipe, SkillDef skill)
         {
-            return t != null && t.Stuff != null && t.Stuff == ThingDef.Named("ESCP_Orichalcum");
-        }
-
-        public static bool RightSkill(RecipeDef recipe)
-        {
-            return recipe.workSkill == SkillDefOf.Crafting;
+            return skill != null && recipe.workSkill == skill;
         }
 
         public static bool ChanceIncrease()
@@ -34,10 +29,15 @@ namespace MorrowRim_Orsimir
 
         public static QualityCategory CheckQualityIncrease(Pawn worker, QualityCategory initial, Thing thing, RecipeDef recipe)
         {
-            if (initial != QualityCategory.Legendary && RightSkill(recipe) && MadeOfOrichalc(thing) && IsOrsimer(worker) && ChanceIncrease())
+            var modExt = StuffKnowledge.Get(worker.def);
+            if (initial != QualityCategory.Legendary && modExt != null)
             {
-                if (ESCP_Orsimer_Mod.ESCP_Orsimer_Logging()) Log.Message("Initial quality of  " + thing + " = " + initial + ", improved quality = " + initial+1); ;
-                return initial+1;
+
+                if (RightSkill(recipe, modExt.skill) && MadeOfStuff(thing, modExt.stuffList) && ChanceIncrease())
+                {
+                    if (ESCP_Orsimer_Mod.ESCP_Orsimer_Logging()) Log.Message("Initial quality of  " + thing + " = " + initial + ", improved quality = " + (initial + 1)); ;
+                    return initial + 1;
+                }
             }
             return initial;
         }

@@ -37,7 +37,7 @@ namespace MorrowRim_Orsimir
                 //used for checking for the right function call
                 var generateQuality = AccessTools.Method(typeof(QualityUtility), nameof(QualityUtility.GenerateQualityCreatedByPawn), new Type[] { typeof(Pawn), typeof(SkillDef)});
                 //function that is called to check quality
-                var orichalcCheck = AccessTools.Method(typeof(HarmonyUtility), nameof(HarmonyUtility.CheckQualityIncrease));
+                var stuffCheck = AccessTools.Method(typeof(HarmonyUtility), nameof(HarmonyUtility.CheckQualityIncrease));
                 //find the right position in the stack
                 for (int i = 0; i < codes.Count; i++)
                 {
@@ -49,7 +49,7 @@ namespace MorrowRim_Orsimir
                         yield return new CodeInstruction(OpCodes.Ldloc_2); // loads original quality
                         yield return new CodeInstruction(OpCodes.Ldarg_0); // thing
                         yield return new CodeInstruction(OpCodes.Ldarg_1); // recipe def
-                        codes[i] = new CodeInstruction(OpCodes.Call, orichalcCheck); // modify
+                        codes[i] = new CodeInstruction(OpCodes.Call, stuffCheck); // modify
                         yield return codes[i]; // and return modifed
                         if (ESCP_Orsimer_Mod.ESCP_Orsimer_Logging()) Log.Message("ESCP_Orsimer_ModName".Translate() + ", has succesfully patched GenRecipe.PostProcessProduct");
                     } 
