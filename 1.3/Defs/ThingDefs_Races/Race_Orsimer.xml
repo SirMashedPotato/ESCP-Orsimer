@@ -143,7 +143,10 @@
                 <stuffList>
 					<li>ESCP_Orichalcum</li>
 				</stuffList>
-				<skill>Crafting</skill>
+				<skillList>
+					<li>Crafting</li>
+				</skillList>
+				<notJustStuff>true</notJustStuff>
             </li>
 		</modExtensions>
 		<statBases>
