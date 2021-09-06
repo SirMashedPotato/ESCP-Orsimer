@@ -140,13 +140,18 @@
 		</descriptionHyperlinks>
 		<modExtensions>
 			<li Class="MorrowRim_Orsimir.StuffKnowledge">
-                <stuffList>
-					<li>ESCP_Orichalcum</li>
-				</stuffList>
-				<skillList>
-					<li>Crafting</li>
-				</skillList>
-				<notJustStuff>true</notJustStuff>
+				<stuffKnowledgeList>
+					<li>
+						<stuffList>
+							<li>ESCP_Orichalcum</li>
+						</stuffList>
+						<skillList>
+							<li>Crafting</li>
+						</skillList>
+						<notJustStuff>true</notJustStuff>
+					</li>
+					<chance>1.0</chance>
+				</stuffKnowledgeList>
             </li>
 		</modExtensions>
 		<statBases>

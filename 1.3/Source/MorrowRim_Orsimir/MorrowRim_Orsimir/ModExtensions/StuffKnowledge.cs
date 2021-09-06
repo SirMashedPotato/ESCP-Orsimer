@@ -5,7 +5,17 @@ using System.Collections.Generic;
 
 namespace MorrowRim_Orsimir
 {
-    class StuffKnowledge : DefModExtension
+    public class StuffKnowledge : DefModExtension
+    {
+        public List<Knowledge> stuffKnowledgeList;
+
+        public static StuffKnowledge Get(Def def)
+        {
+            return def.GetModExtension<StuffKnowledge>();
+        }
+    }
+
+    public class Knowledge
     {
         public List<string> stuffList;
         public List<SkillDef> skillList;
@@ -17,10 +27,6 @@ namespace MorrowRim_Orsimir
         public TraitDef requiredTrait = null;
         public HediffDef requiredHediff = null;
         public Backstory requiredBackstory = null;
-
-        public static StuffKnowledge Get(Def def)
-        {
-            return def.GetModExtension<StuffKnowledge>();
-        }
+        public float chance = 1f;
     }
 }

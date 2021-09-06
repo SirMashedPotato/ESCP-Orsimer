@@ -24,11 +24,11 @@ namespace MorrowRim_Orsimir
 
             listing_Standard.CheckboxLabeled("ESCP_Orsimer_EnableOrichalcPatch".Translate(), ref settings.ESCP_Orsimer_EnableOrichalcPatch, "ESCP_Orsimer_EnableOrichalcPatchTooltip".Translate());
             listing_Standard.Gap();
-
+            /*
             listing_Standard.Label("ESCP_Orsimer_EnableOrichalcPatchChance".Translate() + " (" + settings.ESCP_Orsimer_EnableOrichalcPatchChance * 100 + "%)");
             settings.ESCP_Orsimer_EnableOrichalcPatchChance = (float)Math.Round(listing_Standard.Slider(settings.ESCP_Orsimer_EnableOrichalcPatchChance, 0f, 1f) * 20) / 20;
             listing_Standard.Gap();
-
+            */
             listing_Standard.GapLine();
             if (Prefs.DevMode)
             {

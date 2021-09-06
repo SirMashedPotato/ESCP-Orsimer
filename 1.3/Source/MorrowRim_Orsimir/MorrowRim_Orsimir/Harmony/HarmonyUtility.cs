@@ -59,9 +59,9 @@ namespace MorrowRim_Orsimir
                 || (RequiredTrait(p, t) && RequiredHediff(p, h) && RequiredBackstory(p, b)));
         }
 
-        public static bool ChanceIncrease()
+        public static bool ChanceIncrease(float chance)
         {
-            return Rand.Chance(ESCP_Orsimer_Mod.ESCP_Orsimer_EnableOrichalcPatchChance());
+            return Rand.Chance(chance);
         }
 
         public static QualityCategory CheckQualityIncrease(Pawn worker, QualityCategory initial, Thing thing, RecipeDef recipe)
@@ -69,13 +69,16 @@ namespace MorrowRim_Orsimir
             var modExt = StuffKnowledge.Get(worker.def);
             if (initial != QualityCategory.Legendary && modExt != null)
             {
-                if ((modExt.allOrNothing && RequiredTrait(worker, modExt.requiredTrait) && RequiredHediff(worker, modExt.requiredHediff) && RequiredBackstory(worker, modExt.requiredBackstory)) ||
-                    (!modExt.allOrNothing && OnlyOneCheck(worker, modExt.requiredTrait, modExt.requiredHediff, modExt.requiredBackstory)))
-                {
-                    if (RightSkill(recipe, modExt.skillList) && (MadeOfStuff(thing, modExt.stuffList) || (modExt.notJustStuff && MadeOfThing(thing, modExt.stuffList))) && ChanceIncrease())
+                foreach (var stuffKnowledge in modExt.stuffKnowledgeList)
+                {  
+                    if ((stuffKnowledge.allOrNothing && RequiredTrait(worker, stuffKnowledge.requiredTrait) && RequiredHediff(worker, stuffKnowledge.requiredHediff) && RequiredBackstory(worker, stuffKnowledge.requiredBackstory)) ||
+                        (!stuffKnowledge.allOrNothing && OnlyOneCheck(worker, stuffKnowledge.requiredTrait, stuffKnowledge.requiredHediff, stuffKnowledge.requiredBackstory)))
                     {
-                        if (ESCP_Orsimer_Mod.ESCP_Orsimer_Logging()) Log.Message("Initial quality of  " + thing + " = " + initial + ", improved quality = " + (initial + 1)); ;
-                        return initial + 1;
+                        if (RightSkill(recipe, stuffKnowledge.skillList) && (MadeOfStuff(thing, stuffKnowledge.stuffList) || (stuffKnowledge.notJustStuff && MadeOfThing(thing, stuffKnowledge.stuffList))) && ChanceIncrease(stuffKnowledge.chance))
+                        {
+                            if (ESCP_Orsimer_Mod.ESCP_Orsimer_Logging()) Log.Message("Initial quality of  " + thing + " = " + initial + ", improved quality = " + (initial + 1)); ;
+                            return initial + 1;
+                        }
                     }
                 }
             }
