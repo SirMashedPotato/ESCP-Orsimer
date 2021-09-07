@@ -149,8 +149,8 @@
 							<li>Crafting</li>
 						</skillList>
 						<notJustStuff>true</notJustStuff>
+						<chance>1.0</chance>
 					</li>
-					<chance>1.0</chance>
 				</stuffKnowledgeList>
             </li>
 		</modExtensions>
