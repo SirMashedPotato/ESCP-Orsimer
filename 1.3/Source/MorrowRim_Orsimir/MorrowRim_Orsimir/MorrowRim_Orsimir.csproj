@@ -62,7 +62,7 @@
     <Compile Include="Comp\CompProperties_BeserkerRage.cs" />
     <Compile Include="Comp\Comp_BeserkerRage.cs" />
     <Compile Include="Harmony\Harmony.cs" />
-    <Compile Include="Harmony\HarmonyUtility.cs" />
+    <Compile Include="Harmony\StuffKnowledgeUtility.cs" />
     <Compile Include="ModExtensions\StuffKnowledge.cs" />
     <Compile Include="ModSettings\ESCP_Orsimer_Mod.cs" />
     <Compile Include="ModSettings\ESCP_Orsimer_ModSettings.cs" />

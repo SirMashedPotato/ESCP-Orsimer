@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace MorrowRim_Orsimir
 {
-    public static class HarmonyUtility
+    public static class StuffKnowledgeUtility
     {
         /* For qulity patch */
         public static bool MadeOfStuff(Thing t, List<string> stuffList)

@@ -5,6 +5,7 @@ using Verse;
 using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
+using System.Linq;
 
 
 namespace MorrowRim_Orsimir
@@ -37,7 +38,7 @@ namespace MorrowRim_Orsimir
                 //used for checking for the right function call
                 var generateQuality = AccessTools.Method(typeof(QualityUtility), nameof(QualityUtility.GenerateQualityCreatedByPawn), new Type[] { typeof(Pawn), typeof(SkillDef)});
                 //function that is called to check quality
-                var stuffCheck = AccessTools.Method(typeof(HarmonyUtility), nameof(HarmonyUtility.CheckQualityIncrease));
+                var stuffCheck = AccessTools.Method(typeof(StuffKnowledgeUtility), nameof(StuffKnowledgeUtility.CheckQualityIncrease));
                 //find the right position in the stack
                 for (int i = 0; i < codes.Count; i++)
                 {
