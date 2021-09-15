@@ -22,6 +22,10 @@
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>Astropolitan</li>
+			<li>ESCP_Orsimeri</li>
+		</allowedCultures>
 		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
 		  <li>ClassicStart</li>
@@ -60,6 +64,9 @@
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>ESCP_NamerFactionOrsimer</factionNameMaker>
 		<settlementNameMaker>ESCP_NamerSettlementOrsimerHouse</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_Orsimeri</li>
+		</allowedCultures>
 		<geneticVariance>1</geneticVariance>
 		<forageabilityFactor>1.7</forageabilityFactor>
 		<startingResearchTags>

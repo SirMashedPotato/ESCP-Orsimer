@@ -5,6 +5,7 @@ using Verse;
 using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
+using System.Linq;
 
 
 namespace MorrowRim_Orsimir
@@ -37,7 +38,7 @@ namespace MorrowRim_Orsimir
                 //used for checking for the right function call
                 var generateQuality = AccessTools.Method(typeof(QualityUtility), nameof(QualityUtility.GenerateQualityCreatedByPawn), new Type[] { typeof(Pawn), typeof(SkillDef)});
                 //function that is called to check quality
-                var orichalcCheck = AccessTools.Method(typeof(HarmonyUtility), nameof(HarmonyUtility.CheckQualityIncrease));
+                var stuffCheck = AccessTools.Method(typeof(StuffKnowledgeUtility), nameof(StuffKnowledgeUtility.CheckQualityIncrease));
                 //find the right position in the stack
                 for (int i = 0; i < codes.Count; i++)
                 {
@@ -49,7 +50,7 @@ namespace MorrowRim_Orsimir
                         yield return new CodeInstruction(OpCodes.Ldloc_2); // loads original quality
                         yield return new CodeInstruction(OpCodes.Ldarg_0); // thing
                         yield return new CodeInstruction(OpCodes.Ldarg_1); // recipe def
-                        codes[i] = new CodeInstruction(OpCodes.Call, orichalcCheck); // modify
+                        codes[i] = new CodeInstruction(OpCodes.Call, stuffCheck); // modify
                         yield return codes[i]; // and return modifed
                         if (ESCP_Orsimer_Mod.ESCP_Orsimer_Logging()) Log.Message("ESCP_Orsimer_ModName".Translate() + ", has succesfully patched GenRecipe.PostProcessProduct");
                     } 
@@ -61,40 +62,4 @@ namespace MorrowRim_Orsimir
             }
         }
     }
-    /*
-     * Old code, boring postfix that mostly works
-    [HarmonyPatch(typeof(QuestManager))]
-    [HarmonyPatch("Notify_ThingsProduced")]
-    public static class QuestManager_NotifyThingsProduced_Patch
-    {
-        [HarmonyPostfix]
-        [HarmonyPriority(Priority.Last)]
-        public static void CheckOrichalcum(Pawn worker, List<Thing> things)
-        {
-            if (true)
-            {
-                foreach (Thing thing in things)
-                {
-                    if (thing.def.CostStuffCount > 0 && HarmonyUtility.MadeOfOrichalc(thing) && HarmonyUtility.IsOrsimer(worker))
-                    {
-                        if (thing.def.comps.Any(x => x.compClass.Name == "CompQuality"))
-                        {
-                            thing.TryGetQuality(out QualityCategory qc);
-                            if (qc != QualityCategory.Legendary)
-                            {
-                                Log.Message("Increasing item quality by 1 level: " + thing);
-                                thing.TryGetComp<CompQuality>().SetQuality(qc + 1, new ArtGenerationContext());
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    */
-
-    /* 
-     * Patch that checks if animal has tame boost from orsimer
-     * If thing is so, increase tame chance by 10%
-     */
 }

@@ -9,7 +9,7 @@
 		<techLevel>Neolithic</techLevel>
 		<factionNameMaker>ESCP_NamerFactionOrsimer</factionNameMaker>
 		<settlementNameMaker>ESCP_NamerSettlementOrsimerHouse</settlementNameMaker>
-		<allowedCultures>
+		<allowedCultures Inherit="False">
 			<li>ESCP_Orsimeri</li>
 		</allowedCultures>
 		<!-- Don't enable unless there are actually backstories -->
@@ -268,6 +268,7 @@
 		<requiredMemes>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</requiredMemes>
 		<disallowedMemes>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>

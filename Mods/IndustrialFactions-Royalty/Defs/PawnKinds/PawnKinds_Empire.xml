@@ -3,7 +3,7 @@
 
   <!--===================== Imperial civilians =========================-->
 
-  <PawnKindDef ParentName="EmpireCommonerBase">
+  <PawnKindDef ParentName="EmpireCommonerBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_OrsimerEmpire_Common_Lodger</defName>
     <label>imperial citizen</label>
     <race>ESCP_OrsimerRace</race>
@@ -45,7 +45,7 @@
     <initialResistanceRange>10~17</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef  ParentName="EmpireCommonerBase">
+  <PawnKindDef  ParentName="EmpireCommonerBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_OrsimerEmpire_Common_Trader</defName>
     <label>imperial trader</label>
     <race>ESCP_OrsimerRace</race>
@@ -103,7 +103,7 @@
 
   <!-- Champion -->
 
-  <PawnKindDef ParentName="ImperialFighterBase">
+  <PawnKindDef ParentName="ImperialFighterBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_OrsimerEmpire_Fighter_Champion</defName>
     <label>champion</label>
 	<race>ESCP_OrsimerRace</race>
