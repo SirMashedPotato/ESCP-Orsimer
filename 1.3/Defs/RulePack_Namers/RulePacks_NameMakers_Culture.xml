@@ -24,12 +24,9 @@
   
   <RulePackDef>
     <defName>ESCP_NamerDeity_Orsimeri</defName>
-	<include>
-      <li>NamerDeityGlobal</li>
-    </include>
     <rulePack>
       <rulesStrings>
-        <li>name->[OrsimerGods]</li>
+        <li>r_deityName->[OrsimerGods]</li>
       </rulesStrings>
 	  <rulesFiles>
         <li>OrsimerGods->ESCP_OrsimerNames/OrsimerGods</li>
@@ -37,4 +34,15 @@
     </rulePack>
   </RulePackDef>
 
+  <RulePackDef>
+    <defName>ESCP_NamerDeityType_Orsimeri</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->[OrsimerGodsType]</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>OrsimerGodsType->ESCP_OrsimerNames/OrsimerGodsType</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
 </Defs>

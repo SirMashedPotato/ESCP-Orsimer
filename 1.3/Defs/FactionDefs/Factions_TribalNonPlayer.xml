@@ -12,6 +12,9 @@
 		<allowedCultures Inherit="False">
 			<li>ESCP_Orsimeri</li>
 		</allowedCultures>
+		<structureMemeWeights>
+		  <ESCP_Structure_OriginMauloch MayRequire="Ludeon.RimWorld.Ideology">8</ESCP_Structure_OriginMauloch>
+		</structureMemeWeights>
 		<!-- Don't enable unless there are actually backstories -->
 		<!--
 		<backstoryFilters>
