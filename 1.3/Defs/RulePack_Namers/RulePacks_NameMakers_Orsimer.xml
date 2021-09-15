@@ -3,12 +3,18 @@
 
 	<RulePackDef>
 		<defName>ESCP_NamerPersonOrsimerMale</defName>
+		<include>
+		  <li>TribalWordUtility</li>
+		</include>
 		<rulePack>
 			<rulesStrings>
 				<li>name(p=5)->[MaleList] gro-[FamilyList]</li>
 				<li>name(p=2)->[MaleList] gro-[MaleList]</li>
 				<li>name(p=2)->[MaleList] gro-[FemaleList]</li>
 				<li>name(p=0.2)->[MaleList] gor-[FamilyList]</li>
+				<li>name(p=0.5)->[MaleList] 'the [TerrainFeature]' gro-[FamilyList]</li>
+				<li>name(p=0.5)->[MaleList] 'the [ColorBadass]' gro-[FamilyList]</li>
+				<li>name(p=0.5)->[MaleList] 'the [AnimalBadass]' gro-[FamilyList]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
@@ -29,11 +35,17 @@
 
 	<RulePackDef>
 		<defName>ESCP_NamerPersonOrsimerFemale</defName>
+		<include>
+		  <li>TribalWordUtility</li>
+		</include>
 		<rulePack>
 			<rulesStrings>
 				<li>name(p=5)->[FemaleList] gra-[FamilyList]</li>
 				<li>name(p=2)->[FemaleList] gra-[FemaleList]</li>
 				<li>name(p=2)->[FemaleList] gra-[MaleList]</li>
+				<li>name(p=0.5)->[FemaleList] 'the [TerrainFeature]' gro-[FamilyList]</li>
+				<li>name(p=0.5)->[FemaleList] 'the [ColorBadass]' gro-[FamilyList]</li>
+				<li>name(p=0.5)->[FemaleList] 'the [AnimalBadass]' gro-[FamilyList]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
