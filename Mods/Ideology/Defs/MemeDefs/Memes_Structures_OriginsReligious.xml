@@ -48,7 +48,7 @@
      </patterns>
      <constants>
        <li><key>structure_theist</key><value>true</value></li>
-       <li><key>structure_originChristian</key><value>true</value></li>
+       <li><key>ESCP_Structure_OriginMauloch</key><value>true</value></li>
      </constants>
    </descriptionMaker>
    <symbolPacks>
