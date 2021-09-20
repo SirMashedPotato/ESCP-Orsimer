@@ -66,4 +66,39 @@
 		<initialResistanceRange>10~17</initialResistanceRange>	
 	</PawnKindDef>
 	
+	<PawnKindDef>
+		<defName>ESCP_OrsimerMedievalKind</defName>
+		<label>Orsimer peasant</label>
+		<race>ESCP_OrsimerRace</race>
+		<backstoryCategories>
+		  <li>Tribal</li>
+		  <li>ESCP_OrsimerTribal</li>
+		  <li>ESCP_OrsimerMedieval</li>
+		</backstoryCategories>
+		<combatPower>40</combatPower>
+		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>MedievalBasic</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>100</min>
+			<max>600</max>
+		</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>50</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>	
+	</PawnKindDef>
+	
 </Defs>

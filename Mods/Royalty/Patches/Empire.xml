@@ -11,6 +11,7 @@
 			<value>
 				<li>ESCP_OrsimerPlayerColony</li>
 				<li>ESCP_OrsimerPlayerTribe</li>
+				<li>ESCP_OrsimerPlayerKingdom</li>
 			</value>
 		</match>
 	</Operation>

@@ -200,7 +200,7 @@
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "ESCP_OrsimerRace"]/comps/li[@Class="MorrowRim_Orsimir.CompProperties_BeserkerRage"]/totems</xpath>
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "ESCP_OrsimerRace"]/comps/li[@Class="ESCP_RaceTools.CompProperties_BeserkerRage"]/totems</xpath>
 					<value>
 						<li>MorrowRim_Apparel_TotemPrimal</li>
 						<li>MorrowRim_Apparel_TotemBeastial</li>
@@ -208,7 +208,7 @@
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "ESCP_OrsimerRace"]/comps/li[@Class="MorrowRim_Orsimir.CompProperties_BeserkerRage"]/augments</xpath>
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "ESCP_OrsimerRace"]/comps/li[@Class="ESCP_RaceTools.CompProperties_BeserkerRage"]/augments</xpath>
 					<value>
 						<li>MorrowRim_PrimalRage</li>
 						<li>MorrowRim_BeastialRage</li>

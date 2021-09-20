@@ -78,6 +78,19 @@
 						<li>ESCP_OrsimerPlayerTribe</li> 
 					</factionDefs>
 				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>ESCP_OrsimerMedievalKind</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>ESCP_OrsimerPlayerKingdom</li> 
+					</factionDefs>
+				</li>
 			</alienwandererkinds>
 		</pawnKindSettings>
 	</AlienRace.RaceSettings>
