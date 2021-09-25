@@ -85,6 +85,35 @@
   </PawnKindDef>
   
   <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
+    <modExtensions>
+		<li Class="ESCP_RaceTools.BeastMaster">
+			<maxNumberOfPawns>1</maxNumberOfPawns>
+			<maxTotalCombatPower>100</maxTotalCombatPower>
+			<pawnKinds>
+				<li>ESCP_Welwa</li>
+			</pawnKinds>
+			<bond>true</bond>
+        </li>
+	</modExtensions>
+    <defName>ESCP_OrsimerTribal_WelwaMaster</defName>
+    <label>welwa master</label>
+    <combatPower>80</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>200~300</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarVeil</li>
+    </apparelRequired>
+    <weaponMoney>150~150</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+    </weaponTags>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>5~9</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
     <defName>ESCP_OrsimerTribal_Breacher</defName>
     <label>breacher</label>
     <combatPower>55</combatPower>
@@ -144,6 +173,33 @@
   </PawnKindDef>
 
   <!-- High tier - berserker, heavy archer, chief melee, chief ranged -->
+  
+  <PawnKindDef ParentName="ESCP_OrsimerTribalBase" MayRequire="SirMashedPotato.MorrowRim.Trolls">
+    <modExtensions>
+		<li Class="ESCP_RaceTools.BeastMaster">
+			<maxNumberOfPawns>1</maxNumberOfPawns>
+			<maxTotalCombatPower>200</maxTotalCombatPower>
+			<pawnKinds>
+				<li>MorrowRim_TrollHill</li>
+			</pawnKinds>
+			<bond>true</bond>
+        </li>
+	</modExtensions>
+	<defName>ESCP_OrsimerTribal_TrollMaster</defName>
+    <label>troll master</label>
+    <combatPower>80</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>200~550</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarMask</li>
+    </apparelRequired>
+    <weaponMoney>300~500</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+	<initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>13~20</initialResistanceRange>
+  </PawnKindDef>
 
   <PawnKindDef ParentName="ESCP_OrsimerTribalBase">
     <defName>ESCP_OrsimerTribal_Berserker</defName>

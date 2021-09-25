@@ -2,6 +2,18 @@
 <Defs>
 
 	<FactionDef ParentName="TribeBase" Name="ESCP_OrsimerTribeBase" Abstract="True">
+		<modExtensions>
+			<li Class="ESCP_RaceTools.SettlementPreference">
+				<chance>1.0</chance>
+				<useTemperatureRange>true</useTemperatureRange>
+				<temperatureRangeMin>-30</temperatureRangeMin>
+				<temperatureRangeMax>50</temperatureRangeMax>
+				<useElevationRange>true</useElevationRange>
+				<elevationRangeMin>500</elevationRangeMin>
+				<elevationRangeMax>1200</elevationRangeMax>
+				<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
+			</li>
+		</modExtensions>
 		<leaderTitle>high chieftain</leaderTitle>
 		<requiredCountAtGameStart>0</requiredCountAtGameStart>
 		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
@@ -58,9 +70,8 @@
 			  <ESCP_OrsimerTribal_Berserker>5</ESCP_OrsimerTribal_Berserker>
 			  <ESCP_OrsimerTribal_Elite>5</ESCP_OrsimerTribal_Elite>
 			  <ESCP_OrsimerTribal_ChiefMelee>1.5</ESCP_OrsimerTribal_ChiefMelee>
-			    
-			  <ESCP_Welwa>3</ESCP_Welwa>
-			  <MorrowRim_TrollHill MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollHill>
+			  <ESCP_OrsimerTribal_WelwaMaster>5</ESCP_OrsimerTribal_WelwaMaster>
+			  <ESCP_OrsimerTribal_TrollMaster MayRequire="SirMashedPotato.MorrowRim.Trolls">1</ESCP_OrsimerTribal_TrollMaster>
 			</options>
 		  </li>
 		  <li>
@@ -73,9 +84,8 @@
 			  <ESCP_OrsimerTribal_Berserker>10</ESCP_OrsimerTribal_Berserker>
 			  <ESCP_OrsimerTribal_Elite>10</ESCP_OrsimerTribal_Elite>
 			  <ESCP_OrsimerTribal_ChiefMelee>5</ESCP_OrsimerTribal_ChiefMelee>
-			  
-			  <ESCP_Welwa>3</ESCP_Welwa>
-			  <MorrowRim_TrollHill MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollHill>
+			  <ESCP_OrsimerTribal_WelwaMaster>3</ESCP_OrsimerTribal_WelwaMaster>
+			  <ESCP_OrsimerTribal_TrollMaster MayRequire="SirMashedPotato.MorrowRim.Trolls">1</ESCP_OrsimerTribal_TrollMaster>
 		  </options>
 		  </li>
 		  <li>
@@ -92,6 +102,7 @@
 			  <ESCP_OrsimerTribal_Berserker>5</ESCP_OrsimerTribal_Berserker>
 			  <ESCP_OrsimerTribal_Elite>5</ESCP_OrsimerTribal_Elite>
 			  <ESCP_OrsimerTribal_ChiefMelee>2</ESCP_OrsimerTribal_ChiefMelee>
+			  <ESCP_OrsimerTribal_WelwaMaster>3</ESCP_OrsimerTribal_WelwaMaster>
 		  </options>
 		  </li>
 		  <li>
@@ -105,8 +116,6 @@
 			  <ESCP_OrsimerTribal_Berserker>5</ESCP_OrsimerTribal_Berserker>
 			  <ESCP_OrsimerTribal_Elite>5</ESCP_OrsimerTribal_Elite>
 			  <ESCP_OrsimerTribal_ChiefMelee>2</ESCP_OrsimerTribal_ChiefMelee>
-			  
-			  <ESCP_Welwa>2</ESCP_Welwa>
 			  <MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">1</MorrowRim_Scamp>
 			</options>
 		  </li>
@@ -129,8 +138,7 @@
 			  <ESCP_OrsimerTribal_HeavyArcher>10</ESCP_OrsimerTribal_HeavyArcher>
 			  <ESCP_OrsimerTribal_Berserker>7</ESCP_OrsimerTribal_Berserker>
 			  <ESCP_OrsimerTribal_Elite>7</ESCP_OrsimerTribal_Elite>
-			  
-			  <ESCP_Welwa>2</ESCP_Welwa>
+			  <ESCP_OrsimerTribal_WelwaMaster>2</ESCP_OrsimerTribal_WelwaMaster>
 			  <MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">1</MorrowRim_Scamp>
 			</guards>
 		  </li>
@@ -144,9 +152,8 @@
 			  <ESCP_OrsimerTribal_Berserker>7</ESCP_OrsimerTribal_Berserker>
 			  <ESCP_OrsimerTribal_Elite>7</ESCP_OrsimerTribal_Elite>
 			  <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
-			  
-			  <ESCP_Welwa>3</ESCP_Welwa>
-			  <MorrowRim_TrollHill MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollHill>
+			  <ESCP_OrsimerTribal_WelwaMaster>3</ESCP_OrsimerTribal_WelwaMaster>
+			  <ESCP_OrsimerTribal_TrollMaster MayRequire="SirMashedPotato.MorrowRim.Trolls">1</ESCP_OrsimerTribal_TrollMaster>
 			  <MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">1</MorrowRim_Scamp>
 			</options>
 		  </li>

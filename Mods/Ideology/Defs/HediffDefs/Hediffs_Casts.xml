@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>ESCP_OrsimerPawnTerrified</defName>
+		<label>terrified</label>
+		<description>This pawn has been terrified by an Orsimer. It will take increased damage from all sources, and is more likely to succumb to terror.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+		  <li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>True</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<isBad>true</isBad>
+		<stages>
+		  <li>
+			<statOffsets>
+			  <IncomingDamageFactor>0.25</IncomingDamageFactor>
+			  <MentalBreakThreshold>0.25</MentalBreakThreshold>	<!-- increases threshold, so more likely to mental break -->
+			  <PainShockThreshold>-0.25</PainShockThreshold>	<!-- decreases threshold, so more likely to collapse? -->
+			</statOffsets>
+		  </li>
+		</stages>
+	</HediffDef>
+
+</Defs>

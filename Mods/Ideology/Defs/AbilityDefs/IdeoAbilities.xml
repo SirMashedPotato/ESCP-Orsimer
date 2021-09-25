@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityGroupDef>
+		<defName>ESCP_OrsimerRole</defName>
+		<cooldownTicks>600000</cooldownTicks>
+	</AbilityGroupDef>
+	
+	<AbilityDef>
+		<defName>ESCP_OrsimerWarCry</defName>
+		<label>war cry</label>
+		<description>Emit a cry of war, strong enough to shake the earth itself. Any nearby hostile pawns will be temporarily stunned and terrified, increasing the damage they take for 24 hours.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+		<iconPath>UI/Abilities/ESCP_OrsimerAbilityWarCry</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_OrsimerAbilityWarCry</warmupMoteSocialSymbol>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<groupDef>ESCP_OrsimerRole</groupDef>
+		<hotKey>Misc12</hotKey>
+		<uiOrder>3</uiOrder>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<statBases>
+		  <Ability_Duration>1000</Ability_Duration>
+		  <Ability_EffectRadius>14.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <warmupTime>0.5</warmupTime>
+		  <range>14.9</range>
+		  <drawAimPie>False</drawAimPie>
+		  <requireLineOfSight>False</requireLineOfSight>
+		  <targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="CompProperties_AbilityGiveHediff">
+			<compClass>ESCP_RaceTools.CompAbilityEffect_GiveHediffAndStun</compClass>
+			<hediffDef>ESCP_OrsimerPawnTerrified</hediffDef>
+			<onlyBrain>True</onlyBrain>
+			<applyToSelf>false</applyToSelf>
+			<onlyApplyToSelf>false</onlyApplyToSelf>
+			<replaceExisting>false</replaceExisting>
+		  </li>
+		  <li Class="ESCP_RaceTools.CompProperties_AbilityEffectCameraShakerOneOff">
+		  </li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>ESCP_OrsimerBeserkerCalling</defName>
+		<label>beserker calling</label>
+		<description>Ignites the inner fury, and causes all nearby allied Orsimer, including the caster, to enter their beserker rage.\n\nIf a pawn is already in a beserker rage, or recovering from one, the duration will instead be reset.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+		<iconPath>UI/Abilities/ESCP_OrsimerAbilityBeserk</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_OrsimerAbilityBeserk</warmupMoteSocialSymbol>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<groupDef>ESCP_OrsimerRole</groupDef>
+		<hotKey>Misc12</hotKey>
+		<uiOrder>3</uiOrder>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<statBases>
+		  <Ability_Duration>1000</Ability_Duration>
+		  <Ability_EffectRadius>9.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <warmupTime>0.5</warmupTime>
+		  <range>9.9</range>
+		  <drawAimPie>False</drawAimPie>
+		  <requireLineOfSight>False</requireLineOfSight>
+		  <targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="ESCP_RaceTools.CompProperties_AbilityEnterBeserk">
+			<applyToSelf>true</applyToSelf>
+			<raceDef>ESCP_OrsimerRace</raceDef>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>PsycastPsychicEffect</fleckDef>
+		  </li>
+		  <li Class="ESCP_RaceTools.CompProperties_AbilityEffectCameraShakerOneOff">
+		  </li>
+		</comps>
+	</AbilityDef>
+
+</Defs>

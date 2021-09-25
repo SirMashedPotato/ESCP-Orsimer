@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- special melee role -->
+
+	<PreceptDef ParentName="PreceptRoleMultiBase">
+		<defName>ESCP_OrsimerIdeoRole_MeleeSpecialist</defName>
+		<label>Orsimer melee specialist</label>
+		<description>A special, Orsimer specific, ideoligious status focusing on melee combat to the exclusion of, almost, all else. This specialized role gives increased dodge and hit chance in melee combat and ability to the boost melee abilites for nearby allies. Holders of this role will refuse to do many kinds of non-melee-related work, but will still be willing to mine and craft.</description>
+		<iconPath>UI/Roles/ESCP_OrsimerSpecialistMelee</iconPath>
+		<nameMaker>ESCP_OrsimerNamerRoleMeleeSpecialist</nameMaker>
+		<roleRequirements>
+		  <li Class="RoleRequirement_MinSkillAny">
+			<skills>
+			  <Melee>10</Melee>
+			</skills>
+		  </li>
+		  <li Class="ESCP_RaceTools.RoleRequirement_Race">
+			<race>ESCP_OrsimerRace</race>
+		  </li>
+		</roleRequirements>
+		<roleRequiredWorkTagAny>
+		  <li>Violent</li>
+		</roleRequiredWorkTagAny>
+		<roleTags><li>ESCP_OrsimerIdeoRole_MeleeSpecialist</li></roleTags>
+		<requiredMemes>
+		  <li>ESCP_Structure_OriginMauloch</li>
+		</requiredMemes>
+		<roleEffects>
+		  <li Class="RoleEffect_NoRangedWeapons" />
+		  <li Class="RoleEffect_PawnStatOffset">
+			<statDef>MeleeHitChance</statDef>
+			<modifier>7</modifier>
+		  </li>
+		  <li Class="RoleEffect_PawnStatOffset">
+			<statDef>MeleeDodgeChance</statDef>
+			<modifier>7</modifier>
+		  </li>
+		</roleEffects>
+		<displayOrderInImpact>2</displayOrderInImpact>
+		<grantedAbilities>
+		  <li>ESCP_OrsimerWarCry</li>
+		  <li>ESCP_OrsimerBeserkerCalling</li>
+		  <li>BerserkTrance</li>
+		</grantedAbilities>
+		<roleDisabledWorkTags>
+		  <!--
+		  <li>Crafting</li>
+		  -->
+		  <li>Cooking</li>
+		  <li>PlantWork</li>
+		  <!--
+		  <li>Mining</li>
+		  -->
+		  <li>Constructing</li>
+		  <li>Hunting</li>
+		  <li>Shooting</li>
+		</roleDisabledWorkTags>
+		<roleApparelRequirements>
+		</roleApparelRequirements>
+		<activationBelieverCount>3</activationBelieverCount>
+		<deactivationBelieverCount>1</deactivationBelieverCount>
+	  </PreceptDef>
+
+</Defs>
