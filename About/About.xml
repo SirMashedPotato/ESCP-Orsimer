@@ -42,6 +42,7 @@
 	<incompatibleWith>
       <li>SirMashedPotato.MorrowRim.OrsimerRace</li>
       <li>SirMashedPotato.MorrowRim.OrsimerFactions</li>
+	  <li>SirMashedPotato.MorrowRim.HDMerHeads</li>
     </incompatibleWith>
 
 </ModMetaData>

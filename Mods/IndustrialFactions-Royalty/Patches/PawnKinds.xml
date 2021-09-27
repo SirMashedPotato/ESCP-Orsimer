@@ -44,7 +44,7 @@
 				<!-- Patching quests -->
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices/li[factionDef="Empire"]</xpath>
+					<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices/li[factionDef="Empire"]/pawnKinds</xpath>
 					<value>
 						<li>ESCP_OrsimerEmpire_Common_Lodger</li>
 					</value>
