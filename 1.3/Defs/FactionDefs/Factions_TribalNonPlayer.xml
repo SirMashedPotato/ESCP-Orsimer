@@ -224,7 +224,7 @@
   
 	<FactionDef ParentName="ESCP_OrsimerTribeBase">
 		<defName>ESCP_OrsimerTribeCivil</defName>
-		<label>gentle Orsimer tribe</label>
+		<label>gentle Orsimer strongholds</label>
 		<description>Tribes of Orsimer, following a high chieftain, one who earned their position through blood and sweat. The Orsimer settle strongholds anywhere the please, as long as the location is remote.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nOrsimer are somewhat reclusive and untrustring of outsiders, likely due to their treatment in the past. As long as one respects their culture they may be called a friend. In combat they present a powerful ally, as Orsimer are well known for their beserker rage.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
 		<colorSpectrum>
 		  <li>(0.0, 0.7, 0.1)</li>
@@ -243,7 +243,7 @@
 
 	<FactionDef ParentName="ESCP_OrsimerTribeBase">
 		<defName>ESCP_OrsimerTribeRough</defName>
-		<label>fierce Orsimer tribe</label>
+		<label>fierce Orsimer strongholds</label>
 		<description>Tribes of Orsimer, following a high chieftain, one who earned their position through blood and sweat. The Orsimer settle strongholds anywhere the please, as long as the location is remote.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nOrsimer are somewhat reclusive and untrustring of outsiders, likely due to their treatment in the past. As long as one respects their culture they may be called a friend. In combat they present a powerful ally, as Orsimer are well known for their beserker rage.\n\nThis particular tribe values warlike dominance; it may be difficult to turn them into an ally.</description>
 		<colorSpectrum>
 		  <li>(0.7, 0.6, 0.3)</li>
