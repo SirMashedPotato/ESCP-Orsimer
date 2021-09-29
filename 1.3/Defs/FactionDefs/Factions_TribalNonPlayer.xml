@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="TribeBase" Name="ESCP_OrsimerTribeBase" Abstract="True">
+	<FactionDef ParentName="ESCP_FactionBase" Name="ESCP_OrsimerTribeBase" Abstract="True">
 		<modExtensions>
 			<li Class="ESCP_RaceTools.SettlementPreference">
 				<chance>1.0</chance>
@@ -15,13 +15,11 @@
 			</li>
 		</modExtensions>
 		<leaderTitle>high chieftain</leaderTitle>
-		<requiredCountAtGameStart>0</requiredCountAtGameStart>
-		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
 		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</factionIconPath>
 		<techLevel>Neolithic</techLevel>
 		<factionNameMaker>ESCP_NamerFactionOrsimer</factionNameMaker>
 		<settlementNameMaker>ESCP_NamerSettlementOrsimerHouse</settlementNameMaker>
-		<allowedCultures Inherit="False">
+		<allowedCultures>
 			<li>ESCP_Orsimeri</li>
 		</allowedCultures>
 		<structureMemeWeights>
@@ -39,24 +37,14 @@
 		</backstoryFilters>
 		-->
 		<caravanTraderKinds>
-		  <li>Caravan_Neolithic_BulkGoods</li>
-		  <li>Caravan_Neolithic_WarMerchant</li>
-		  <li>Caravan_Neolithic_Slaver</li>
-		  <li>Caravan_Neolithic_ShamanMerchant</li>
-		   <!-- VE Medieval -->
-		  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Armourer</li>
-		  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Weaponsmith</li>
 		  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Sellswords</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
-		  <li>Visitor_Neolithic_Standard</li>
-		  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Visitor_Medieval_Standard</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-		  <li>Base_Neolithic_Standard</li>
 		</baseTraderKinds>
 		<raidLootMaker>ESCP_OrsimerTribeRaidLootMaker</raidLootMaker>
-		<pawnGroupMakers Inherit="false">
+		<pawnGroupMakers>
 		  <li>
 			<!-- Normal fights, ranged with melee mix-ins -->
 			<kindDef>Combat</kindDef>

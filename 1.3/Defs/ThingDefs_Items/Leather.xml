@@ -16,7 +16,7 @@
 		  <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
-		  <color>(137,125,94)</color>
+		  <color>(143,139,103)</color>
 		  <commonality>0.0025</commonality>
 		</stuffProps>
 	</ThingDef>
