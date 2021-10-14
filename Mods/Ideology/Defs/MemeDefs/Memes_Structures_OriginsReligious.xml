@@ -12,7 +12,6 @@
     <allowSymbolsFromDeity>false</allowSymbolsFromDeity>
     <symbolPackOverride>true</symbolPackOverride>
     <worshipRoomLabel>temple</worshipRoomLabel>
-    <groupDef>Theist_Abstract</groupDef>
 	<category>Structure</category>
     <impact>0</impact>
     <requiredRituals>
