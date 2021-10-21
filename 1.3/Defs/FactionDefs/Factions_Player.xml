@@ -45,10 +45,10 @@
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>ESCP_OrsimerPlayerTribe</defName>
 		<label>New Orsimer Tribe</label>
-		<description>A small orsimer tribe.</description>
+		<description>A small Orsimer tribe.</description>
 		<isPlayer>true</isPlayer>
-		<pawnSingular>orsimer tribseman</pawnSingular>
-		<pawnsPlural>orsimer tribsepeople</pawnsPlural>
+		<pawnSingular>Orsimer tribseman</pawnSingular>
+		<pawnsPlural>Orsimer tribsepeople</pawnsPlural>
 		<basicMemberKind>ESCP_OrsimerTribalKind</basicMemberKind>
 		<techLevel>Neolithic</techLevel>
 		<backstoryFilters>
@@ -92,8 +92,8 @@
 		<label>New Orsimer Kingdom</label>
 		<description>A small Orsimer kingdom.</description>
 		<isPlayer>true</isPlayer>
-		<pawnSingular>altmer tribseman</pawnSingular>
-		<pawnsPlural>altmer tribsepeople</pawnsPlural>
+		<pawnSingular>Orsimer tribseman</pawnSingular>
+		<pawnsPlural>Orsimer tribsepeople</pawnsPlural>
 		<basicMemberKind>ESCP_OrsimerMedievalKind</basicMemberKind>
 		<techLevel>Medieval</techLevel>
 		<backstoryFilters>
