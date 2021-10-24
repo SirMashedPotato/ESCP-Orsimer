@@ -218,6 +218,9 @@
 		  <li>(0.0, 0.7, 0.1)</li>
 		  <li>(0.5, 0.3, 0.0)</li>
 		</colorSpectrum>
+		<requiredMemes>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+		</requiredMemes>
 		<disallowedMemes>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
@@ -241,9 +244,9 @@
 		<naturalEnemy>true</naturalEnemy>
 		<requiredMemes>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		</requiredMemes>
 		<disallowedMemes>
-		  <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
@@ -265,7 +268,6 @@
 		<factionNameMaker>ESCP_NamerFactionOrsimerRaider</factionNameMaker>
 		<requiredMemes>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
-		  <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</requiredMemes>
 		<disallowedMemes>
