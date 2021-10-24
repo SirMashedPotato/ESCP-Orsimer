@@ -106,7 +106,7 @@
 						
 						<AchievementsExpanded.AchievementDef>
 							<defName>ESCP_AchievementTameWelwa</defName>
-							<label>Well Well Wel[wa]</label>
+							<label>Well Well Well...wa</label>
 							<description>Have 3 tame welwa</description>
 							<bgtexPath>Achievements/ESCP_AchievementBackgroundOrsimer</bgtexPath>
 							<tab>ESCP_AchievementsTab</tab>
