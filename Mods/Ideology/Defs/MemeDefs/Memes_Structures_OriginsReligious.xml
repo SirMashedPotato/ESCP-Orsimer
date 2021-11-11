@@ -4,7 +4,7 @@
  <MemeDef>
     <defName>ESCP_Structure_OriginMauloch</defName>
     <label>Code of Mauloch origin</label>
-    <description>This is a variant of the abstract theist structure. This ideoligion is a descendant of the Code of Mauloch It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
+    <description>This ideoligion is a descendant of the Code of Mauloch It may have very different precepts than those of thousands of years ago, but its symbols are similar.\n\nThe original Code of Mauloch was followed by many Orsimer strongholds, and was used to dictate the rules members abided by, and the punishment if any were broken.</description>
     <iconPath>UI/Structures/ESCP_OriginMauloch</iconPath>
     <deityCount>1</deityCount>
     <deityNameMakerOverride>ESCP_NamerDeity_Orsimeri</deityNameMakerOverride>
@@ -51,20 +51,10 @@
      </constants>
    </descriptionMaker>
    <symbolPacks>
-      <li><ideoName>Christianity</ideoName><adjective>Christian</adjective><member>Christian</member><prefix>true</prefix></li>
-      <li><ideoName>Catholicism</ideoName><adjective>Catholic</adjective><member>Catholic</member><prefix>true</prefix></li>
-      <li><ideoName>Protestantism</ideoName><adjective>Protestant</adjective><member>Protestant</member><prefix>true</prefix></li>
-      <li><ideoName>Orthodoxy</ideoName><adjective>Orthodox</adjective><member>Orthodoxist</member><prefix>true</prefix></li>
-      <li><ideoName>Nestorianism</ideoName><adjective>Nestorian</adjective><member>Nestorian</member><prefix>true</prefix></li>
-      <li><ideoName>Anglicanism</ideoName><adjective>Anglican</adjective><member>Anglican</member><prefix>true</prefix></li>
-      <li><ideoName>Baptism</ideoName><adjective>Baptist</adjective><member>Baptist</member><prefix>true</prefix></li>
-      <li><ideoName>Anabaptism</ideoName><adjective>Anabaptist</adjective><member>Anabaptist</member><prefix>true</prefix></li>
-      <li><ideoName>Calvinism</ideoName><adjective>Calvinist</adjective><member>Calvinist</member><prefix>true</prefix></li>
-      <li><ideoName>Lutheranism</ideoName><adjective>Lutheran</adjective><member>Lutheran</member><prefix>true</prefix></li>
-      <li><ideoName>Adventism</ideoName><adjective>Adventist</adjective><member>Adventist</member><prefix>true</prefix></li>
-      <li><ideoName>Methodism</ideoName><adjective>Methodist</adjective><member>Methodist</member><prefix>true</prefix></li>
-      <li><ideoName>Mormonism</ideoName><adjective>Mormon</adjective><member>Mormon</member><prefix>true</prefix></li>
-      <li><ideoName>Theonomy</ideoName><adjective>Theonomic</adjective><member>Theonomist</member></li>
+      <li><ideoName>Code of Mauloch</ideoName><adjective>Follower</adjective><member>Follower</member><prefix>true</prefix></li>
+      <li><ideoName>Code of Malacath</ideoName><adjective>Follower</adjective><member>Follower</member><prefix>true</prefix></li>
+      <li><ideoName>Code of Blood</ideoName><adjective>Follower</adjective><member>Follower</member><prefix>true</prefix></li>
+      <li><ideoName>Code of Honour</ideoName><adjective>Follower</adjective><member>Follower</member><prefix>true</prefix></li>
     </symbolPacks>
     <thingStyleCategories>
       <li>
