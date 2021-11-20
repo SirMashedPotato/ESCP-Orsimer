@@ -5,10 +5,15 @@
     <defName>ESCP_Structure_OriginMauloch</defName>
     <label>Code of Mauloch origin</label>
     <description>This ideoligion is a descendant of the Code of Mauloch It may have very different precepts than those of thousands of years ago, but its symbols are similar.\n\nThe original Code of Mauloch was followed by many Orsimer strongholds, and was used to dictate the rules members abided by, and the punishment if any were broken.</description>
-    <iconPath>UI/Structures/ESCP_OriginMauloch</iconPath>
+    <modExtensions>
+		<li Class="ESCP_RaceTools.IdeoOrginProperties">
+			<IgnoreDuplicateDeityNames>true</IgnoreDuplicateDeityNames>
+			<RandomiseDeityName>true</RandomiseDeityName>
+			<RandomiseDeityType>true</RandomiseDeityType>
+        </li>
+	</modExtensions>
+	<iconPath>UI/Structures/ESCP_OriginMauloch</iconPath>
     <deityCount>1</deityCount>
-    <deityNameMakerOverride>ESCP_NamerDeity_Orsimeri</deityNameMakerOverride>
-    <deityTypeMakerOverride>ESCP_NamerDeityType_Orsimeri</deityTypeMakerOverride>
     <allowSymbolsFromDeity>false</allowSymbolsFromDeity>
     <symbolPackOverride>true</symbolPackOverride>
     <worshipRoomLabel>temple</worshipRoomLabel>
@@ -56,6 +61,18 @@
       <li><ideoName>Code of Blood</ideoName><adjective>Follower</adjective><member>Follower</member><prefix>true</prefix></li>
       <li><ideoName>Code of Honour</ideoName><adjective>Follower</adjective><member>Follower</member><prefix>true</prefix></li>
     </symbolPacks>
+	<fixedDeityNameTypes>
+		<li><name>Malacath</name><type>God of Curses</type></li>
+		<li><name>Mauloch</name><type>Prince of the Bloody Oath</type></li>
+		<li><name>Trinimac</name><type>Lord of Ash and Bone</type></li>
+		<li><name>Malacath</name><type>Lord of Monsters</type></li>
+		<li><name>Mauloch</name><type>Oathbreaker</type></li>
+		<li><name>Trinimac</name><type>Creator of Curses</type></li>
+		<li><name>Malacath</name><type>He Who Speaks Sideways</type></li>
+		<li><name>Mauloch</name><type>the Furious One</type></li>
+		<li><name>Trinimac</name><type>Keeper of the Bloody Curses</type></li>
+		<li><name>Malacath</name><type>Defender of the Betrayed</type></li>
+	</fixedDeityNameTypes>
     <thingStyleCategories>
       <li>
         <category>ESCP_OrsimerStyle</category>
