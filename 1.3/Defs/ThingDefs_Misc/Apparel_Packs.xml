@@ -159,11 +159,7 @@
 		</apparel>
 		<statBases>
 		  <MarketValue>800</MarketValue>
-		  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-		<comps>
-		  <li Class="CompProperties_Styleable"></li>
-		</comps>
 	</ThingDef>
 
 </Defs>
