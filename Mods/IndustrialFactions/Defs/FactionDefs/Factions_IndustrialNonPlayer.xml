@@ -128,7 +128,7 @@
             <li>ComponentIndustrial</li>
             <li>MealSurvivalPack</li>
             <li>Neutroamine</li>
-            <li>ESCP_Orichalcum</li>
+            <!--<li>ESCP_Orichalcum</li>-->
           </thingDefs>
         </filter>
       </fixedParams>
@@ -314,7 +314,7 @@
             <li>WakeUp</li>
             <li>SmokeleafJoint</li>
             <li>Luciferium</li>
-            <li>ESCP_Orichalcum</li>
+            <!--<li>ESCP_Orichalcum</li>-->
           </thingDefs>
         </filter>
       </fixedParams>

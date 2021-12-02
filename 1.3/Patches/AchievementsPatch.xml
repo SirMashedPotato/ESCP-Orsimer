@@ -32,7 +32,7 @@
 						<!-- Colonist -->
 						
 						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_AchievementOrsimerColonists</defName>
+							<defName>ESCP_AchievementOrsimer_OrsimerColonists</defName>
 							<label>A Town Full of Hot Heads</label>
 							<description>Have 12 Orsimer in your colony at the same time</description>
 							<bgtexPath>Achievements/ESCP_AchievementBackgroundOrsimer</bgtexPath>
@@ -46,7 +46,7 @@
 								</raceDefs>
 							</tracker>
 
-							<texPath>Achievements/ESCP_AchievementOrsimerColonists</texPath>
+							<texPath>Achievements/ESCP_AchievementOrsimer_OrsimerColonists</texPath>
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
 						
@@ -54,7 +54,7 @@
 						<!-- Incidents -->
 						
 						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_AchievementBondedEchatere</defName>
+							<defName>ESCP_AchievementOrsimer_BondedEchatere</defName>
 							<label>Don't Grow Soft</label>
 							<description>Have a colonist develop a bond with an echatere</description>
 							<bgtexPath>Achievements/ESCP_AchievementBackgroundOrsimer</bgtexPath>
@@ -64,12 +64,12 @@
 								<count>1</count>
 							</tracker>
 
-							<texPath>Achievements/ESCP_AchievementBondedEchatere</texPath>
-							<points>25</points>
+							<texPath>Achievements/ESCP_AchievementOrsimer_BondedEchatere</texPath>
+							<points>15</points>
 						</AchievementsExpanded.AchievementDef>
 						
 						<!-- Items -->
-						
+						<!--
 						<AchievementsExpanded.AchievementDef>
 							<defName>ESCP_AchievementOrichalcum</defName>
 							<label>Pig Steel</label>
@@ -84,11 +84,11 @@
 							<texPath>Achievements/ESCP_AchievementOrichalcum</texPath>
 							<points>15</points>
 						</AchievementsExpanded.AchievementDef>
-						
+						-->
 						<!-- Kills -->
 						
 						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_OrsimerSlayer</defName>
+							<defName>ESCP_AchievementOrsimer_OrsimerSlayer</defName>
 							<label>Death to the Green-Skins</label>
 							<description>Slay 50 Orsimer</description>
 							<bgtexPath>Achievements/ESCP_AchievementBackgroundOrsimer</bgtexPath>
@@ -98,14 +98,14 @@
 								<count>50</count>
 							</tracker>
 
-							<texPath>Achievements/ESCP_OrsimerSlayer</texPath>
-							<points>25</points>
+							<texPath>Achievements/ESCP_AchievementOrsimer_OrsimerSlayer</texPath>
+							<points>10</points>
 						</AchievementsExpanded.AchievementDef>
 						
 						<!-- Livestock -->
 						
 						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_AchievementTameWelwa</defName>
+							<defName>ESCP_AchievementOrsimer_TameWelwa</defName>
 							<label>Well Well Well...wa</label>
 							<description>Have 3 tame welwa</description>
 							<bgtexPath>Achievements/ESCP_AchievementBackgroundOrsimer</bgtexPath>
@@ -119,14 +119,14 @@
 								</kindDefs>
 							</tracker>
 
-							<texPath>Achievements/ESCP_AchievementTameWelwa</texPath>
+							<texPath>Achievements/ESCP_AchievementOrsimer_TameWelwa</texPath>
 							<points>10</points>
 						</AchievementsExpanded.AchievementDef>
 						
 						<!-- Stats -->
 						
 						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_AchievementBeserkOrsimer</defName>
+							<defName>ESCP_AchievementOrsimer_BeserkOrsimer</defName>
 							<label>Now The Kid Gloves Come Off</label>
 							<description>Witness an Orsimer enter a beserk frenzy for the first time</description>
 							<bgtexPath>Achievements/ESCP_AchievementBackgroundOrsimer</bgtexPath>
@@ -136,12 +136,12 @@
 								<count>1</count>
 							</tracker>
 
-							<texPath>Achievements/ESCP_AchievementBeserkOrsimer</texPath>
+							<texPath>Achievements/ESCP_AchievementOrsimer_BeserkOrsimer</texPath>
 							<points>10</points>
 						</AchievementsExpanded.AchievementDef>
 						
 						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_AchievementBeserkOrsimerMany</defName>
+							<defName>ESCP_AchievementOrsimer_BeserkOrsimerMany</defName>
 							<label>Fury to Rival Malacath</label>
 							<description>Have an Orsimer enter a beserk frenzy for the 100th time</description>
 							<bgtexPath>Achievements/ESCP_AchievementBackgroundOrsimer</bgtexPath>
@@ -151,7 +151,7 @@
 								<count>100</count>
 							</tracker>
 
-							<texPath>Achievements/ESCP_AchievementBeserkOrsimerMany</texPath>
+							<texPath>Achievements/ESCP_AchievementOrsimer_BeserkOrsimerMany</texPath>
 							<points>50</points>
 						</AchievementsExpanded.AchievementDef>
 						

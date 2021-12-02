@@ -177,7 +177,7 @@
 		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
 		<apparelStuffFilter>
 			<thingDefs>
-				<li>ESCP_Orichalcum</li>
+				<li MayRequire="SirMashedPotato.ESCP.MashedExtras">ESCP_Orichalcum</li>
 				<li>ESCP_EchaterePelt</li>
 				<li>ESCP_WoolEchatere</li>
 				<li>Leather_Plain</li>
@@ -203,7 +203,11 @@
 				<li>Jade</li>
 				<li>MedicineHerbal</li>
 				<li>Pemmican</li>
-				<li>ESCP_Orichalcum</li>
+				<li>ESCP_EchaterePelt</li>
+				<li>ESCP_WoolEchatere</li>
+				<li MayRequire="SirMashedPotato.MorrowRim.Trolls">MorrowRim_Leather_LightTroll</li>
+				<li MayRequire="SirMashedPotato.MorrowRim.Trolls">MorrowRim_Leather_HeavyTroll</li>
+				<li MayRequire="SirMashedPotato.ESCP.MashedExtras">ESCP_Orichalcum</li>
 			  </thingDefs>
 			</filter>
 		  </fixedParams>

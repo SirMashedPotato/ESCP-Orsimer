@@ -599,8 +599,8 @@
 					<li>ESCP_Apparel_TotemFuror</li>
 				</apparelList>
 				<recipeList>
-					<li>Make_MorrowRim_MeleeWeapon_OrsimerWarhammer</li>
-					<li>Make_MorrowRim_MeleeWeapon_OrsimerBattleaxe</li>
+					<li MayRequire="SirMashedPotato.ESCP.MashedExtras">Make_MorrowRim_MeleeWeapon_OrsimerWarhammer</li>
+					<li MayRequire="SirMashedPotato.ESCP.MashedExtras">Make_MorrowRim_MeleeWeapon_OrsimerBattleaxe</li>
 				</recipeList>
 			</raceRestriction>
 
