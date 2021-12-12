@@ -214,6 +214,29 @@
 		</root>
 	</ThingSetMakerDef>
   
+	<!-- Tribal esque, less access to strong weapons and armour, pretty much leave as is when Orsimer Armoury support is in -->
+	<FactionDef ParentName="ESCP_OrsimerTribeBase" >
+		<defName>ESCP_OrsimerTribeNomadic</defName>
+		<label>nomadic Orsimer strongholds</label>
+		<description>Tribes of Orsimer, following a high chieftain, one who earned their position through blood and sweat. The Orsimer settle strongholds anywhere the please, as long as the location is remote.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nOrsimer are somewhat reclusive and untrustring of outsiders, likely due to their treatment in the past. As long as one respects their culture they may be called a friend. In combat they present a powerful ally, as Orsimer are well known for their beserker rage.\n\nThis particular tribe pursues a nomadic way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<colorSpectrum>
+			<li>(0.2, 0.7, 0.1)</li>
+			<li>(0.6, 0.4, 0.1)</li>
+		</colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlementNomadic</factionIconPath>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>40</configurationListOrderPriority>
+	</FactionDef>
+  
 	<FactionDef ParentName="ESCP_OrsimerTribeBase">
 		<defName>ESCP_OrsimerTribeCivil</defName>
 		<label>gentle Orsimer strongholds</label>
@@ -227,7 +250,6 @@
 		</requiredMemes>
 		<disallowedMemes>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-		  <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
@@ -251,7 +273,6 @@
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		</requiredMemes>
 		<disallowedMemes>
-		  <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
