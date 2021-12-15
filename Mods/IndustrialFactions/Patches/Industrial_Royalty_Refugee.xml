@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Patch>
 
-  <PawnKindDef Name="ESCP_OrsimerRefugeeBase" Abstract="True" MayRequire="Ludeon.RimWorld.Royalty">
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods> 
+				
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+
+  <PawnKindDef Name="ESCP_OrsimerRefugeeBase" Abstract="True">
     <race>ESCP_OrsimerRace</race>
     <defaultFactionType>OutlanderRefugee</defaultFactionType>
     <chemicalAddictionChance>0.12</chemicalAddictionChance>
@@ -11,7 +20,7 @@
   </PawnKindDef>
 
   <!-- Refugee -->
-  <PawnKindDef ParentName="ESCP_OrsimerRefugeeBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="ESCP_OrsimerRefugeeBase">
     <defName>ESCP_OrsimerRefugee</defName>
     <label>refugee</label>
     <combatPower>35</combatPower>
@@ -50,4 +59,9 @@
     <initialResistanceRange>8~14</initialResistanceRange>
   </PawnKindDef>
 
-</Defs>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>
+

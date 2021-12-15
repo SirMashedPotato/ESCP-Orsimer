@@ -8,8 +8,5 @@
 		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">Mods/VFE_Core</li>	
 		
 		<li IfModActive="SirMashedPotato.ESCP.IndustrialFactionsDummy">Mods/IndustrialFactions</li>	
-		<li IfModActive="SirMashedPotato.ESCP.IndustrialFactionsDummy">Mods/IndustrialFactions-Royalty</li>	
-		<li IfModActive="SirMashedPotato.ESCP.IndustrialFactionsDummy">Mods/IndustrialFactions-Ideology</li>	
-		<li IfModActive="SirMashedPotato.ESCP.IndustrialFactionsDummy">Mods/IndustrialFactions-VFE_Core</li>	
 	</v1.3>
 </loadFolders>
