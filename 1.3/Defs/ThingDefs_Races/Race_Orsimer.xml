@@ -41,9 +41,6 @@
 		</statBases>
 		
 		<comps>
-	
-		  <li Class="ESCP_RaceTools.CompProperties_BeastMasterInit">
-		  </li>
 
 		  <li Class="ESCP_RaceTools.CompProperties_BeserkerRage">
 			<hediffDef>ESCP_BeserkerRage</hediffDef>
