@@ -43,9 +43,9 @@
 				<li>name(p=5)->[FemaleList] gra-[FamilyList]</li>
 				<li>name(p=2)->[FemaleList] gra-[FemaleList]</li>
 				<li>name(p=2)->[FemaleList] gra-[MaleList]</li>
-				<li>name(p=0.5)->[FemaleList] 'the [TerrainFeature]' gro-[FamilyList]</li>
-				<li>name(p=0.5)->[FemaleList] 'the [ColorBadass]' gro-[FamilyList]</li>
-				<li>name(p=0.5)->[FemaleList] 'the [AnimalBadass]' gro-[FamilyList]</li>
+				<li>name(p=0.5)->[FemaleList] 'the [TerrainFeature]' gra-[FamilyList]</li>
+				<li>name(p=0.5)->[FemaleList] 'the [ColorBadass]' gra-[FamilyList]</li>
+				<li>name(p=0.5)->[FemaleList] 'the [AnimalBadass]' gra-[FamilyList]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
