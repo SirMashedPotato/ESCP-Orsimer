@@ -40,6 +40,13 @@
 			<li>Synthread</li>
 		  </thingDefs>
 		</apparelStuffFilter>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_Orsimer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
 	</FactionDef>
 	
 	<FactionDef ParentName="PlayerFactionBase">
@@ -85,6 +92,13 @@
 		<recipePrerequisiteTags>
 		  <li>Tribal</li>
 		</recipePrerequisiteTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_Orsimer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
 	</FactionDef>
 	
 	<FactionDef ParentName="PlayerFactionBase">
@@ -128,6 +142,13 @@
 		<recipePrerequisiteTags>
 		  <li>Tribal</li>
 		</recipePrerequisiteTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_Orsimer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
 	</FactionDef>
 
 </Defs>

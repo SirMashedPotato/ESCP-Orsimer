@@ -13,6 +13,11 @@
 				<elevationRangeMax>1200</elevationRangeMax>
 				<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
 			</li>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_Orsimer</li>
+				</factionTags>
+			</li>
 		</modExtensions>
 		<leaderTitle>high chieftain</leaderTitle>
 		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</factionIconPath>
@@ -24,6 +29,7 @@
 		</allowedCultures>
 		<structureMemeWeights>
 		  <ESCP_Structure_OriginMauloch MayRequire="Ludeon.RimWorld.Ideology">8</ESCP_Structure_OriginMauloch>
+		  <ESCP_Structure_OriginTrinimac MayRequire="Ludeon.RimWorld.Ideology">4</ESCP_Structure_OriginTrinimac>
 		</structureMemeWeights>
 		<!-- Don't enable unless there are actually backstories -->
 		<!--
