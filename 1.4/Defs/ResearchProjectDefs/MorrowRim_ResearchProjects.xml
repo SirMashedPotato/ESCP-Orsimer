@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<ResearchProjectDef>
 		<defName>MorrowRim_OrsimerTotems</defName>
 		<label>orsimer totems</label>
-		<description>Allows the construction of Orsimer totems at a sculpting table. These totems are attached to the belt, and modify an Orsimers beserker rage.\n\nOnly Orsimer are capable of wearing these totems, and of completing this research.</description>
+		<description>Allows the construction of Orsimer totems at a sculpting table. These totems are attached to the belt, and modify an Orsimers berserker rage.\n\nOnly Orsimer are capable of wearing these totems, and of completing this research.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>6.00</researchViewX>
@@ -13,5 +12,4 @@
 		<prerequisites>
 		</prerequisites>
 	</ResearchProjectDef>
-
 </Defs>

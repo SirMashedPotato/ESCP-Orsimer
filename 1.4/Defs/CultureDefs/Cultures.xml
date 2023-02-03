@@ -1,76 +1,74 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-  <CultureDef>
-    <defName>ESCP_Orsimeri</defName>
-    <label>Orsimeri</label>
-    <description>An ancient culture common among Orsimer tribes.</description>
-    <pawnNameMaker>NamerPersonCorunan</pawnNameMaker>
-    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
-    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
-    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
-    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
-    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_LeaderTitleMaker_Orsimeri</leaderTitleMaker>
-    <allowedPlaceTags>
-      <li>OriginTribal</li>
-    </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</iconPath>
-    <preferredWeaponClasses>
-      <noble>Melee</noble>
-      <despised>Ranged</despised>
-    </preferredWeaponClasses>
-    <thingStyleCategories>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>ESCP_OrsimerStyle</category>
-        <priority>2</priority>
-      </li>
-	  <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>Rustic</category>
-        <priority>1</priority>
-      </li>
-	  <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>Totemic</category>
-        <priority>1</priority>
-      </li>
-    </thingStyleCategories>
-    <styleItemTags>
-	  <li>
-        <tag>ESCP_TattooFaceOrsimer</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-	  <li>
-        <tag>Tribal</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>NoBeard</tag>
-        <baseWeight>10</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>BeardTribal</tag>
-        <baseWeight>0.3</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>TattooFaceTribal</tag>
-        <baseWeight>0.4</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>TattooBodyTribal</tag>
-        <baseWeight>0.4</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>NoTattoo</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-    </styleItemTags>
-  </CultureDef>
-  
+	<CultureDef>
+		<defName>ESCP_OrsimerCulture</defName>
+		<label>Orsimeri</label>
+		<description>An ancient culture common among Orsimer.</description>
+		<pawnNameMaker>ESCP_Orsimer_NamerMale</pawnNameMaker>
+		<pawnNameMakerFemale>ESCP_Orsimer_NamerFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_Orsimer_NamerCultureLeaderTitle</leaderTitleMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</iconPath>
+		<preferredWeaponClasses>
+			<noble>Melee</noble>
+			<despised>Ranged</despised>
+		</preferredWeaponClasses>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>ESCP_OrsimerStyle</category>
+				<priority>2</priority>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Rustic</category>
+				<priority>1</priority>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Totemic</category>
+				<priority>1</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>ESCP_TattooFaceOrsimer</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFaceTribal</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyTribal</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
 </Defs>

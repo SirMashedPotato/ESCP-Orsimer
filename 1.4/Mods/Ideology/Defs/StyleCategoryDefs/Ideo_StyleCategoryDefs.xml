@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StyleCategoryDef>
+		<defName>ESCP_OrsimerStyle</defName>
+		<label>Orsimeri</label>
+		<iconPath>World/WorldObjects/Expanding/ESCP_OrsimerRaider</iconPath>
+		<soundOngoingRitual>RitualSustainer_Totemic</soundOngoingRitual>
+		<ritualVisualEffectDef>Hindu</ritualVisualEffectDef>
+		<thingDefStyles/>
+	</StyleCategoryDef>
+</Defs>

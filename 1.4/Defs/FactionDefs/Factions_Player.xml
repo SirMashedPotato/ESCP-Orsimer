@@ -1,154 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-	<FactionDef ParentName="PlayerFactionBase">
-		<defName>ESCP_OrsimerPlayerColony</defName>
-		<label>Orsimer arrivals</label>
-		<description>A colony of Orsimer stowaways from the Azuras Dawn colonisation ship.</description>
-		<isPlayer>true</isPlayer>
-		<basicMemberKind>ESCP_OrsimerKind</basicMemberKind>
-		<pawnSingular>Orsimer offworlder</pawnSingular>
-		<pawnsPlural>Orsimer offworlders</pawnsPlural>
-		<techLevel>Industrial</techLevel>
-		<backstoryFilters>
-		  <li>
-			<categories>
-			  <li>Offworld</li>
-			  <li>ESCP_OrsimerOffworld</li>
-			</categories>
-		  </li>
-		</backstoryFilters>
-		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlementIndustrial</factionIconPath>
-		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<allowedCultures>
-			<li>Astropolitan</li>
-			<li>ESCP_Orsimeri</li>
-		</allowedCultures>
-		<geneticVariance>1</geneticVariance>
-		<startingResearchTags>
-		  <li>ClassicStart</li>
-		  <li>ESCP_OrsimerStart_Industrial</li>
-		</startingResearchTags>
-		<startingTechprintsResearchTags>
-		  <li>ClassicStart</li>
-		  <li>ClassicStartTechprints</li>
-		</startingTechprintsResearchTags>
-		<apparelStuffFilter>
-		  <thingDefs>
-			<li>Synthread</li>
-		  </thingDefs>
-		</apparelStuffFilter>
-		<modExtensions>
-			<li Class="ESCP_RaceTools.FactionProperties">
-				<factionTags>
-					<li>ESCP_Orsimer</li>
-				</factionTags>
-			</li>
-		</modExtensions>
-	</FactionDef>
-	
-	<FactionDef ParentName="PlayerFactionBase">
-		<defName>ESCP_OrsimerPlayerTribe</defName>
-		<label>New Orsimer Tribe</label>
-		<description>A small Orsimer tribe.</description>
-		<isPlayer>true</isPlayer>
-		<pawnSingular>Orsimer tribseman</pawnSingular>
-		<pawnsPlural>Orsimer tribsepeople</pawnsPlural>
-		<basicMemberKind>ESCP_OrsimerTribalKind</basicMemberKind>
-		<techLevel>Neolithic</techLevel>
-		<backstoryFilters>
-		  <li>
-			<categories>
-			  <li>Tribal</li>
-			  <li>ESCP_OrsimerTribal</li>
-			</categories>
-		  </li>
-		</backstoryFilters>
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Industrial">
+		<defName>ESCP_OrsimerPlayerFaction_Industrial</defName>
+		<label>New Orsimer Arrivals</label>
+		<basicMemberKind>ESCP_OrsimerPlayerPawnKind_Outlander</basicMemberKind>
 		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</factionIconPath>
-		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>ESCP_NamerFactionOrsimer</factionNameMaker>
-		<settlementNameMaker>ESCP_NamerSettlementOrsimerHouse</settlementNameMaker>
 		<allowedCultures>
-			<li>ESCP_Orsimeri</li>
+			<li>ESCP_OrsimerCulture</li>
 		</allowedCultures>
-		<geneticVariance>1</geneticVariance>
-		<forageabilityFactor>1.7</forageabilityFactor>
 		<startingResearchTags>
-		  <li>TribalStart</li>
-		  <li>ESCP_OrsimerStart_Tribal</li>
+			<li>ESCP_OrsimerStart_Industrial</li>
 		</startingResearchTags>
-		<startingTechprintsResearchTags>
-		  <li>TribalStart</li>
-		  <li>TribalStartTechprints</li>
-		</startingTechprintsResearchTags>
-		<apparelStuffFilter>
-		  <thingDefs>
-			<li>Cloth</li>
-		  </thingDefs>
-		</apparelStuffFilter>
-		<recipePrerequisiteTags>
-		  <li>Tribal</li>
-		</recipePrerequisiteTags>
 		<modExtensions>
 			<li Class="ESCP_RaceTools.FactionProperties">
 				<factionTags>
-					<li>ESCP_Orsimer</li>
+					<li>ESCP_OrsimerFaction</li>
+					<li>ESCP_OrsimerFactionPlayer</li>
 				</factionTags>
 			</li>
 		</modExtensions>
 	</FactionDef>
-	
-	<FactionDef ParentName="PlayerFactionBase">
-		<defName>ESCP_OrsimerPlayerKingdom</defName>
+	<!-- ========== [ESCP_OrsimerPlayerFaction_Medieval] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Medieval">
+		<defName>ESCP_OrsimerPlayerFaction_Medieval</defName>
 		<label>New Orsimer Kingdom</label>
-		<description>A small Orsimer kingdom.</description>
-		<isPlayer>true</isPlayer>
-		<pawnSingular>Orsimer tribseman</pawnSingular>
-		<pawnsPlural>Orsimer tribsepeople</pawnsPlural>
-		<basicMemberKind>ESCP_OrsimerMedievalKind</basicMemberKind>
-		<techLevel>Medieval</techLevel>
-		<backstoryFilters>
-		  <li>
-			<categories>
-			  <li>Tribal</li>
-			</categories>
-		  </li>
-		</backstoryFilters>
+		<basicMemberKind>ESCP_OrsimerPlayerPawnKind_Medieval</basicMemberKind>
 		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</factionIconPath>
-		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionTribal</factionNameMaker>
-		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
 		<allowedCultures>
-			<li>ESCP_Orsimeri</li>
+			<li>ESCP_OrsimerCulture</li>
 		</allowedCultures>
-		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
-		  <li>TribalStart</li>
-		  <li>ESCP_OrsimerStart_Medieval</li>
+			<li>ESCP_OrsimerStart_Medieval</li>
 		</startingResearchTags>
-		<startingTechprintsResearchTags>
-		  <li>TribalStart</li>
-		  <li>TribalStartTechprints</li>
-		</startingTechprintsResearchTags>
-		<apparelStuffFilter>
-		  <thingDefs>
-			<li>Cloth</li>
-		  </thingDefs>
-		</apparelStuffFilter>
-		<recipePrerequisiteTags>
-		  <li>Tribal</li>
-		</recipePrerequisiteTags>
 		<modExtensions>
 			<li Class="ESCP_RaceTools.FactionProperties">
 				<factionTags>
-					<li>ESCP_Orsimer</li>
+					<li>ESCP_OrsimerFaction</li>
+					<li>ESCP_OrsimerFactionPlayer</li>
 				</factionTags>
 			</li>
 		</modExtensions>
 	</FactionDef>
-
+	<!-- ========== [ESCP_OrsimerPlayerFactionBase_Tribal] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Tribal">
+		<defName>ESCP_OrsimerPlayerFaction_Tribal</defName>
+		<label>New Orsimer Tribe</label>
+		<basicMemberKind>ESCP_OrsimerPlayerPawnKind_Tribal</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_OrsimerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_OrsimerStart_Tribal</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_OrsimerFaction</li>
+					<li>ESCP_OrsimerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
 </Defs>

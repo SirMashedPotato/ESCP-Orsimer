@@ -1,84 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BasePawnOrsimer">
+	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_MerWideFace">
 		<defName>ESCP_OrsimerRace</defName>
 		<label>Orsimer</label>
-		<description>An elven race, though many consider them to be more closely related to goblins or trolls, likely due to their appearance and previous animalistic nature. Orsimer lack many features typical of the other elven races, angular faces, extended lifespans, increased psychic sensitivity and heightened intelligence.\n\nThey make up for these losses with a strong punch and durable body, capable of dishing out, and taking, severe beatings. It is best not to enter a fist-fight with an Orsimer, for even if you are capable of throwing good punches, the Orsimer will just enter a beserker rage, ignoring all pain and dishing out great deals of it.\n\nAn Orsimer's increased strength makes them the perfect choice for working in mines or in the front line. Orsimer also make for good smiths, and have a unique understanding of working orichalcum. They do not mind wearing clothing stripped from a corpse, as the corpse did not deserve the clothing, for it is a corpse.</description>
+		<description>An elven race, though many consider them to be more closely related to goblins or trolls, likely due to their appearance and previous animalistic nature. Orsimer lack many features typical of the other elven races, angular faces, extended lifespans, increased psychic sensitivity and heightened intelligence.\n\nThey make up for these losses with a strong punch and durable body, capable of dishing out, and taking, severe beatings. It is best not to enter a fist-fight with an Orsimer, for even if you are capable of throwing good punches, the Orsimer will just enter a berserker rage, ignoring all pain and dishing out great deals of it.\n\n&lt;color=#E5E54C&gt;Tainted Mer Blood&lt;/color&gt;\nPsychic sensitivity is decreased by 30%\nFertility is decreased by 50%.\nBase health scale is increased by 20%.\n\n&lt;color=#E5E54C&gt;Pariah Folk&lt;/color&gt;\nSocial impact is reduced by 20%\nGlobal learning factor is reduced by 10%\nGeneral labour speed is increased by 20%.\n\n&lt;color=#E5E54C&gt;Children of Mauloch&lt;/color&gt;\nBase body size is increased by 10%.\nMelee damage factor is increased by 20%\nThe thought for wearing tainted apparel is negated.\nAble to enter a berserker rage when pain is high enough.</description>
 		<descriptionHyperlinks>
 			<HediffDef>ESCP_BeserkerRage</HediffDef>
+			<GeneDef MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Orsimer</GeneDef>
 		</descriptionHyperlinks>
 		<modExtensions>
-			<li Class="ESCP_RaceTools.StuffKnowledge">
-				<stuffKnowledgeList>
-					<li>
-						<stuffList>
-							<li>ESCP_Orichalcum</li>
-						</stuffList>
-						<skillList>
-							<li>Crafting</li>
-						</skillList>
-						<notJustStuff>true</notJustStuff>
-						<chance>1.0</chance>
-					</li>
-				</stuffKnowledgeList>
-            </li>
+			<li Class="ESCP_RaceTools.RaceProperties">
+				<!--<majorRacialGeneToInherit MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Mer</majorRacialGeneToInherit>-->
+				<minorRacialGeneToInherit MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Orsimer</minorRacialGeneToInherit>
+			</li>
 		</modExtensions>
 		<statBases>
-			  <MarketValue>1900</MarketValue>
-			  <MoveSpeed>4.4</MoveSpeed>
-			  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-			  <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
-			  <ComfyTemperatureMin>8</ComfyTemperatureMin>
-			  <ComfyTemperatureMax>23</ComfyTemperatureMax>
-			  <RoyalFavorValue>3</RoyalFavorValue>
-			  <PsychicSensitivity>0.7</PsychicSensitivity>
-			  <SocialImpact>0.9</SocialImpact>
-			  <MiningSpeed>1.2</MiningSpeed>
-			  <GlobalLearningFactor>0.9</GlobalLearningFactor>
-			  <SmeltingSpeed>1.2</SmeltingSpeed>
-			  <GeneralLaborSpeed>1.2</GeneralLaborSpeed>
+			<PsychicSensitivity>0.7</PsychicSensitivity>
+			<SocialImpact>0.8</SocialImpact>
+			<GlobalLearningFactor>0.9</GlobalLearningFactor>
+			<GeneralLaborSpeed>1.2</GeneralLaborSpeed>
+			<MeleeDamageFactor MayRequire="Ludeon.RimWorld.Biotech">1.2</MeleeDamageFactor>
 		</statBases>
-		
 		<comps>
-
-		  <li Class="ESCP_RaceTools.CompProperties_BeserkerRage">
-			<hediffDef>ESCP_BeserkerRage</hediffDef>
-			<recordDef>ESCP_OrsimerEnrages</recordDef>
-			<enableAugments>true</enableAugments>
-			<totems>
-				<li>ESCP_Apparel_TotemWroth</li>
-				<li>ESCP_Apparel_TotemFury</li>
-				<li>ESCP_Apparel_TotemFuror</li>
-				<li>ESCP_Apparel_TotemArchotech</li>
-			</totems>
-			<augments>
-				<li>ESCP_BeserkerWroth</li>
-				<li>ESCP_BeserkerFury</li>
-				<li>ESCP_BeserkerFuror</li>
-				<li>ESCP_ArchotechsRage</li>
-			</augments>
-		  </li>
-
+			<li Class="ESCP_RaceTools.CompProperties_BeserkerRage">
+				<hediffDef>ESCP_BeserkerRage</hediffDef>
+				<recordDef>ESCP_OrsimerEnrages</recordDef>
+				<enableAugments>true</enableAugments>
+				<totems>
+					<li>ESCP_Apparel_TotemWroth</li>
+					<li>ESCP_Apparel_TotemFury</li>
+					<li>ESCP_Apparel_TotemFuror</li>
+					<li>ESCP_Apparel_TotemArchotech</li>
+				</totems>
+				<augments>
+					<li>ESCP_BeserkerWroth</li>
+					<li>ESCP_BeserkerFury</li>
+					<li>ESCP_BeserkerFuror</li>
+					<li>ESCP_ArchotechsRage</li>
+				</augments>
+			</li>
 		</comps>
-	
 		<race>
 			<lifeExpectancy>100</lifeExpectancy>
 			<leatherDef>ESCP_LeatherOrsimer</leatherDef>
-			<nameGenerator>ESCP_NamerPersonOrsimerMale</nameGenerator>
-			<nameGeneratorFemale>ESCP_NamerPersonOrsimerFemale</nameGeneratorFemale>
+			<nameGenerator>ESCP_Orsimer_NamerMale</nameGenerator>
+			<nameGeneratorFemale>ESCP_Orsimer_NamerFemale</nameGeneratorFemale>
 			<baseBodySize>1.1</baseBodySize>
+			<baseHealthScale>1.2</baseHealthScale>
 		</race>
-	
 		<alienRace>
 			<generalSettings>
-				<maxDamageForSocialfight>8</maxDamageForSocialfight>
-				<forcedRaceTraitEntries>
-					<li>
-						<defName>Brawler</defName>
-						<chance>5</chance>
-					</li>
-				</forcedRaceTraitEntries>
+				<maxDamageForSocialfight>9</maxDamageForSocialfight>
 				<disallowedTraits>
 					<li>
 						<defName>Beauty</defName>
@@ -100,168 +72,150 @@
 				<allowHumanBios>false</allowHumanBios>
 				<humanRecipeImport>true</humanRecipeImport>
 				<alienPartGenerator>
-					<aliencrowntypes>
-						<li>Average_Pointy</li>
-						<li>Average_Wide</li>
-						<li>Average_Normal</li>
-
-						<li>Narrow_Pointy</li>
-						<li>Narrow_Wide</li>
-						<li>Narrow_Normal</li>
-					</aliencrowntypes>
-					<alienbodytypes>
-						<li>Male</li>
-						<li>Female</li>
-						<li>Hulk</li>
-						<li>Fat</li>
-						<li>Thin</li>
-					</alienbodytypes>
-					<useGenderedHeads>true</useGenderedHeads>
-					<useGenderedBodies>false</useGenderedBodies>
 					<colorChannels>
-					<li>
-					<name>skin</name>
-					<first Class="ColorGenerator_Options">
-						<options>
-							<li>
-								<weight>10</weight>
-								<only>(118,94,66,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(138,114,85,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(88,70,48,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(114,93,66,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(123,105,73,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(128,113,80,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(126,107,77,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(80,64,44,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(124,113,84,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(100,86,63,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(127,116,87,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(137,125,94,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(76,70,46,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(137,125,94,255)</only>
-							</li>
-							<li>
-								<weight>1</weight>
-								<only>(140,145,140,255)</only>
-							</li>
-							<li>
-								<weight>1</weight>
-								<only>(180,181,180,255)</only>
-							</li>
-						</options>
-					</first>
-					</li>
-					<li>
-					<name>hair</name>
-					<first Class="ColorGenerator_Options">
-						<options>
-							<li>
-								<weight>10</weight>
-								<only>(58,35,17,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(40,31,22,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(87,61,44,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(63,37,22,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(76,53,35,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(70,42,30,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(125,108,88,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(96,60,44,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(101,67,42,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(124,91,56,255)</only>
-							</li>
-						</options>
-					</first>
-					</li>
-					<li>
-					<name>tusk</name>
-					<first Class="ColorGenerator_Options">
-						<options>
-							<li>
-								<weight>10</weight>
-								<only>(196,180,146,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(183,166,138,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(193,179,154,255)</only>
-							</li>
-							<li>
-								<weight>10</weight>
-								<only>(193,182,145,255)</only>
-							</li>
-						</options>
-					</first>
-					</li>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>(118,94,66,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(138,114,85,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(88,70,48,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(114,93,66,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(123,105,73,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(128,113,80,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(126,107,77,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(80,64,44,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(124,113,84,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(100,86,63,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(127,116,87,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(137,125,94,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(76,70,46,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(137,125,94,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(140,145,140,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(180,181,180,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>(58,35,17,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(40,31,22,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(87,61,44,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(63,37,22,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(76,53,35,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(70,42,30,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(125,108,88,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(96,60,44,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(101,67,42,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(124,91,56,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>tusk</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>(196,180,146,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(183,166,138,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(193,179,154,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(193,182,145,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
 					</colorChannels>
-					<customDrawSize>(1.0, 1.1)</customDrawSize>
+					<customDrawSize>(1.1, 1.1)</customDrawSize>
 					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
 					<headOffset>(0.0, 0.0)</headOffset>
 					<bodyAddons>
@@ -269,7 +223,7 @@
 						<li>
 							<path>Things/Pawn/Humanlike/ESCP_Orsimer/Tusk/Tusk</path>
 							<drawForMale>true</drawForMale>
-							<drawForFemale>false</drawForFemale>
+							<drawForFemale>true</drawForFemale>
 							<colorChannel>tusk</colorChannel>
 							<bodyPart>Jaw</bodyPart>
 							<drawnInBed>true</drawnInBed>
@@ -278,111 +232,20 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<drawnDesiccated>true</drawnDesiccated>
 							<hiddenUnderApparelFor>
-								  <li>FullHead</li>
-								  <li>Teeth</li>
-								  <li>Mouth</li>
+								<li>FullHead</li>
+								<li>Teeth</li>
+								<li>Mouth</li>
 							</hiddenUnderApparelFor>
 							<hiddenUnderApparelTag>
-								<li>MorrowRim_CoverOrsimerTusks</li>
+								<li>ESCP_CoverOrsimerTusks</li>
 							</hiddenUnderApparelTag>
-							<!-- offsets -->
 							<offsets>
-								<south>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.05)</Average_Normal>
-										<Average_Pointy>(0.0,0.05)</Average_Pointy>
-										<Average_Wide>(0.0,0.05)</Average_Wide>
-										<Narrow_Normal>(0.0,0.05)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.05)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.05)</Narrow_Wide>
-									</crownTypes>
-								</south>
 								<north>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.05)</Average_Normal>
-										<Average_Pointy>(0.0,0.05)</Average_Pointy>
-										<Average_Wide>(0.0,0.05)</Average_Wide>
-										<Narrow_Normal>(0.0,0.05)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.05)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.05)</Narrow_Wide>
-									</crownTypes>
+									<layerOffset>-0.28</layerOffset>
 								</north>
-								<east>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.05)</Average_Normal>
-										<Average_Pointy>(0.0,0.05)</Average_Pointy>
-										<Average_Wide>(0.0,0.05)</Average_Wide>
-										<Narrow_Normal>(0.05,0.05)</Narrow_Normal>
-										<Narrow_Pointy>(0.05,0.05)</Narrow_Pointy>
-										<Narrow_Wide>(0.05,0.05)</Narrow_Wide>
-									</crownTypes>
-								</east>
 							</offsets>
 						</li>
-						<!-- tusks, female -->
-						<li>
-							<path>Things/Pawn/Humanlike/ESCP_Orsimer/Tusk/Tusk</path>
-							<drawForMale>false</drawForMale>
-							<drawForFemale>true</drawForFemale>
-							<drawSize>(0.85, 0.85)</drawSize>
-							<colorChannel>tusk</colorChannel>
-							<bodyPart>Jaw</bodyPart>
-							<drawnInBed>true</drawnInBed>
-							<inFrontOfBody>true</inFrontOfBody>
-							<alignWithHead>true</alignWithHead>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>true</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								  <li>FullHead</li>
-								  <li>Teeth</li>
-								  <li>Mouth</li>
-							</hiddenUnderApparelFor>
-							<!-- offsets -->
-							<offsets>
-								<south>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.0)</Average_Normal>
-										<Average_Pointy>(0.0,0.0)</Average_Pointy>
-										<Average_Wide>(0.0,0.0)</Average_Wide>
-										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
-									</crownTypes>
-								</south>
-								<north>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.0)</Average_Normal>
-										<Average_Pointy>(0.0,0.0)</Average_Pointy>
-										<Average_Wide>(0.0,0.0)</Average_Wide>
-										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
-									</crownTypes>
-								</north>
-								<east>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(-0.05,0.0)</Average_Normal>
-										<Average_Pointy>(-0.05,0.0)</Average_Pointy>
-										<Average_Wide>(-0.05,0.0)</Average_Wide>
-										<Narrow_Normal>(0.05,0.0)</Narrow_Normal>
-										<Narrow_Pointy>(0.05,0.0)</Narrow_Pointy>
-										<Narrow_Wide>(0.05,0.0)</Narrow_Wide>
-									</crownTypes>
-								</east>
-							</offsets>
-						</li>
+						
 						<!-- horns, male only -->
 						<li>
 							<path>Things/Pawn/Humanlike/ESCP_Orsimer/Horn/Horn</path>
@@ -400,228 +263,29 @@
 								<li>UpperHead</li>
 							</hiddenUnderApparelFor>
 							<hiddenUnderApparelTag>
-								<li>MorrowRim_CoverOrsimerHorns</li>
+								<li>ESCP_CoverOrsimerHorns</li>
 							</hiddenUnderApparelTag>
-							<!-- offsets -->
 							<offsets>
-								<south>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.05)</Average_Normal>
-										<Average_Pointy>(0.0,0.05)</Average_Pointy>
-										<Average_Wide>(0.0,0.05)</Average_Wide>
-										<Narrow_Normal>(0.0,0.05)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.05)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.05)</Narrow_Wide>
-									</crownTypes>
-								</south>
-								<north>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.05)</Average_Normal>
-										<Average_Pointy>(0.0,0.05)</Average_Pointy>
-										<Average_Wide>(0.0,0.05)</Average_Wide>
-										<Narrow_Normal>(0.0,0.05)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.05)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.05)</Narrow_Wide>
-									</crownTypes>
-								</north>
-								<east>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.05)</Average_Normal>
-										<Average_Pointy>(0.0,0.05)</Average_Pointy>
-										<Average_Wide>(0.0,0.05)</Average_Wide>
-										<Narrow_Normal>(0.05,0.05)</Narrow_Normal>
-										<Narrow_Pointy>(0.05,0.05)</Narrow_Pointy>
-										<Narrow_Wide>(0.05,0.05)</Narrow_Wide>
-									</crownTypes>
-								</east>
-							</offsets>
-						</li>
-						<!-- ears right, both genders -->
-						<li>
-							<path>Things/Pawn/Humanlike/ESCP_Orsimer/Ear/RightEar</path>
-							<colorChannel>skin</colorChannel>
-							 <bodyPart>right ear</bodyPart>
-							<drawnInBed>true</drawnInBed>
-							<inFrontOfBody>false</inFrontOfBody>
-							<alignWithHead>true</alignWithHead>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
-							<!-- offsets -->
-							<offsets>
-								<south>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.0)</Average_Normal>
-										<Average_Pointy>(0.0,0.0)</Average_Pointy>
-										<Average_Wide>(0.0,0.0)</Average_Wide>
-										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
-									</crownTypes>
-								</south>
 								<north>
 									<layerOffset>-0.28</layerOffset>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.0)</Average_Normal>
-										<Average_Pointy>(0.0,0.0)</Average_Pointy>
-										<Average_Wide>(0.0,0.0)</Average_Wide>
-										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
-									</crownTypes>
 								</north>
-								<east>
-									<layerOffset>-0.332</layerOffset>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.0)</Average_Normal>
-										<Average_Pointy>(0.0,0.0)</Average_Pointy>
-										<Average_Wide>(0.0,0.0)</Average_Wide>
-										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
-									</crownTypes>
-								</east>
 							</offsets>
 						</li>
-						<!-- ears left, both genders -->
-						<li>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<path>Things/Pawn/Humanlike/ESCP_Orsimer/Ear/LeftEar</path>
-							<colorChannel>skin</colorChannel>
-							 <bodyPart>left ear</bodyPart>
-							<drawnInBed>true</drawnInBed>
-							<inFrontOfBody>false</inFrontOfBody>
-							<alignWithHead>true</alignWithHead>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
-							<!-- offsets -->
-							<offsets>
-								<south>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.0)</Average_Normal>
-										<Average_Pointy>(0.0,0.0)</Average_Pointy>
-										<Average_Wide>(0.0,0.0)</Average_Wide>
-										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
-									</crownTypes>
-								</south>
-								<north>
-									<layerOffset>-0.28</layerOffset>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.0)</Average_Normal>
-										<Average_Pointy>(0.0,0.0)</Average_Pointy>
-										<Average_Wide>(0.0,0.0)</Average_Wide>
-										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
-									</crownTypes>
-								</north>
-								<east>
-									<layerOffset>-0.332</layerOffset>
-									<bodyTypes>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.0,0.0)</Average_Normal>
-										<Average_Pointy>(0.0,0.0)</Average_Pointy>
-										<Average_Wide>(0.0,0.0)</Average_Wide>
-										<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
-										<Narrow_Pointy>(0.0,0.0)</Narrow_Pointy>
-										<Narrow_Wide>(0.0,0.0)</Narrow_Wide>
-									</crownTypes>
-								</east>
-							</offsets>
-						</li>
-					</bodyAddons> 
+					</bodyAddons>
 				</alienPartGenerator>
-				
 			</generalSettings>
-			
-			<graphicPaths>
-				<li>
-					<head>Things/Pawn/Humanlike/ESCP_Orsimer/Head/</head>
-				</li>
-			</graphicPaths>
-
-			<!--<pawnKindSettings>
-
-			</pawnKindSettings>-->
-			
 			<thoughtSettings>
 				<cannotReceiveThoughts>
 					<li>DeadMansApparel</li>
 				</cannotReceiveThoughts>
-				<replacerList>
-				</replacerList>
 			</thoughtSettings>
-			
-			<relationSettings>
-
-			</relationSettings>
-			
 			<raceRestriction>
-				<researchList>
-					<li>
-						<projects>
-							<li>MorrowRim_OrsimerTotems</li>
-						</projects>
-					</li>
-				</researchList>
 				<apparelList>
 					<li>ESCP_Apparel_TotemFury</li>
 					<li>ESCP_Apparel_TotemWroth</li>
 					<li>ESCP_Apparel_TotemFuror</li>
 				</apparelList>
-				<recipeList>
-					<li MayRequire="SirMashedPotato.ESCP.MashedExtras">Make_MorrowRim_MeleeWeapon_OrsimerWarhammer</li>
-					<li MayRequire="SirMashedPotato.ESCP.MashedExtras">Make_MorrowRim_MeleeWeapon_OrsimerBattleaxe</li>
-				</recipeList>
 			</raceRestriction>
-
-			<compatibility>
-				<isFlesh>true</isFlesh>
-				<isSentient>true</isSentient>
-				<hasBlood>true</hasBlood>
-			</compatibility>
-			
-			<!-- New in 1.3 -->
-			
-			<styleSettings>
-			<!--
-				<li>
-					<key>BeardDef</key>
-					<value>
-						<hasStyle>false</hasStyle>
-					</value>
-				</li>
-				-->
-			</styleSettings>
-			
 		</alienRace>
-	
 	</AlienRace.ThingDef_AlienRace>
-	
 </Defs>

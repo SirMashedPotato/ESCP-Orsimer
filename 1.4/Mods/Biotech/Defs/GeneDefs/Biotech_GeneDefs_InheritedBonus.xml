@@ -2,16 +2,17 @@
 <Defs>
 	<!-- ==========[ESCP_GeneInheritedBonus_Altmer]========== -->
 	<GeneDef ParentName="ESCP_InheritedRacialBonus_Base">
-		<defName>ESCP_GeneInheritedBonus_Altmer</defName>
-		<label>Altmer blood</label>
-		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Altmer race, though at a comparatively weaker level.</description>
-		<iconPath>UI/Icons/Genes/ESCP_InheritedBonus/ESCP_GeneInheritedBonus_Altmer</iconPath>
+		<defName>ESCP_GeneInheritedBonus_Orsimer</defName>
+		<label>Orsimer blood</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Orsimer race, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/ESCP_InheritedBonus/ESCP_GeneInheritedBonus_Orsimer</iconPath>
 		<statOffsets>
-			<PsychicSensitivity>0.15</PsychicSensitivity>
-			<Flammability>0.1</Flammability>
-			<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
-			<GlobalLearningFactor>0.1</GlobalLearningFactor>
+			<PsychicSensitivity>-0.15</PsychicSensitivity>
+			<SocialImpact>-0.1</SocialImpact>
+			<GlobalLearningFactor>-0.05</GlobalLearningFactor>
+			<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+			<MeleeDamageFactor>0.1</MeleeDamageFactor>
 		</statOffsets>
-		<displayOrderInCategory>1</displayOrderInCategory>
+		<displayOrderInCategory>10</displayOrderInCategory>
 	</GeneDef>
 </Defs>

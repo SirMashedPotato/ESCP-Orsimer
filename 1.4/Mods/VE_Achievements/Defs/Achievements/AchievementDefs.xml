@@ -1,43 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[ESCP_AchievementAltmer_AltmerColonists]========== -->
+	<!-- ==========[ESCP_AchievementOrsimer_OrsimerColonists]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
-		<defName>ESCP_AchievementAltmer_AltmerColonists</defName>
-		<label>A Most Divine Colony</label>
-		<description>Have 12 Altmer in your colony at the same time</description>
+		<defName>ESCP_AchievementOrsimer_OrsimerColonists</defName>
+		<label>A Town Full of Hot Heads</label>
+		<description>Have 12 Orsimer in your colony at the same time</description>
 		<tracker Class="AchievementsExpanded.RaceDefTracker">
 			<raceDefs>
 				<li>
-					<key>ESCP_AltmerRace</key>
+					<key>ESCP_OrsimerRace</key>
 					<value>12</value>
 				</li>
 			</raceDefs>
 		</tracker>
-		<texPath>Achievements/ESCP_AchievementAltmer_AltmerColonists</texPath>
+		<texPath>Achievements/ESCP_AchievementOrsimer_OrsimerColonists</texPath>
 		<points>25</points>
 	</AchievementsExpanded.AchievementDef>
-	<!-- ==========[ESCP_AchievementAltmer_AltmerSlayer]========== -->
+	<!-- ==========[ESCP_AchievementOrsimer_BondedEchatere]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
-		<defName>ESCP_AchievementAltmer_AltmerSlayer</defName>
-		<label>The Arrogant Snobs Deserve It</label>
-		<description>Slay 50 Altmer</description>
-		<tracker Class="AchievementsExpanded.KillTracker">
-			<raceDef>ESCP_AltmerRace</raceDef>
-			<count>50</count>
-		</tracker>
-		<texPath>Achievements/ESCP_AchievementAltmer_AltmerSlayer</texPath>
-		<points>10</points>
-	</AchievementsExpanded.AchievementDef>
-	<!-- ==========[ESCP_AchievementAltmer_DominionDestroyer]========== -->
-	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
-		<defName>ESCP_AchievementAltmer_DominionDestroyer</defName>
-		<label>Dominion Destroyer</label>
-		<description>Defeat an Aldmeri Dominion faction</description>
-		<tracker Class="Mashed_VanillaAchievementsExpanded.FactionDefeatTracker">
-			<def>ESCP_AltmerNonPlayerFaction_Dominion</def>
+		<defName>ESCP_AchievementOrsimer_BondedEchatere</defName>
+		<label>Don't Grow Soft</label>
+		<description>Have a colonist develop a bond with an echatere</description>
+		<tracker Class="AchievementsExpanded.AnimalBondedTracker">
+			<kindDef>ESCP_Echatere</kindDef>
 			<count>1</count>
 		</tracker>
-		<texPath>Achievements/ESCP_AchievementAltmer_DominionDestroyer</texPath>
-		<points>25</points>
+		<texPath>Achievements/ESCP_AchievementOrsimer_BondedEchatere</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementOrsimer_TameWelwa]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementOrsimer_TameWelwa</defName>
+		<label>Well Well Welwa</label>
+		<description>Have three tame welwa</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<kindDefs>
+				<li>
+					<key>ESCP_Welwa</key>
+					<value>3</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementOrsimer_TameWelwa</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementOrsimer_OrsimerBeserk]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementOrsimer_OrsimerBeserk</defName>
+		<label>You Fight Like a Child</label>
+		<description>Witness an Orsimer enter a berserker rage for the first time</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>ESCP_OrsimerEnrages</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementOrsimer_OrsimerBeserk</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementOrsimer_OrsimerBeserkMany]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementOrsimer_OrsimerBeserkMany</defName>
+		<label>Fury to Rival Malacath</label>
+		<description>Have a single Orsimer enter their 100th berserker rage</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>ESCP_OrsimerEnrages</def>
+			<count>100</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementOrsimer_OrsimerBeserkMany</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementOrsimer_OrsimerSlayer]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementOrsimer_OrsimerSlayer</defName>
+		<label>Death to the Green-Skins</label>
+		<description>Slay 50 Orsimer</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<raceDef>ESCP_OrsimerRace</raceDef>
+			<count>50</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementOrsimer_OrsimerSlayer</texPath>
+		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
 </Defs>

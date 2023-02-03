@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<AlienRace.RaceSettings>
 		<defName>ESCP_OrsimerRaceSettings</defName>
 		<pawnKindSettings>
 			<alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>ESCP_OrsimerKind</li>
-						<li>ESCP_OrsimerTribalKind</li>
+						<li>ESCP_OrsimerPlayerPawnKind_Outlander</li>
+						<li>ESCP_OrsimerPlayerPawnKind_Tribal</li>
 					</kindDefs>
 					<chance>5.0</chance>
 				</li>
 			</alienslavekinds>
-
 			<alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>ESCP_OrsimerKind</li>
-						<li>ESCP_OrsimerTribalKind</li>
+						<li>ESCP_OrsimerPlayerPawnKind_Outlander</li>
+						<li>ESCP_OrsimerPlayerPawnKind_Tribal</li>
 					</kindDefs>
 					<chance>10.0</chance>
 				</li>
@@ -28,26 +26,26 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>ESCP_OrsimerKind</li>
+								<li>ESCP_OrsimerPlayerPawnKind_Outlander</li>
 							</kindDefs>
 							<chance>2.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li> 
+						<li>PlayerColony</li>
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>ESCP_OrsimerTribalKind</li>
+								<li>ESCP_OrsimerPlayerPawnKind_Tribal</li>
 							</kindDefs>
 							<chance>0.1</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerTribe</li> 
+						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -56,43 +54,42 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>ESCP_OrsimerKind</li>
+								<li>ESCP_OrsimerPlayerPawnKind_Outlander</li>
 							</kindDefs>
 							<chance>100.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>ESCP_OrsimerPlayerColony</li> 
+						<li>ESCP_OrsimerPlayerFaction_Industrial</li>
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>ESCP_OrsimerTribalKind</li>
+								<li>ESCP_OrsimerPlayerPawnKind_Medieval</li>
 							</kindDefs>
 							<chance>100.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>ESCP_OrsimerPlayerTribe</li> 
+						<li>ESCP_OrsimerPlayerFaction_Medieval</li>
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>ESCP_OrsimerMedievalKind</li>
+								<li>ESCP_OrsimerPlayerPawnKind_Tribal</li>
 							</kindDefs>
 							<chance>100.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>ESCP_OrsimerPlayerKingdom</li> 
+						<li>ESCP_OrsimerPlayerFaction_Tribal</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
 		</pawnKindSettings>
 	</AlienRace.RaceSettings>
-
 </Defs>
