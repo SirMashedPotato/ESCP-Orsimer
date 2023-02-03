@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_AchievementAltmer_AltmerColonists]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementAltmer_AltmerColonists</defName>
+		<label>A Most Divine Colony</label>
+		<description>Have 12 Altmer in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>ESCP_AltmerRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementAltmer_AltmerColonists</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementAltmer_AltmerSlayer]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementAltmer_AltmerSlayer</defName>
+		<label>The Arrogant Snobs Deserve It</label>
+		<description>Slay 50 Altmer</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<raceDef>ESCP_AltmerRace</raceDef>
+			<count>50</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementAltmer_AltmerSlayer</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementAltmer_DominionDestroyer]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementAltmer_DominionDestroyer</defName>
+		<label>Dominion Destroyer</label>
+		<description>Defeat an Aldmeri Dominion faction</description>
+		<tracker Class="Mashed_VanillaAchievementsExpanded.FactionDefeatTracker">
+			<def>ESCP_AltmerNonPlayerFaction_Dominion</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementAltmer_DominionDestroyer</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

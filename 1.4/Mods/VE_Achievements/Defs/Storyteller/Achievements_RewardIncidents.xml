@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_AchievementReward_PawnJoinsIncident_Altmer]========== -->
+	<IncidentDef ParentName="ESCP_AchievementReward_PawnJoinsIncident_Base">
+		<defName>ESCP_AchievementReward_PawnJoinsIncident_Altmer</defName>
+		<label>Altmer subject joins</label>
+		<letterLabel>Altmer joins: {PAWN_nameDef}</letterLabel>
+		<pawnKind>ESCP_AltmerPlayerPawnKind_Medieval</pawnKind>
+	</IncidentDef>
+</Defs>

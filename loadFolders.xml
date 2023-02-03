@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <loadFolders>
-	<v1.3>
+	<v1.4>
 		<li>Common</li>
-		<li>1.3</li>
-		<li IfModActive="Ludeon.RimWorld.Royalty">Mods/Royalty</li>	
-		<li IfModActive="Ludeon.RimWorld.Ideology">Mods/Ideology</li>	
-		
-		<li IfModActive="SirMashedPotato.ESCP.IndustrialFactionsDummy">Mods/IndustrialFactions</li>	
-	</v1.3>
+		<li>1.4</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.4/Mods/Royalty</li>	
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/Mods/Ideology</li>	
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/Mods/Biotech</li>	
+		<li IfModActive="vanillaexpanded.achievements">1.4/Mods/VE_Achievements</li>	
+		<li IfModActive="SirMashedPotato.ESCP.IndustrialFactionsDummy">1.4/Mods/IndustrialFactions</li>	
+	</v1.4>
 </loadFolders>
