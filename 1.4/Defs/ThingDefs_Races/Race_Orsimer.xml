@@ -306,6 +306,10 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<bodytypeGraphics>
+								<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/ESCP_Orsimer/Horn/Horn3</Baby>
+								<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/ESCP_Orsimer/Horn/Horn3</Child>
+							</bodytypeGraphics>
 							<debug>false</debug>
 						</li>
 					</bodyAddons>
