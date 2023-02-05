@@ -124,10 +124,20 @@
 				<BorealForest>0.7</BorealForest>
 				<Tundra>0.5</Tundra>
 				<ColdBog>0.3</ColdBog>
+				<!-- Regrowth -->
+				<RG_TemperateGrassland MayRequire="ReGrowth.BOTR.Core">0.3</RG_TemperateGrassland>
+				<RG_AspenForest MayRequire="ReGrowth.BOTR.AspenForest">0.3</RG_AspenForest>
+				<!-- More Vanilla Biomes -->
+				<ZBiome_AlpineMeadow MayRequire="zylle.MoreVanillaBiomes">0.5</ZBiome_AlpineMeadow>
+				<!-- Winter taiga -->
+				<WinterTaiga MayRequire="reel.FrozenForest">0.5</WinterTaiga>
+				<!-- Biome Expansion - Redwood forest -->
+				<RedwoodForest MayRequire="kikohi.BERF">0.3</RedwoodForest>
 			</wildBiomes>
 		</race>
 		<tradeTags>
 			<li>AnimalExotic</li>
+			<li>ESCP_AnimalOrsimer</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef Name="ESCP_Echatere" ParentName="AnimalKindBase">

@@ -125,11 +125,19 @@
 				<AridShrubland>0.05</AridShrubland>
 				<BorealForest>0.05</BorealForest>
 				<TemperateForest>0.07</TemperateForest>
+				<!-- Regrowth -->
+				<RG_TemperateGrassland MayRequire="ReGrowth.BOTR.Core">0.07</RG_TemperateGrassland>
+				<RG_AspenForest MayRequire="ReGrowth.BOTR.AspenForest">0.05</RG_AspenForest>
+				<!-- MorrowRim -->
+				<MorrowRim_Grazelands MayRequire="SirMashedPotato.MorrowRim.Grazelands">0.05</MorrowRim_Grazelands>
+				<!-- Advanced Biomes -->
+				<Savanna MayRequire="Mlie.AdvancedBiomes">0.05</Savanna>
 			</wildBiomes>
 		</race>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
+			<li>ESCP_AnimalOrsimer</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
