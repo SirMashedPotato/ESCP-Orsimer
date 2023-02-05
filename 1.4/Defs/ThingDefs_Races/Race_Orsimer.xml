@@ -219,11 +219,9 @@
 					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
 					<headOffset>(0.0, 0.0)</headOffset>
 					<bodyAddons>
-						<!-- tusks, male -->
+						<!-- =====[Tusks]===== -->
 						<li>
 							<path>Things/Pawn/Humanlike/ESCP_Orsimer/Tusk/Tusk</path>
-							<drawForMale>true</drawForMale>
-							<drawForFemale>true</drawForFemale>
 							<colorChannel>tusk</colorChannel>
 							<bodyPart>Jaw</bodyPart>
 							<drawnInBed>true</drawnInBed>
@@ -239,14 +237,38 @@
 							<hiddenUnderApparelTag>
 								<li>ESCP_CoverOrsimerTusks</li>
 							</hiddenUnderApparelTag>
+
 							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
 								<north>
-									<layerOffset>-0.28</layerOffset>
+									<layerOffset>-0.273</layerOffset>
 								</north>
+								<east>
+									<headTypes>
+										<ESCP_HeadMerWideFace_Female_Average_Normal>(0,0)</ESCP_HeadMerWideFace_Female_Average_Normal>
+										<ESCP_HeadMerWideFace_Female_Average_Pointy>(0,0)</ESCP_HeadMerWideFace_Female_Average_Pointy>
+										<ESCP_HeadMerWideFace_Female_Average_Wide>(0,0)</ESCP_HeadMerWideFace_Female_Average_Wide>
+										<ESCP_HeadMerWideFace_Female_Narrow_Normal>(0.05,0)</ESCP_HeadMerWideFace_Female_Narrow_Normal>
+										<ESCP_HeadMerWideFace_Female_Narrow_Pointy>(0.05,0)</ESCP_HeadMerWideFace_Female_Narrow_Pointy>
+										<ESCP_HeadMerWideFace_Female_Narrow_Wide>(0.05,0)</ESCP_HeadMerWideFace_Female_Narrow_Wide>
+										
+										<ESCP_HeadMerWideFace_Male_Average_Normal>(0,0)</ESCP_HeadMerWideFace_Male_Average_Normal>
+										<ESCP_HeadMerWideFace_Male_Average_Pointy>(0,0)</ESCP_HeadMerWideFace_Male_Average_Pointy>
+										<ESCP_HeadMerWideFace_Male_Average_Wide>(0,0)</ESCP_HeadMerWideFace_Male_Average_Wide>
+										<ESCP_HeadMerWideFace_Male_Narrow_Normal>(0.05,0)</ESCP_HeadMerWideFace_Male_Narrow_Normal>
+										<ESCP_HeadMerWideFace_Male_Narrow_Pointy>(0.05,0)</ESCP_HeadMerWideFace_Male_Narrow_Pointy>
+										<ESCP_HeadMerWideFace_Male_Narrow_Wide>(0.05,0)</ESCP_HeadMerWideFace_Male_Narrow_Wide>
+									</headTypes>
+									<layerOffset>-0.273</layerOffset>
+								</east>
 							</offsets>
+							
+							<debug>false</debug>
 						</li>
 						
-						<!-- horns, male only -->
+						<!-- =====[Horns, male only]===== -->
 						<li>
 							<path>Things/Pawn/Humanlike/ESCP_Orsimer/Horn/Horn</path>
 							<drawForMale>true</drawForMale>
@@ -266,10 +288,25 @@
 								<li>ESCP_CoverOrsimerHorns</li>
 							</hiddenUnderApparelTag>
 							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
 								<north>
-									<layerOffset>-0.28</layerOffset>
+									<layerOffset>-0.273</layerOffset>
 								</north>
+								<east>
+									<headTypes>
+										<ESCP_HeadMerWideFace_Male_Average_Normal>(0,0)</ESCP_HeadMerWideFace_Male_Average_Normal>
+										<ESCP_HeadMerWideFace_Male_Average_Pointy>(0,0)</ESCP_HeadMerWideFace_Male_Average_Pointy>
+										<ESCP_HeadMerWideFace_Male_Average_Wide>(0,0)</ESCP_HeadMerWideFace_Male_Average_Wide>
+										<ESCP_HeadMerWideFace_Male_Narrow_Normal>(0.05,0)</ESCP_HeadMerWideFace_Male_Narrow_Normal>
+										<ESCP_HeadMerWideFace_Male_Narrow_Pointy>(0.05,0)</ESCP_HeadMerWideFace_Male_Narrow_Pointy>
+										<ESCP_HeadMerWideFace_Male_Narrow_Wide>(0.05,0)</ESCP_HeadMerWideFace_Male_Narrow_Wide>
+									</headTypes>
+									<layerOffset>-0.273</layerOffset>
+								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
