@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[ESCP_GeneInheritedBonus_Altmer]========== -->
+	<!-- ==========[ESCP_GeneInheritedBonus_Orsimer]========== -->
 	<GeneDef ParentName="ESCP_InheritedRacialBonus_Base">
 		<defName>ESCP_GeneInheritedBonus_Orsimer</defName>
 		<label>Orsimer blood</label>

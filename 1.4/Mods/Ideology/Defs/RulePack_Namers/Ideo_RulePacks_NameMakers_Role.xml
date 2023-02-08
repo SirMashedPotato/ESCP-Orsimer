@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ESCP_Orsimer_NamerRoleBerserkerSpecialist</defName>
+		<include>
+			<li>NamerRoleSpecialistUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_roleName->berserker</li>
+				<li>firstPart->roar</li>
+				<li>firstPart->fist</li>
+				<li>firstPart->bruise</li>
+				<li>firstPart->blade</li>
+				<li>firstPart->brawl</li>
+				<li>firstPart->knuckle</li>
+				<li>firstPart->spear</li>
+				<li>firstPart->sword</li>
+				<li>firstPart->club</li>
+				<li>firstPart->edge</li>
+				<li>firstPart->cut</li>
+				<li>firstPart->smash</li>
+				<li>firstPart->crush</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

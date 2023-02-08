@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_OrsimerRole]========== -->
+	<AbilityGroupDef>
+		<defName>ESCP_OrsimerIdeoRole</defName>
+		<cooldownTicks>600000</cooldownTicks>
+	</AbilityGroupDef>
+	<!-- ==========[ESCP_OrsimerBerserkerAbility_Base]========== -->
+	<AbilityDef Name="ESCP_OrsimerBerserkerAbility_Base" Abstract="True">
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<groupDef>ESCP_OrsimerIdeoRole</groupDef>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<statBases>
+			<Ability_Duration>1000</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+	<!-- ==========[ESCP_OrsimerBerserkerCalling]========== -->
+	<AbilityDef ParentName="ESCP_OrsimerBerserkerAbility_Base">
+		<defName>ESCP_Orsimer_BerserkerCalling</defName>
+		<label>berserker calling</label>
+		<description>Ignites the inner fury, and causes all nearby allied Orsimer, including the caster, to enter their berserker rage.\n\nIf a pawn is already in a berserker rage, or recovering from one, the duration will instead be reset.</description>
+		<iconPath>UI/Abilities/ESCP_OrsimerAbilityBeserk</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_OrsimerAbilityBeserk</warmupMoteSocialSymbol>
+		<statBases>
+			<Ability_EffectRadius>5.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<range>5.9</range>
+		</verbProperties>
+		<comps>
+			<li Class="ESCP_RaceTools.CompProperties_AbilityEnterBeserk">
+				<applyToSelf>true</applyToSelf>
+				<raceDef>ESCP_OrsimerRace</raceDef>
+				<screenShakeIntensity>5</screenShakeIntensity>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<!-- ==========[ESCP_OrsimerBerserkerCalling]========== -->
+	<AbilityDef ParentName="ESCP_OrsimerBerserkerAbility_Base">
+		<defName>ESCP_Orsimer_BerserkerWarCry</defName>
+		<label>berserker war cry</label>
+		<description>Emit a ferocious cry of war, strong enough to shake the earth itself. Any nearby hostile pawns will be temporarily stunned and terrified, increasing the damage they take for 24 hours.</description>
+		<iconPath>UI/Abilities/ESCP_OrsimerAbilityWarCry</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_OrsimerAbilityWarCry</warmupMoteSocialSymbol>
+		<statBases>
+			<Ability_EffectRadius>9.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<range>9.9</range>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>ESCP_Orsimer_BeserkerWarCryHediff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>false</replaceExisting>
+				<screenShakeIntensity>5</screenShakeIntensity>
+			</li>
+			<li Class="ESCP_RaceTools.CompProperties_AbilityDoDamage">
+				<damageDef>Stun</damageDef>
+				<damageAmount>10</damageAmount>
+				<onlyHostile>true</onlyHostile>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<!-- ==========[ESCP_Orsimer_BeserkerWarCryHediff]========== -->
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>ESCP_Orsimer_BeserkerWarCryHediff</defName>
+		<label>terrified</label>
+		<description>This pawn has been terrified by the berserker war cry of an Orsimer. It will take increased damage from all sources, and is more likely to succumb to terror.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+		  <li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>True</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<isBad>true</isBad>
+		<stages>
+		  <li>
+			<statOffsets>
+			  <IncomingDamageFactor>0.25</IncomingDamageFactor>
+			  <MentalBreakThreshold>0.25</MentalBreakThreshold>
+			  <PainShockThreshold>-0.25</PainShockThreshold>
+			</statOffsets>
+		  </li>
+		</stages>
+	</HediffDef>
+</Defs>
