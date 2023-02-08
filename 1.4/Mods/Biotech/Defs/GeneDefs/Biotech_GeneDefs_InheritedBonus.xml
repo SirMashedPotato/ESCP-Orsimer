@@ -8,10 +8,10 @@
 		<iconPath>UI/Icons/Genes/ESCP_InheritedBonus/ESCP_GeneInheritedBonus_Orsimer</iconPath>
 		<statOffsets>
 			<PsychicSensitivity>-0.15</PsychicSensitivity>
-			<SocialImpact>-0.1</SocialImpact>
+			<SocialImpact>-0.15</SocialImpact>
 			<GlobalLearningFactor>-0.05</GlobalLearningFactor>
-			<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
-			<MeleeDamageFactor>0.1</MeleeDamageFactor>
+			<GeneralLaborSpeed>0.05</GeneralLaborSpeed>
+			<MeleeDamageFactor>0.05</MeleeDamageFactor>
 		</statOffsets>
 		<displayOrderInCategory>10</displayOrderInCategory>
 	</GeneDef>

@@ -12,7 +12,6 @@
 			<li>Neolithic</li>
 			<li>Medieval</li>
 			<li>MedievalBasic</li>
-			<li>ESCP_OrsimerTotem_Basic</li>
 		</apparelTags>
 		<backstoryFiltersOverride>
 			<li>
@@ -112,7 +111,6 @@
 		<apparelMoney>200~300</apparelMoney>
 		<apparelRequired>
 			<li>Apparel_WarVeil</li>
-			<li>ESCP_Apparel_TotemFuror</li>
 		</apparelRequired>
 		<weaponMoney>150~150</weaponMoney>
 		<weaponTags>
@@ -194,7 +192,6 @@
 		<apparelMoney>200~550</apparelMoney>
 		<apparelRequired>
 			<li>Apparel_WarMask</li>
-			<li>ESCP_Apparel_TotemWroth</li>
 		</apparelRequired>
 		<weaponMoney>300~300</weaponMoney>
 		<weaponTags>
@@ -238,7 +235,6 @@
 		<apparelMoney>200~550</apparelMoney>
 		<apparelRequired>
 			<li>Apparel_WarMask</li>
-			<li>ESCP_Apparel_TotemFury</li>
 		</apparelRequired>
 		<weaponMoney>250~250</weaponMoney>
 		<weaponTags>
@@ -266,9 +262,6 @@
 			<li>Apparel_TribalHeaddress</li>
 			<li>Apparel_PlateArmor</li>
 		</apparelRequired>
-		<apparelTags>
-		  <li>ESCP_OrsimerTotem_Advanced</li>
-		</apparelTags>
 		<requiredWorkTags>
 			<li>Violent</li>
 		</requiredWorkTags>

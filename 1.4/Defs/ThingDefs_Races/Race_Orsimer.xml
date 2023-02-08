@@ -3,9 +3,9 @@
 	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_MerWideFace">
 		<defName>ESCP_OrsimerRace</defName>
 		<label>Orsimer</label>
-		<description>An elven race, though many consider them to be more closely related to goblins or trolls, likely due to their appearance and previous animalistic nature. Orsimer lack many features typical of the other elven races, angular faces, extended lifespans, increased psychic sensitivity and heightened intelligence.\n\nThey make up for these losses with a strong punch and durable body, capable of dishing out, and taking, severe beatings. It is best not to enter a fist-fight with an Orsimer, for even if you are capable of throwing good punches, the Orsimer will just enter a berserker rage, ignoring all pain and dishing out great deals of it.\n\n&lt;color=#E5E54C&gt;Tainted Mer Blood&lt;/color&gt;\nPsychic sensitivity is decreased by 30%\nFertility is decreased by 50%.\nBase health scale is increased by 20%.\n\n&lt;color=#E5E54C&gt;Pariah Folk&lt;/color&gt;\nSocial impact is reduced by 20%\nGlobal learning factor is reduced by 10%\nGeneral labour speed is increased by 20%.\n\n&lt;color=#E5E54C&gt;Children of Mauloch&lt;/color&gt;\nBase body size is increased by 10%.\nMelee damage factor is increased by 20%.\nThe thought for wearing tainted apparel is negated.\nAble to enter a berserker rage when pain is high enough.</description>
+		<description>An elven race, though many consider them to be more closely related to goblins or trolls, likely due to their appearance and previous animalistic nature. Orsimer lack many features typical of the other elven races, angular faces, extended lifespans, increased psychic sensitivity and heightened intelligence.\n\nThey make up for these losses with a strong punch and durable body, capable of dishing out, and taking, severe beatings. It is best not to enter a fist-fight with an Orsimer, for even if you are capable of throwing good punches, the Orsimer will just enter a berserker rage, ignoring all pain and dishing out great deals of it.\n\n&lt;color=#E5E54C&gt;Tainted Mer Blood&lt;/color&gt;\nPsychic sensitivity is decreased by 30%\nFertility is decreased by 50%.\nBase health scale is increased by 20%.\n\n&lt;color=#E5E54C&gt;Pariah Folk&lt;/color&gt;\nSocial impact is decreased by 30%\nGlobal learning factor is decreased by 10%\nGeneral labour speed is increased by 10%.\n\n&lt;color=#E5E54C&gt;Children of Mauloch&lt;/color&gt;\nBase body size is increased by 10%.\nMelee damage factor is increased by 10%.\nThe thought for wearing tainted apparel is negated.\nAble to enter a berserker rage when pain is high enough.</description>
 		<descriptionHyperlinks>
-			<HediffDef>ESCP_BeserkerRage</HediffDef>
+			<HediffDef>ESCP_BerserkerRage</HediffDef>
 			<GeneDef MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Orsimer</GeneDef>
 		</descriptionHyperlinks>
 		<modExtensions>
@@ -16,28 +16,15 @@
 		</modExtensions>
 		<statBases>
 			<PsychicSensitivity>0.7</PsychicSensitivity>
-			<SocialImpact>0.8</SocialImpact>
+			<SocialImpact>0.7</SocialImpact>
 			<GlobalLearningFactor>0.9</GlobalLearningFactor>
-			<GeneralLaborSpeed>1.2</GeneralLaborSpeed>
-			<MeleeDamageFactor MayRequire="Ludeon.RimWorld.Biotech">1.2</MeleeDamageFactor>
+			<GeneralLaborSpeed>1.1</GeneralLaborSpeed>
+			<MeleeDamageFactor MayRequire="Ludeon.RimWorld.Biotech">1.1</MeleeDamageFactor>
 		</statBases>
 		<comps>
 			<li Class="ESCP_RaceTools.CompProperties_BeserkerRage">
-				<hediffDef>ESCP_BeserkerRage</hediffDef>
+				<hediffDef>ESCP_BerserkerRage</hediffDef>
 				<recordDef>ESCP_OrsimerEnrages</recordDef>
-				<enableAugments>true</enableAugments>
-				<totems>
-					<li>ESCP_Apparel_TotemWroth</li>
-					<li>ESCP_Apparel_TotemFury</li>
-					<li>ESCP_Apparel_TotemFuror</li>
-					<li>ESCP_Apparel_TotemArchotech</li>
-				</totems>
-				<augments>
-					<li>ESCP_BeserkerWroth</li>
-					<li>ESCP_BeserkerFury</li>
-					<li>ESCP_BeserkerFuror</li>
-					<li>ESCP_ArchotechsRage</li>
-				</augments>
 			</li>
 		</comps>
 		<race>
@@ -71,7 +58,10 @@
 				</disallowedTraits>
 				<allowHumanBios>false</allowHumanBios>
 				<humanRecipeImport>true</humanRecipeImport>
+				<immuneToAge>false</immuneToAge>
 				<alienPartGenerator>
+					<getsGreyAt>70</getsGreyAt>
+					<oldHairAgeRange IgnoreIfNoMatchingField="True">60~80</oldHairAgeRange>
 					<colorChannels>
 						<li>
 							<name>skin</name>
@@ -320,13 +310,6 @@
 					<li>DeadMansApparel</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
-			<raceRestriction>
-				<apparelList>
-					<li>ESCP_Apparel_TotemFury</li>
-					<li>ESCP_Apparel_TotemWroth</li>
-					<li>ESCP_Apparel_TotemFuror</li>
-				</apparelList>
-			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>

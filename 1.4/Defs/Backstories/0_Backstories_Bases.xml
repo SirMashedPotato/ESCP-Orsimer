@@ -21,4 +21,13 @@
 			<li>ESCP_OrsimerBackstory_Adulthood</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_Maormer_AdulthoodBackstory_MageBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_AdulthoodBase" Name="ESCP_Orsimer_Adulthood_WarriorBase" Abstract="True">
+		<spawnCategories>
+			<li>ESCP_OrsimerBackstory_AdulthoodWarrior</li>
+		</spawnCategories>
+		<forcedHediffs>
+			<li>ESCP_ViolentMeditationHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
 </Defs>

@@ -1,319 +1,66 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
- 
 	<HediffDef>
-		<defName>ESCP_BeserkerRage</defName>
-		<label>beserker rage</label>
-		<description>Orsimer are able to enter an enraged state during moments of extreme danger, often caused by intense pain. This state increases moving, manipulation and greatly reduces pain, though fogs the mind, decreasing sight and hearing.\n\nOrsimer are left slightly drained after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while in a drained state, which will last 11 hours.</description>
+		<defName>ESCP_BerserkerRage</defName>
+		<label>berserker rage</label>
+		<description>Orsimer are able to enter an enraged state during moments of extreme danger, often caused by intense pain. This state fortifies movement speed and melee damage, and greatly reduces pain. Though it also fogs the mind, draining sight and hearing.\n\nOrsimer are left fatigued after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while they are fatigued, which will last 11 hours.</description>
+		<descriptionShort>Orsimer are able to enter an enraged state during moments of extreme danger, often caused by intense pain. Afterwards they are left fatigued, preventing them from enraging again until their body recovers.</descriptionShort>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(1.0, 0.4, 0.2)</defaultLabelColor>
 		<makesSickThought>false</makesSickThought>
 		<maxSeverity>1</maxSeverity>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<comps>
-		  <li Class="HediffCompProperties_Immunizable">
-			<severityPerDayNotImmune>-2.0</severityPerDayNotImmune>
-		  </li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>-2.0</severityPerDayNotImmune>
+			</li>
 		</comps>
 		<stages>
-		  <li>
-			<label>drained</label>
-			<minSeverity>0.0</minSeverity>
-			<capMods>
-			  <li>
-				<capacity>BloodFiltration</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			  <li>
-				<capacity>BloodPumping</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			  <li>
-				<capacity>Metabolism</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			</capMods>
-		  </li>
-		  <li>
-			<label>enraged</label>
-			<minSeverity>0.8</minSeverity>
-			<painOffset>-2.0</painOffset>
-			<capMods>
-			  <li>
-				<capacity>Moving</capacity>
-				<offset>1.0</offset>
-			  </li>
-			  <li>
-				<capacity>Manipulation</capacity>
-				<offset>1.0</offset>
-			  </li>
-			  <li>
-				<capacity>Sight</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			  <li>
-				<capacity>Hearing</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			</capMods>
-		  </li>
+			<li>
+				<label>fatigued</label>
+				<minSeverity>0.0</minSeverity>
+				<restFallFactorOffset>1.15</restFallFactorOffset>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>enraged</label>
+				<minSeverity>0.8</minSeverity>
+				<painFactor>0.3</painFactor>
+				<statOffsets>
+					<InjuryHealingFactor>0.15</InjuryHealingFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
 		</stages>
 	</HediffDef>
-
-	<HediffDef>
-		<defName>ESCP_BeserkerWroth</defName>
-		<label>beserker wroth</label>
-		<description>A modified version of beserker rage that sacrifices moving for manipulation, caused by wearing a totem of wroth.\n\nOrsimer are left slightly drained after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while in a drained state, which will last 11 hours.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(1.0, 0.4, 0.2)</defaultLabelColor>
-		<makesSickThought>false</makesSickThought>
-		<maxSeverity>1</maxSeverity>
-		<scenarioCanAdd>true</scenarioCanAdd>
-		<comps>
-		  <li Class="HediffCompProperties_Immunizable">
-			<severityPerDayNotImmune>-2.0</severityPerDayNotImmune>
-		  </li>
-		</comps>
-		<stages>
-		  <li>
-			<label>drained</label>
-			<minSeverity>0.0</minSeverity>
-			<capMods>
-			  <li>
-				<capacity>BloodFiltration</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			  <li>
-				<capacity>BloodPumping</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			  <li>
-				<capacity>Metabolism</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			</capMods>
-		  </li>
-		  <li>
-			<label>enraged</label>
-			<minSeverity>0.8</minSeverity>
-			<painOffset>-2.0</painOffset>
-			<!--
-			<statOffsets>
-				<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-				<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-			</statOffsets>
-			-->
-			<capMods>
-			  <li>
-				<capacity>Moving</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			  <li>
-				<capacity>Manipulation</capacity>
-				<offset>1.5</offset>
-			  </li>
-			  <li>
-				<capacity>Sight</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			  <li>
-				<capacity>Hearing</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			</capMods>
-		  </li>
-		</stages>
-	</HediffDef>
-	
-	<HediffDef>
-		<defName>ESCP_BeserkerFury</defName>
-		<label>beserker fury</label>
-		<description>A modified version of beserker rage that sacrifices manipulation for moving, caused by wearing a totem of fury.\n\nOrsimer are left slightly drained after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while in a drained state, which will last 11 hours.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(1.0, 0.4, 0.2)</defaultLabelColor>
-		<makesSickThought>false</makesSickThought>
-		<maxSeverity>1</maxSeverity>
-		<scenarioCanAdd>true</scenarioCanAdd>
-		<comps>
-		  <li Class="HediffCompProperties_Immunizable">
-			<severityPerDayNotImmune>-2.0</severityPerDayNotImmune>
-		  </li>
-		</comps>
-		<stages>
-		  <li>
-			<label>drained</label>
-			<minSeverity>0.0</minSeverity>
-			<capMods>
-			  <li>
-				<capacity>BloodFiltration</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			  <li>
-				<capacity>BloodPumping</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			  <li>
-				<capacity>Metabolism</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			</capMods>
-		  </li>
-		  <li>
-			<label>enraged</label>
-			<minSeverity>0.8</minSeverity>
-			<painOffset>-2.0</painOffset>
-			<!--
-			<statOffsets>
-				<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-				<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-			</statOffsets>
-			-->
-			<capMods>
-			  <li>
-				<capacity>Moving</capacity>
-				<offset>1.5</offset>
-			  </li>
-			  <li>
-				<capacity>Manipulation</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			  <li>
-				<capacity>Sight</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			  <li>
-				<capacity>Hearing</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			</capMods>
-		  </li>
-		</stages>
-	</HediffDef>
-	
-	<HediffDef>
-		<defName>ESCP_BeserkerFuror</defName>
-		<label>beserker furor</label>
-		<description>A modified version of beserker rage that sacrifices manipulation and moving for resistance, caused by wearing a totem of furor.\n\nOrsimer are left slightly drained after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while in a drained state, which will last 11 hours.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(1.0, 0.4, 0.2)</defaultLabelColor>
-		<makesSickThought>false</makesSickThought>
-		<maxSeverity>1</maxSeverity>
-		<scenarioCanAdd>true</scenarioCanAdd>
-		<comps>
-		  <li Class="HediffCompProperties_Immunizable">
-			<severityPerDayNotImmune>-2.0</severityPerDayNotImmune>
-		  </li>
-		</comps>
-		<stages>
-		  <li>
-			<label>drained</label>
-			<minSeverity>0.0</minSeverity>
-			<capMods>
-			  <li>
-				<capacity>BloodFiltration</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			  <li>
-				<capacity>BloodPumping</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			  <li>
-				<capacity>Metabolism</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			</capMods>
-		  </li>
-		  <li>
-			<label>enraged</label>
-			<minSeverity>0.8</minSeverity>
-			<painOffset>-2.0</painOffset>
-			<statOffsets>
-				<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-				<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-			</statOffsets>
-			<capMods>
-			  <li>
-				<capacity>Moving</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			  <li>
-				<capacity>Manipulation</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			  <li>
-				<capacity>Sight</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			  <li>
-				<capacity>Hearing</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			</capMods>
-		  </li>
-		</stages>
-	</HediffDef>
-	
-	<HediffDef>
-		<defName>ESCP_ArchotechsRage</defName>
-		<label>archotech's rage</label>
-		<description>A modified version of beserker rage that fortifies durability, moving and manipulation. Caused by wearing a totem of the archotech.\n\nOrsimer are left slightly drained after the rage wears off, decreasing blood filtration, blood pumping and metabolism. They can not enter an enraged state while in a drained state, which will last 11 hours.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(1.0, 0.4, 0.2)</defaultLabelColor>
-		<makesSickThought>false</makesSickThought>
-		<maxSeverity>1</maxSeverity>
-		<scenarioCanAdd>true</scenarioCanAdd>
-		<comps>
-		  <li Class="HediffCompProperties_Immunizable">
-			<severityPerDayNotImmune>-2.0</severityPerDayNotImmune>
-		  </li>
-		</comps>
-		<stages>
-		  <li>
-			<label>drained</label>
-			<minSeverity>0.0</minSeverity>
-			<capMods>
-			  <li>
-				<capacity>BloodFiltration</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			  <li>
-				<capacity>BloodPumping</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			  <li>
-				<capacity>Metabolism</capacity>
-				<offset>-0.1</offset>
-			  </li>
-			</capMods>
-		  </li>
-		  <li>
-			<label>enraged</label>
-			<minSeverity>0.8</minSeverity>
-			<painOffset>-2.0</painOffset>
-			<statOffsets>
-				<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-				<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-			</statOffsets>
-			<capMods>
-			  <li>
-				<capacity>Moving</capacity>
-				<offset>1.25</offset>
-			  </li>
-			  <li>
-				<capacity>Manipulation</capacity>
-				<offset>1.25</offset>
-			  </li>
-			  <li>
-				<capacity>Sight</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			  <li>
-				<capacity>Hearing</capacity>
-				<offset>-0.25</offset>
-			  </li>
-			</capMods>
-		  </li>
-		</stages>
-	</HediffDef>
-
 </Defs>
