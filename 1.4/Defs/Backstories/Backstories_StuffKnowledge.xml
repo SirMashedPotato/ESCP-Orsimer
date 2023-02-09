@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_OrsimerBackstory_Adulthood_StuffKnowledgeOrichalcum]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_AdulthoodBase">
+		<defName>ESCP_OrsimerBackstory_Adulthood_StuffKnowledgeOrichalcum</defName>
+		<title>master orichalcum smith</title>
+		<titleShort>master smith</titleShort>
+		<baseDesc>[PAWN_nameDef] had trained under the watchful eye of one of the best smiths in Orsinium, who in turn had also trained been trained by a master smith. Thanks to this opportunity, [PAWN_nameDef] followed in the footsteps of [PAWN_possessive] master, and became highly skilled at working orichalcum. A truly temperamental metal, just like [PAWN_nameDef].</baseDesc>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>12</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>Caring</li>
+		</workDisables>
+		<maleCommonality>5</maleCommonality>
+		<femaleCommonality>5</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

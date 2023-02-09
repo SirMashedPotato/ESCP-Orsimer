@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_OrsimerBackstory_Adulthood_CraftingA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_AdulthoodBase">
+		<defName>ESCP_OrsimerBackstory_Adulthood_CraftingA</defName>
+		<title>intricate Orcish smith</title>
+		<titleShort>smith</titleShort>
+		<baseDesc>[PAWN_nameDef] was rather skilled at crafting traditional Orsimer armour. Not the primitive stuff the less experienced Orsimer make, but instead finely crafted armour fit for a warrior of stature. Needless to say [PAWN_possessive] crafts were more popular with Imperials than with Orsimer.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_OrsimerBackstory_Adulthood_CraftingB]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_AdulthoodBase">
+		<defName>ESCP_OrsimerBackstory_Adulthood_CraftingB</defName>
+		<title>simple Orcish smith</title>
+		<titleShort>smith</titleShort>
+		<baseDesc>[PAWN_nameDef] made armour for [PAWN_possessive] stronghold. Not the needlessly fancy stuff, but the simple stuff that protects you, and does a good job at it. There was also the bonus that this armour was easy to make, which meant [PAWN_nameDef] often had quite a bit of spare time. [PAWN_pronoun] usually spent this time roasting meat in the forge.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Cooking</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>
