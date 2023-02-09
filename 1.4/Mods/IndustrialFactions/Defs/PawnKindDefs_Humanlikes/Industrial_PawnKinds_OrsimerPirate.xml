@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Industrial_OrsimerDrifter]========== -->
+	<PawnKindDef ParentName="DrifterBase">
+		<defName>ESCP_Industrial_OrsimerDrifter</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerScavenger]========== -->
+	<PawnKindDef ParentName="ScavengerBase">
+		<defName>ESCP_Industrial_OrsimerScavenger</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerThrasher]========== -->
+	<PawnKindDef ParentName="ThrasherBase">
+		<defName>ESCP_Industrial_OrsimerThrasher</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerPirate]========== -->
+	<PawnKindDef ParentName="PirateKindBase">
+		<defName>ESCP_Industrial_OrsimerPirate</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Industrial_OrsimerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="ESCP_MinerPawnKindBase_Industrial" MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>ESCP_Industrial_OrsimerMiner</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="ESCP_HunterPawnKindBase_Industrial" MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>ESCP_Industrial_OrsimerHunter</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="ESCP_LoggerPawnKindBase_Industrial" MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>ESCP_Industrial_OrsimerLogger</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="ESCP_FarmerPawnKindBase_Industrial" MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>ESCP_Industrial_OrsimerFarmer</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>

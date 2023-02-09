@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="ESCP_NonPlayerFactionBase_IndustrialPirate" Name="ESCP_Industrial_OrsimerNonPlayerFaction_Base" Abstract="True">
+		<modExtensions>
+			<li Class="ESCP_RaceTools.SettlementPreference">
+				<chance>1.0</chance>
+				<useTemperatureRange>true</useTemperatureRange>
+				<temperatureRangeMin>-30</temperatureRangeMin>
+				<temperatureRangeMax>50</temperatureRangeMax>
+				<useElevationRange>true</useElevationRange>
+				<elevationRangeMin>500</elevationRangeMin>
+				<elevationRangeMax>1200</elevationRangeMax>
+				<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
+			</li>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_OrsimerFaction</li>
+					<li>ESCP_OrsimerFactionNonPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+		<settlementGenerationWeight>0.5</settlementGenerationWeight>
+		<leaderTitle>high chieftain</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerPirate</factionIconPath>
+		<factionNameMaker>ESCP_Orsimer_NamerFactionRaider</factionNameMaker>
+		<settlementNameMaker>ESCP_Orsimer_NamerSettlement</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_OrsimerCulture</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<ESCP_Structure_OriginMauloch MayRequire="Ludeon.RimWorld.Ideology">8</ESCP_Structure_OriginMauloch>
+			<ESCP_Structure_OriginTrinimac MayRequire="Ludeon.RimWorld.Ideology">4</ESCP_Structure_OriginTrinimac>
+		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+		</requiredMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		</disallowedPrecepts>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<ESCP_Industrial_OrsimerDrifter>10</ESCP_Industrial_OrsimerDrifter>
+					<ESCP_Industrial_OrsimerThrasher>3</ESCP_Industrial_OrsimerThrasher>
+					<ESCP_Industrial_OrsimerScavenger>10</ESCP_Industrial_OrsimerScavenger>
+					<ESCP_Industrial_OrsimerPirate>10</ESCP_Industrial_OrsimerPirate>
+					<ESCP_Industrial_OrsimerGrenadier_EMP>0.25</ESCP_Industrial_OrsimerGrenadier_EMP>
+					<ESCP_Industrial_OrsimerGrenadier_Smoke>0.25</ESCP_Industrial_OrsimerGrenadier_Smoke>
+					<ESCP_Industrial_OrsimerGrenadier_Destructive>2</ESCP_Industrial_OrsimerGrenadier_Destructive>
+					<ESCP_Industrial_OrsimerMercenary_Gunner>10</ESCP_Industrial_OrsimerMercenary_Gunner>
+					<ESCP_Industrial_OrsimerMercenary_Heavy>6</ESCP_Industrial_OrsimerMercenary_Heavy>
+					<ESCP_Industrial_OrsimerMercenary_Slasher>3</ESCP_Industrial_OrsimerMercenary_Slasher>
+					<ESCP_Industrial_OrsimerMercenary_Sniper>7</ESCP_Industrial_OrsimerMercenary_Sniper>
+					<ESCP_Industrial_OrsimerMercenary_Elite>10</ESCP_Industrial_OrsimerMercenary_Elite>
+					<ESCP_Industrial_OrsimerPirateBoss>5</ESCP_Industrial_OrsimerPirateBoss>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee-only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<ESCP_Industrial_OrsimerThrasher>10</ESCP_Industrial_OrsimerThrasher>
+					<ESCP_Industrial_OrsimerMercenary_Slasher>10</ESCP_Industrial_OrsimerMercenary_Slasher>
+					<PirateBoss>5</PirateBoss>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<ESCP_Industrial_OrsimerScavenger>10</ESCP_Industrial_OrsimerScavenger>
+					<ESCP_Industrial_OrsimerPirate>10</ESCP_Industrial_OrsimerPirate>
+					<ESCP_Industrial_OrsimerGrenadier_EMP>0.25</ESCP_Industrial_OrsimerGrenadier_EMP>
+					<ESCP_Industrial_OrsimerGrenadier_Smoke>0.25</ESCP_Industrial_OrsimerGrenadier_Smoke>
+					<ESCP_Industrial_OrsimerGrenadier_Destructive>2</ESCP_Industrial_OrsimerGrenadier_Destructive>
+					<ESCP_Industrial_OrsimerMercenary_Gunner>10</ESCP_Industrial_OrsimerMercenary_Gunner>
+					<ESCP_Industrial_OrsimerMercenary_Heavy>6</ESCP_Industrial_OrsimerMercenary_Heavy>
+					<ESCP_Industrial_OrsimerMercenary_Sniper>7</ESCP_Industrial_OrsimerMercenary_Sniper>
+					<ESCP_Industrial_OrsimerMercenary_Elite>10</ESCP_Industrial_OrsimerMercenary_Elite>
+					<ESCP_Industrial_OrsimerPirateBoss>5</ESCP_Industrial_OrsimerPirateBoss>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, explosives with ranged mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>15</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<ESCP_Industrial_OrsimerGrenadier_EMP>0.5</ESCP_Industrial_OrsimerGrenadier_EMP>
+					<ESCP_Industrial_OrsimerGrenadier_Smoke>0.5</ESCP_Industrial_OrsimerGrenadier_Smoke>
+					<ESCP_Industrial_OrsimerGrenadier_Destructive>10</ESCP_Industrial_OrsimerGrenadier_Destructive>
+					<ESCP_Industrial_OrsimerMercenary_Gunner>1</ESCP_Industrial_OrsimerMercenary_Gunner>
+					<ESCP_Industrial_OrsimerMercenary_Heavy>10</ESCP_Industrial_OrsimerMercenary_Heavy>
+					<ESCP_Industrial_OrsimerMercenary_Elite>1</ESCP_Industrial_OrsimerMercenary_Elite>
+					<ESCP_Industrial_OrsimerPirateBoss>1</ESCP_Industrial_OrsimerPirateBoss>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, snipers only -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<ESCP_Industrial_OrsimerMercenary_Sniper>10</ESCP_Industrial_OrsimerMercenary_Sniper>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, drifters only (very rare) -->
+				<kindDef>Combat</kindDef>
+				<commonality>2.5</commonality>
+				<maxTotalPoints>1000</maxTotalPoints>
+				<options>
+					<ESCP_Industrial_OrsimerDrifter>10</ESCP_Industrial_OrsimerDrifter>
+				</options>
+			</li>
+			<li>
+				<!-- Base defence, mainly ranged with melee mix-ins -->
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ESCP_Industrial_OrsimerThrasher>3</ESCP_Industrial_OrsimerThrasher>
+					<ESCP_Industrial_OrsimerPirate>10</ESCP_Industrial_OrsimerPirate>
+					<Grenadier_Destructive>2</Grenadier_Destructive>
+					<ESCP_Industrial_OrsimerMercenary_Slasher>3</ESCP_Industrial_OrsimerMercenary_Slasher>
+					<ESCP_Industrial_OrsimerMercenary_Sniper>10</ESCP_Industrial_OrsimerMercenary_Sniper>
+					<ESCP_Industrial_OrsimerMercenary_Gunner>10</ESCP_Industrial_OrsimerMercenary_Gunner>
+					<ESCP_Industrial_OrsimerMercenary_Elite>10</ESCP_Industrial_OrsimerMercenary_Elite>
+					<ESCP_Industrial_OrsimerPirateBoss>10</ESCP_Industrial_OrsimerPirateBoss>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!-- ==========[ESCP_OrsimerNonPlayerFaction_Pirate]========== -->
+	<FactionDef ParentName="ESCP_Industrial_OrsimerNonPlayerFaction_Base">
+		<defName>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defName>
+		<label>Orsimer pirates (industrial)</label>
+		<description>A loose confederation of Orsimer pirate gangs who've agreed to mostly fight outsiders instead of fighting each other.\n\nPirates don't sow, they don't build, and they rarely trade. Driven by a blood-and-honour culture that values personal strength and ruthlessness, they enrich themselves by raiding and robbing their more productive neighbours.\n\nTheir technology level depends mostly on who they've managed to steal from recently. Mostly they carry gunpowder weapons, though some prefer to stab victims at close range.</description>
+		<factionNameMaker>ESCP_Orsimer_NamerFactionRaider</factionNameMaker>
+	</FactionDef>
+</Defs>

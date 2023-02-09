@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Industrial_OrsimerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="VillagerBase">
+		<defName>ESCP_Industrial_OrsimerVillager</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="GuardBase">
+		<defName>ESCP_Industrial_OrsimerTown_Guard</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="TraderBase">
+		<defName>ESCP_Industrial_OrsimerTown_Trader</defName>
+		<xenotypeSet Inherit="False"/>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="CouncilmanBase">
+		<defName>ESCP_Industrial_OrsimerTown_Councilman</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>
