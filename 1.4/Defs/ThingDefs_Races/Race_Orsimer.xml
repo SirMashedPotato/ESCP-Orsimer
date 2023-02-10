@@ -229,12 +229,6 @@
 							</hiddenUnderApparelTag>
 
 							<offsets>
-								<south>
-									<layerOffset>-0.273</layerOffset>
-								</south>
-								<north>
-									<layerOffset>-0.273</layerOffset>
-								</north>
 								<east>
 									<headTypes>
 										<ESCP_HeadMerWideFace_Female_Average_Normal>(0,0)</ESCP_HeadMerWideFace_Female_Average_Normal>
@@ -251,7 +245,6 @@
 										<ESCP_HeadMerWideFace_Male_Narrow_Pointy>(0.05,0)</ESCP_HeadMerWideFace_Male_Narrow_Pointy>
 										<ESCP_HeadMerWideFace_Male_Narrow_Wide>(0.05,0)</ESCP_HeadMerWideFace_Male_Narrow_Wide>
 									</headTypes>
-									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
 							
