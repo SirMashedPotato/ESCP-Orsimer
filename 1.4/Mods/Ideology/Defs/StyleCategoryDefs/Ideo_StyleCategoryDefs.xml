@@ -5,7 +5,7 @@
 		<label>Orsimeri</label>
 		<iconPath>World/WorldObjects/Expanding/ESCP_OrsimerRaider</iconPath>
 		<soundOngoingRitual>RitualSustainer_Totemic</soundOngoingRitual>
-		<ritualVisualEffectDef>Hindu</ritualVisualEffectDef>
+		<ritualVisualEffectDef>ESCP_Orsimeri</ritualVisualEffectDef>
 		<thingDefStyles/>
 	</StyleCategoryDef>
 </Defs>
