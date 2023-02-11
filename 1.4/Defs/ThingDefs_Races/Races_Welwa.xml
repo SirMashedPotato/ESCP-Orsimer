@@ -147,19 +147,22 @@
 		<combatPower>140</combatPower>
 		<ecoSystemWeight>0.45</ecoSystemWeight>
 		<wildGroupSize>3~5</wildGroupSize>
-		<alternateGraphicChance>0.75</alternateGraphicChance>
+		<alternateGraphicChance>1</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
-				<color>(130,80,80)</color>
+				<color>(120,100,100)</color>
 			</li>
 			<li>
-				<color>(115,83,68)</color>
+				<color>(135,103,88)</color>
 			</li>
 			<li>
-				<color>(118,96,84)</color>
+				<color>(138,116,104)</color>
 			</li>
 			<li>
-				<color>(85,66,57)</color>
+				<color>(105,86,77)</color>
+			</li>
+			<li>
+				<color>(115,96,87)</color>
 			</li>
 		</alternateGraphics>
 		<lifeStages>
@@ -169,7 +172,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/ESCP_Welwa/Welwa</texPath>
 					<drawSize>0.85</drawSize>
-					<color>(72,55,48)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/ESCP_Welwa/Dessicated_Welwa</texPath>
@@ -180,7 +182,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/ESCP_Welwa/Welwa</texPath>
 					<drawSize>1.4</drawSize>
-					<color>(72,55,48)</color>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -195,7 +196,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/ESCP_Welwa/Welwa</texPath>
 					<drawSize>1.75</drawSize>
-					<color>(72,55,48)</color>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.15)</offset>
