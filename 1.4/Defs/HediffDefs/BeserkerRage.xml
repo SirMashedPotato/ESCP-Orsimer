@@ -15,7 +15,7 @@
 				<severityPerDayNotImmune>-2.0</severityPerDayNotImmune>
 			</li>
 			<li Class="HediffCompProperties_Effecter">
-				<stateEffecter>Berserk</stateEffecter>
+				<stateEffecter>ESCP_OrsimerBerserkerRage</stateEffecter>
 				<severityIndices>1~1</severityIndices>
 			</li>
 		</comps>
