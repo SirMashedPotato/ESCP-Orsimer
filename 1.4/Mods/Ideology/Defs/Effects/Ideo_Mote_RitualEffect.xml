@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="MoteBase">
-		<defName>ESCP_OrsimerRitualScourge</defName>
+		<defName>ESCP_OrsimerRitualBanner</defName>
 		<thingClass>MoteThrown</thingClass>
 		<altitudeLayer>LightingOverlay</altitudeLayer>
 		<mote>
@@ -13,7 +13,7 @@
 		</mote>
 		<graphicData>
 			<graphicClass>Graphic_Mote</graphicClass>
-			<texPath>Things/Mote/RitualEffects/ESCP_OrsimerRitualScourge</texPath>
+			<texPath>Things/Mote/RitualEffects/ESCP_OrsimerRitualBanner</texPath>
 			<drawSize>(3.4, 3.4)</drawSize>
 		</graphicData>
 	</ThingDef>

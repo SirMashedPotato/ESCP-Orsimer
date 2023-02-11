@@ -12,7 +12,7 @@
 			<li Class="CompProperties_RitualEffectConstantCircle">
 				<radius>7.0</radius>
 				<numCopies>5</numCopies>
-				<moteDef>ESCP_OrsimerRitualScourge</moteDef>
+				<moteDef>ESCP_OrsimerRitualBanner</moteDef>
 				<scalePositionWithRoom>true</scalePositionWithRoom>
 				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
 				<offset>(0, 0, 0.5)</offset>
