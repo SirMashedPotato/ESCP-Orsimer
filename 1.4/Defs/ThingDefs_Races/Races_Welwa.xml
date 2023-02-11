@@ -15,7 +15,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>13</power>
+				<power>10</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -32,7 +32,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>13</power>
+				<power>10</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -49,7 +49,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>10</power>
+				<power>14</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.9</chanceFactor>
