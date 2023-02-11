@@ -146,7 +146,7 @@
 		<race>ESCP_Welwa</race>
 		<combatPower>140</combatPower>
 		<ecoSystemWeight>0.45</ecoSystemWeight>
-		<wildGroupSize>3~5</wildGroupSize>
+		<wildGroupSize>2~5</wildGroupSize>
 		<alternateGraphicChance>1</alternateGraphicChance>
 		<alternateGraphics>
 			<li>

@@ -146,7 +146,7 @@
 		<race>ESCP_Echatere</race>
 		<combatPower>120</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
-		<wildGroupSize>3~5</wildGroupSize>
+		<wildGroupSize>2~5</wildGroupSize>
 		<lifeStages>
 			<li>
 				<label>echalette</label>

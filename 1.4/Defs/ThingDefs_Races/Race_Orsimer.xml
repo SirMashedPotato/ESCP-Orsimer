@@ -38,24 +38,6 @@
 		<alienRace>
 			<generalSettings>
 				<maxDamageForSocialfight>9</maxDamageForSocialfight>
-				<disallowedTraits>
-					<li>
-						<defName>Beauty</defName>
-						<degree>1</degree>
-						<commonalityMale>90</commonalityMale>
-						<commonalityFemale>50</commonalityFemale>
-					</li>
-					<li>
-						<defName>Beauty</defName>
-						<degree>2</degree>
-						<commonalityMale>100</commonalityMale>
-						<commonalityFemale>80</commonalityFemale>
-					</li>
-					<li>
-						<defName>Wimp</defName>
-						<chance>80</chance>
-					</li>
-				</disallowedTraits>
 				<allowHumanBios>false</allowHumanBios>
 				<humanRecipeImport>true</humanRecipeImport>
 				<immuneToAge>false</immuneToAge>
