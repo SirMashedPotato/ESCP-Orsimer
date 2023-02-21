@@ -209,7 +209,6 @@
 							<hiddenUnderApparelTag>
 								<li>ESCP_CoverOrsimerTusks</li>
 							</hiddenUnderApparelTag>
-
 							<offsets>
 								<east>
 									<headTypes>
@@ -219,7 +218,6 @@
 										<ESCP_HeadMerWideFace_Female_Narrow_Normal>(0.05,0)</ESCP_HeadMerWideFace_Female_Narrow_Normal>
 										<ESCP_HeadMerWideFace_Female_Narrow_Pointy>(0.05,0)</ESCP_HeadMerWideFace_Female_Narrow_Pointy>
 										<ESCP_HeadMerWideFace_Female_Narrow_Wide>(0.05,0)</ESCP_HeadMerWideFace_Female_Narrow_Wide>
-										
 										<ESCP_HeadMerWideFace_Male_Average_Normal>(0,0)</ESCP_HeadMerWideFace_Male_Average_Normal>
 										<ESCP_HeadMerWideFace_Male_Average_Pointy>(0,0)</ESCP_HeadMerWideFace_Male_Average_Pointy>
 										<ESCP_HeadMerWideFace_Male_Average_Wide>(0,0)</ESCP_HeadMerWideFace_Male_Average_Wide>
@@ -229,10 +227,8 @@
 									</headTypes>
 								</east>
 							</offsets>
-							
 							<debug>false</debug>
 						</li>
-						
 						<!-- =====[Horns, male only]===== -->
 						<li>
 							<path>Things/Pawn/Humanlike/ESCP_Orsimer/Horn/Horn</path>
@@ -279,6 +275,39 @@
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
+				<!-- =====[Biotech backstory bullshit]===== -->
+				<newbornBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_Newborn</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</newbornBackstoryFilter>
+				<childBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_Child</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</childBackstoryFilter>
+				<adultBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_Adult</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</adultBackstoryFilter>
+				<adultVatBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_VatGrown</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</adultVatBackstoryFilter>
 			</generalSettings>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
