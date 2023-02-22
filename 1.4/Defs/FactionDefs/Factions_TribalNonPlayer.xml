@@ -173,6 +173,13 @@
 					<ESCP_Orsimer_Tribal_Hunter>1</ESCP_Orsimer_Tribal_Hunter>
 				</options>
 			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Orsimer_Tribal_Logger>1</ESCP_Orsimer_Tribal_Logger>
+				</options>
+			</li>
 		</pawnGroupMakers>
 	</FactionDef>
 	<!-- ==========[ESCP_OrsimerNonPlayerFaction_Kingdom]========== -->

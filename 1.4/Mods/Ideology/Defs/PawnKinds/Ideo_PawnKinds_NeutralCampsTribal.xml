@@ -40,4 +40,48 @@
 		<initialWillRange>1~2</initialWillRange>
 		<initialResistanceRange>17~27</initialResistanceRange>
 	</PawnKindDef>
+	<!-- ==========[ESCP_OrsimerTribal_Logger]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalBase">
+		<defName>ESCP_Orsimer_Tribal_Logger</defName>
+		<label>logger</label>
+		<combatPower>35</combatPower>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categoriesChildhood>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+					<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalLogger</li>
+					<li>ESCP_OrsimerBackstory_AdulthoodLogger</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>180~350</apparelMoney>
+		<weaponMoney>80~80</weaponMoney>
+		<apparelRequired>
+			<li>Apparel_Shadecone</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.03</techHediffsChance>
+		<initialWillRange>1~2</initialWillRange>
+		<initialResistanceRange>17~27</initialResistanceRange>
+	</PawnKindDef>
 </Defs>
