@@ -314,6 +314,11 @@
 					<li>DeadMansApparel</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Orsimer</li>
+				</blackGeneList>
+			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>
