@@ -28,6 +28,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -60,6 +63,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -93,6 +99,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -120,6 +129,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -150,6 +162,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -177,6 +192,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -207,6 +225,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -234,6 +255,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -264,6 +288,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -290,6 +317,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -321,6 +351,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -348,6 +381,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -378,6 +414,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>

@@ -13,6 +13,14 @@
 					<li>ESCP_OrsimerBackstory_Childhood</li>
 					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
 				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Miner</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalMiner</li>
+					<li>ESCP_OrsimerBackstory_AdulthoodMiner</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -32,6 +40,14 @@
 					<li>ESCP_OrsimerBackstory_Childhood</li>
 					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
 				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Hunter</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalHunter</li>
+					<li>ESCP_OrsimerBackstory_AdulthoodHunter</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -51,6 +67,14 @@
 					<li>ESCP_OrsimerBackstory_Childhood</li>
 					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
 				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Logger</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalLogger</li>
+					<li>ESCP_OrsimerBackstory_AdulthoodLogger</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -70,6 +94,14 @@
 					<li>ESCP_OrsimerBackstory_Childhood</li>
 					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
 				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Farmer</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalFarmer</li>
+					<li>ESCP_OrsimerBackstory_AdulthoodFarmer</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>

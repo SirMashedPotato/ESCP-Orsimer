@@ -17,6 +17,9 @@
 				<value>3</value>
 			</li>
 		</skillGains>
+		<spawnCategories>
+			<li>ESCP_OrsimerBackstory_AdulthoodMiner</li>
+		</spawnCategories>
 		<maleCommonality>80</maleCommonality>
 		<femaleCommonality>80</femaleCommonality>
 	</AlienRace.AlienBackstoryDef>

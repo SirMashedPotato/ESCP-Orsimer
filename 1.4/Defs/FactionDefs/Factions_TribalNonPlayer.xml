@@ -173,13 +173,6 @@
 					<ESCP_Orsimer_Tribal_Hunter>1</ESCP_Orsimer_Tribal_Hunter>
 				</options>
 			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<kindDef>Farmers</kindDef>
-				<commonality>1</commonality>
-				<options>
-					<ESCP_Orsimer_Tribal_Farmer>1</ESCP_Orsimer_Tribal_Farmer>
-				</options>
-			</li>
 		</pawnGroupMakers>
 	</FactionDef>
 	<!-- ==========[ESCP_OrsimerNonPlayerFaction_Kingdom]========== -->

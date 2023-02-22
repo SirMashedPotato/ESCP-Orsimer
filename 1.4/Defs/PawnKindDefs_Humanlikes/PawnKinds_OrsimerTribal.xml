@@ -23,6 +23,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
 					<li>ESCP_OrsimerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_OrsimerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -124,11 +127,22 @@
 		<defName>ESCP_Orsimer_Tribal_Hunter</defName>
 		<label>hunter</label>
 		<combatPower>60</combatPower>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
-				<categoriesAdulthood Inherit="False">
-					<li>TribalHunter</li>
+				<categoriesChildhood>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalHunter</li>
+					<li>ESCP_OrsimerBackstory_AdulthoodHunter</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
 			</li>
 		</backstoryFiltersOverride>
 		<gearHealthRange>0.5~1.8</gearHealthRange>
@@ -164,11 +178,21 @@
 				<bond>true</bond>
 			</li>
 		</modExtensions>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
-				<categoriesAdulthood Inherit="False">
+				<categoriesChildhood>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
 					<li>ESCP_GenericBackstory_AdulthoodBeastMaster</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
 			</li>
 		</backstoryFiltersOverride>
 	</PawnKindDef>
@@ -219,11 +243,21 @@
 				<bond>true</bond>
 			</li>
 		</modExtensions>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
-				<categoriesAdulthood Inherit="False">
+				<categoriesChildhood>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
 					<li>ESCP_GenericBackstory_AdulthoodBeastMaster</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
 			</li>
 		</backstoryFiltersOverride>
 	</PawnKindDef>
