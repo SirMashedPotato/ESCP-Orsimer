@@ -5,7 +5,7 @@
 		<defName>ESCP_OrsimerPlayerFaction_Industrial</defName>
 		<label>New Orsimer Arrivals</label>
 		<basicMemberKind>ESCP_OrsimerPlayerPawnKind_Outlander</basicMemberKind>
-		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlementIndustrial</factionIconPath>
 		<allowedCultures>
 			<li>ESCP_OrsimerCulture</li>
 		</allowedCultures>
