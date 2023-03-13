@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_OrsimerBackstory_Adulthood_ConstructionA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_AdulthoodBase">
+		<defName>ESCP_OrsimerBackstory_Adulthood_ConstructionA</defName>
+		<title>stronghold builder</title>
+		<titleShort>builder</titleShort>
+		<baseDesc>[PAWN_nameDef] helped [PAWN_possessive] tribe construct new strongholds whenever the tribe was forced to move. This happened rather often, so [PAWN_nameDef] became quite skilled at construction.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Construction</key>
+				<value>6</value>
+			</li>
+		</skillGains>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

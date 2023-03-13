@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_Orsimer_NamerMale] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Orsimer_NamerMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name(p=5)->[MaleList] gro-[FamilyList]</li>
+				<li>name(p=2)->[MaleList] gro-[MaleList]</li>
+				<li>name(p=2)->[MaleList] gro-[FemaleList]</li>
+				<li>name(p=0.2)->[MaleList] gor-[FamilyList]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>MaleList->ESCP_OrsimerNames/OrsimerMale</li>
+				<li>FemaleList->ESCP_OrsimerNames/OrsimerFemale</li>
+				<li>FamilyList->ESCP_OrsimerNames/OrsimerFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ========== [ESCP_Orsimer_NamerFemale] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Orsimer_NamerFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name(p=5)->[FemaleList] gra-[FamilyList]</li>
+				<li>name(p=2)->[FemaleList] gra-[FemaleList]</li>
+				<li>name(p=2)->[FemaleList] gra-[MaleList]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>MaleList->ESCP_OrsimerNames/OrsimerMale</li>
+				<li>FemaleList->ESCP_OrsimerNames/OrsimerFemale</li>
+				<li>FamilyList->ESCP_OrsimerNames/OrsimerFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ========== [ESCP_NamerEchatere] ========== -->
+	<RulePackDef>
+		<defName>ESCP_NamerEchatere</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[a]-[c]</li>
+				<li>name->[b]-[c]</li>
+				<li>name->[c]-[d]</li>
+				<li>name->[d]-[c]</li>
+				<li>name->[a]-[c]-[d]</li>
+				<li>name->[a]-[d]-[c]</li>
+				<li>name->[b]-[c]-[d]</li>
+				<li>name->[b]-[d]-[c]</li>
+				<li>name->[a]-[b]-[c]</li>
+				<li>name->[b]-[a]-[c]</li>
+				<li>name->[a]-[b]-[c]-[d]</li>
+				<li>name->[a]-[b]-[d]-[c]</li>
+				<li>name->[b]-[a]-[c]-[d]</li>
+				<li>name->[b]-[a]-[d]-[c]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>a->ESCP_EchatereNames/a</li>
+				<li>d->ESCP_EchatereNames/d</li>
+				<li>c->ESCP_EchatereNames/c</li>
+				<li>d->ESCP_EchatereNames/d</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

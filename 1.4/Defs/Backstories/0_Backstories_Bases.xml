@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+		Current Orsimer spawn categories:
+			[Generic]
+			ESCP_OrsimerBackstory
+
+	-->
+	<!-- ==========[ESCP_Orsimer_ChildhoodBase]========== -->
+	<AlienRace.AlienBackstoryDef Name="ESCP_Orsimer_ChildhoodBase" Abstract="True" >
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<spawnCategories>
+			<li>ESCP_OrsimerBackstory_Childhood</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_Orsimer_AdulthoodBase]========== -->
+	<AlienRace.AlienBackstoryDef Name="ESCP_Orsimer_AdulthoodBase" Abstract="True" >
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ESCP_OrsimerBackstory_Adulthood</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_Maormer_AdulthoodBackstory_MageBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_AdulthoodBase" Name="ESCP_Orsimer_Adulthood_WarriorBase" Abstract="True">
+		<spawnCategories>
+			<li>ESCP_OrsimerBackstory_AdulthoodWarrior</li>
+		</spawnCategories>
+		<forcedHediffs>
+			<li>ESCP_ViolentMeditationHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

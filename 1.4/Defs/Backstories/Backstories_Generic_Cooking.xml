@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_OrsimerBackstory_Adulthood_CookingA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_AdulthoodBase">
+		<defName>ESCP_OrsimerBackstory_Adulthood_CookingA</defName>
+		<title>echatere cheese maker</title>
+		<titleShort>cheese maker</titleShort>
+		<baseDesc>[PAWN_nameDef] spent much of the day making cheese out of echatere milk. Partly because [PAWN_pronoun] was reasonably good at it, partly because it helped keep a roof over [PAWN_possessive] head, but also partly because echatere cheese is supposedly an aphrodisiac. Though [PAWN_nameDef] could never confirm the truth about that last reason.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Cooking</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

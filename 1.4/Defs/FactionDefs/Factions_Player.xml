@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Industrial">
+		<defName>ESCP_OrsimerPlayerFaction_Industrial</defName>
+		<label>New Orsimer Arrivals</label>
+		<basicMemberKind>ESCP_OrsimerPlayerPawnKind_Outlander</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlementIndustrial</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_OrsimerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_OrsimerStart_Industrial</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_OrsimerFaction</li>
+					<li>ESCP_OrsimerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+	<!-- ========== [ESCP_OrsimerPlayerFaction_Medieval] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Medieval">
+		<defName>ESCP_OrsimerPlayerFaction_Medieval</defName>
+		<label>New Orsimer Kingdom</label>
+		<basicMemberKind>ESCP_OrsimerPlayerPawnKind_Medieval</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_OrsimerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_OrsimerStart_Medieval</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_OrsimerFaction</li>
+					<li>ESCP_OrsimerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+	<!-- ========== [ESCP_OrsimerPlayerFactionBase_Tribal] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Tribal">
+		<defName>ESCP_OrsimerPlayerFaction_Tribal</defName>
+		<label>New Orsimer Tribe</label>
+		<basicMemberKind>ESCP_OrsimerPlayerPawnKind_Tribal</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_OrsimerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_OrsimerStart_Tribal</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_OrsimerFaction</li>
+					<li>ESCP_OrsimerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+</Defs>

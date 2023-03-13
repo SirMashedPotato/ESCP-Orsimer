@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Industrial_OrsimerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="GrenadierBase">
+		<defName>ESCP_Industrial_OrsimerGrenadier_Destructive</defName>
+		<label>grenadier</label>
+		<combatPower>70</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerGrenadier_EMP]========== -->
+	<PawnKindDef ParentName="GrenadierBase">
+		<defName>ESCP_Industrial_OrsimerGrenadier_EMP</defName>
+		<label>EMP grenadier</label>
+		<combatPower>55</combatPower>
+		<weaponTags>
+			<li>GrenadeEMP</li>
+		</weaponTags>
+		<initialResistanceRange>15~24</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerGrenadier_Smoke]========== -->
+	<PawnKindDef ParentName="GrenadierBase">
+		<defName>ESCP_Industrial_OrsimerGrenadier_Smoke</defName>
+		<label>smoke grenadier</label>
+		<combatPower>55</combatPower>
+		<weaponTags>
+			<li>GrenadeSmoke</li>
+		</weaponTags>
+		<weaponMoney>400~400</weaponMoney>
+		<initialResistanceRange>18~28</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerMercenary_Gunner]========== -->
+	<PawnKindDef ParentName="MercenaryGunnerBase">
+		<defName>ESCP_Industrial_OrsimerMercenary_Gunner</defName>
+		<initialResistanceRange>6~10</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerMercenary_Gunner_Acidifier]========== -->
+	<PawnKindDef ParentName="MercenaryGunnerBase">
+		<defName>ESCP_Industrial_OrsimerMercenary_Gunner_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerMercenary_Sniper]========== -->
+	<PawnKindDef ParentName="MercenarySniperBase">
+		<defName>ESCP_Industrial_OrsimerMercenary_Sniper</defName>
+		<initialResistanceRange>13~20</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerMercenary_Sniper_Acidifier]========== -->
+	<PawnKindDef ParentName="MercenarySniperBase">
+		<defName>ESCP_Industrial_OrsimerMercenary_Sniper_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<initialResistanceRange>14~23</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerMercenary_Slasher]========== -->
+	<PawnKindDef ParentName="MercenarySlasherBase">
+		<defName>ESCP_Industrial_OrsimerMercenary_Slasher</defName>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerMercenary_Slasher_Acidifier]========== -->
+	<PawnKindDef ParentName="MercenarySlasherBase">
+		<defName>ESCP_Industrial_OrsimerMercenary_Slasher_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<initialResistanceRange>9~15</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerMercenary_Heavy]========== -->
+	<PawnKindDef ParentName="MercenaryHeavyBase">
+		<defName>ESCP_Industrial_OrsimerMercenary_Heavy</defName>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerPirateBoss]========== -->
+	<PawnKindDef ParentName="MercenaryEliteTierBase">
+		<defName>ESCP_Industrial_OrsimerPirateBoss</defName>
+		<label>boss</label>
+		<labelPlural>bosses</labelPlural>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>true</canBeSapper>
+		<initialResistanceRange>17~27</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerMercenary_Elite]========== -->
+	<PawnKindDef ParentName="MercenaryEliteBase">
+		<defName>ESCP_Industrial_OrsimerMercenary_Elite</defName>
+		<initialResistanceRange>15~23</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_OrsimerMercenary_Elite_Acidifier]========== -->
+	<PawnKindDef ParentName="MercenaryEliteBase">
+		<defName>ESCP_Industrial_OrsimerMercenary_Elite_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<initialResistanceRange>12~20</initialResistanceRange>
+		<!-- Orsimer stuff -->
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_Industrial_OrsimerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodFightersGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodImperialLegion</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>

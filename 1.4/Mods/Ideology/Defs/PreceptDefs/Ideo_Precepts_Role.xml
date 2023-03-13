@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PreceptDef ParentName="PreceptRoleMultiBase">
+		<defName>ESCP_Orsimer_IdeoRole_BerserkerSpecialist</defName>
+		<label>Orsimer berserker specialist</label>
+		<description>A special, Orsimer specific, ideoligious status focusing on melee combat to the exclusion of, almost, all else. This specialised role gives increased hit chance in melee combat, and the ability to emit powerful berserker roars. Holders of this role will refuse to do many kinds of non-melee-related work, but will still be willing to mine and craft.</description>
+		<iconPath>UI/Roles/ESCP_OrsimerSpecialistMelee</iconPath>
+		<nameMaker>ESCP_Orsimer_NamerRoleBerserkerSpecialist</nameMaker>
+		<roleRequirements>
+			<li Class="RoleRequirement_MinSkillAny">
+				<skills>
+					<Melee>10</Melee>
+				</skills>
+			</li>
+			<li Class="ESCP_RaceTools.RoleRequirement_Race">
+				<race>ESCP_OrsimerRace</race>
+			</li>
+		</roleRequirements>
+		<roleRequiredWorkTagAny>
+			<li>Violent</li>
+		</roleRequiredWorkTagAny>
+		<roleTags>
+			<li>ESCP_Orsimer_IdeoRole_BerserkerSpecialist</li>
+		</roleTags>
+		<requiredMemes>
+			<li>ESCP_Structure_OriginMauloch</li>
+			<li>ESCP_Structure_OriginTrinimac</li>
+		</requiredMemes>
+		<roleEffects>
+			<li Class="RoleEffect_NoRangedWeapons"/>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>MeleeHitChance</statDef>
+				<modifier>10</modifier>
+			</li>
+		</roleEffects>
+		<displayOrderInImpact>2</displayOrderInImpact>
+		<grantedAbilities>
+			<li>ESCP_Orsimer_BerserkerCalling</li>
+			<li>ESCP_Orsimer_BerserkerWarCry</li>
+		</grantedAbilities>
+		<roleDisabledWorkTags>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Constructing</li>
+			<li>Hunting</li>
+			<li>Shooting</li>
+		</roleDisabledWorkTags>
+		<roleApparelRequirements>
+		</roleApparelRequirements>
+		<activationBelieverCount>3</activationBelieverCount>
+		<deactivationBelieverCount>1</deactivationBelieverCount>
+	</PreceptDef>
+</Defs>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_OrsimerBerserkerRage]========== -->
+	<EffecterDef>
+		<defName>ESCP_OrsimerBerserkerRage</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<scale>1</scale>
+				<positionRadius>0</positionRadius>
+				<ticksBetweenMotes>180</ticksBetweenMotes>
+				<moteDef>ESCP_OrsimerBerserkerRageMote</moteDef>
+				<speed>0</speed>
+				<angle>0~0</angle>
+				<rotation>0~0</rotation>
+			</li>
+		</children>
+	</EffecterDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>ESCP_OrsimerBerserkerRageMote</defName>
+		<graphicData>
+			<texPath>Things/Mote/ESCP_OrsimerBerserkerRageMote</texPath>
+			<drawSize>(0.6, 0.6)</drawSize>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<fadeInTime>1</fadeInTime>
+			<solidTime>1</solidTime>
+			<fadeOutTime>1</fadeOutTime>
+			<attachedDrawOffset>(0, 0, 1)</attachedDrawOffset>
+		</mote>
+	</ThingDef>
+</Defs>

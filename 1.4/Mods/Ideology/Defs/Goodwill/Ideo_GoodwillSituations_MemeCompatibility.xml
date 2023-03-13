@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- ==========[ESCP_MaulochOrigin_MaulochOrigin]========== -->
+	<GoodwillSituationDef>
+		<defName>ESCP_MaulochOrigin_MaulochOrigin</defName>
+		<label>Code of Mauloch origin agreement</label>
+		<workerClass>GoodwillSituationWorker_MemeCompatibility</workerClass>
+		<meme>ESCP_Structure_OriginMauloch</meme>
+		<otherMeme>ESCP_Structure_OriginMauloch</otherMeme>
+		<naturalGoodwillOffset>50</naturalGoodwillOffset>
+	</GoodwillSituationDef>
+	<!-- ==========[ESCP_TrinimacOrigin_TrinimacOrigin]========== -->
+	<GoodwillSituationDef>
+		<defName>ESCP_TrinimacOrigin_TrinimacOrigin</defName>
+		<label>Cult of Trinimac origin agreement</label>
+		<workerClass>GoodwillSituationWorker_MemeCompatibility</workerClass>
+		<meme>ESCP_Structure_OriginTrinimac</meme>
+		<otherMeme>ESCP_Structure_OriginTrinimac</otherMeme>
+		<naturalGoodwillOffset>50</naturalGoodwillOffset>
+	</GoodwillSituationDef>
+</Defs>

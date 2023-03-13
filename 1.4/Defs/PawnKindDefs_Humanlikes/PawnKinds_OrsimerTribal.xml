@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Orsimer_TribalBase]========== -->
+	<PawnKindDef Name="ESCP_Orsimer_TribalBase" Abstract="True">
+		<race>ESCP_OrsimerRace</race>
+		<defaultFactionType>ESCP_OrsimerNonPlayerFaction_Kingdom</defaultFactionType>
+		<maxGenerationAge>150</maxGenerationAge>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<apparelTags>
+			<li>Neolithic</li>
+			<li>Medieval</li>
+			<li>MedievalBasic</li>
+		</apparelTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_OrsimerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_Tribal_Penitent]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalBase">
+		<defName>ESCP_Orsimer_Tribal_Penitent</defName>
+		<label>penitent</label>
+		<combatPower>40</combatPower>
+		<chemicalAddictionChance>0.10</chemicalAddictionChance>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
+		<apparelMoney>50~100</apparelMoney>
+		<weaponMoney>90~150</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+		</weaponTags>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_Tribal_Archer]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalBase">
+		<defName>ESCP_Orsimer_Tribal_Archer</defName>
+		<label>archer</label>
+		<combatPower>45</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>180~350</apparelMoney>
+		<weaponMoney>80~80</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.03</techHediffsChance>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>17~27</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_Tribal_Warrior]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalBase">
+		<defName>ESCP_Orsimer_Tribal_Warrior</defName>
+		<label>warrior</label>
+		<combatPower>50</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<canBeSapper>true</canBeSapper>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>200~300</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarVeil</li>
+		</apparelRequired>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponMoney>150~150</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeDecent</li>
+		</weaponTags>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>5~9</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_Tribal_Breacher]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalBase">
+		<defName>ESCP_Orsimer_Tribal_Breacher</defName>
+		<label>breacher</label>
+		<combatPower>55</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>200~300</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarVeil</li>
+		</apparelRequired>
+		<weaponMoney>150~150</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeDestructive</li>
+		</weaponTags>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>12~19</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_Tribal_Hunter]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalBase" Name="ESCP_Orsimer_TribalHunterBase">
+		<defName>ESCP_Orsimer_Tribal_Hunter</defName>
+		<label>hunter</label>
+		<combatPower>60</combatPower>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categoriesChildhood>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalHunter</li>
+					<li>ESCP_OrsimerBackstory_AdulthoodHunter</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>200~300</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarVeil</li>
+		</apparelRequired>
+		<weaponMoney>100~100</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedDecent</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>10~16</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_Tribal_WelwaMaster]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalHunterBase">
+		<defName>ESCP_Orsimer_Tribal_WelwaMaster</defName>
+		<label>welwa master</label>
+		<combatPower>100</combatPower>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.BeastMaster">
+				<maxNumberOfPawns>1</maxNumberOfPawns>
+				<maxTotalCombatPower>100</maxTotalCombatPower>
+				<pawnKinds>
+					<li>ESCP_Welwa</li>
+				</pawnKinds>
+				<bond>true</bond>
+			</li>
+		</modExtensions>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categoriesChildhood>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>ESCP_GenericBackstory_AdulthoodBeastMaster</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_Tribal_Trader]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalHunterBase">
+		<defName>ESCP_Orsimer_Tribal_Trader</defName>
+		<label>trader</label>
+		<trader>true</trader>
+		<apparelRequired Inherit="False">
+			<li>Apparel_TribalHeaddress</li>
+		</apparelRequired>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>9~15</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_Tribal_Berserker]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalBase" Name="ESCP_Orsimer_TribalBerserkerBase">
+		<defName>ESCP_Orsimer_Tribal_Berserker</defName>
+		<label>berserker</label>
+		<combatPower>65</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>200~550</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarMask</li>
+		</apparelRequired>
+		<weaponMoney>300~300</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeAdvanced</li>
+		</weaponTags>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>13~20</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_Tribal_TrollMaster]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalBerserkerBase" MayRequire="SirMashedPotato.ESCP.Trolls">
+		<defName>ESCP_Orsimer_Tribal_TrollMaster</defName>
+		<label>troll master</label>
+		<combatPower>95</combatPower>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.BeastMaster">
+				<maxNumberOfPawns>1</maxNumberOfPawns>
+				<maxTotalCombatPower>200</maxTotalCombatPower>
+				<pawnKinds>
+					<li>ESCP_TrollCave</li>
+					<li>ESCP_TrollHill</li>
+				</pawnKinds>
+				<bond>true</bond>
+			</li>
+		</modExtensions>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categoriesChildhood>
+					<li>ESCP_OrsimerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>ESCP_GenericBackstory_AdulthoodBeastMaster</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_OrsimerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_Tribal_HeavyArcher]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalBase">
+		<defName>ESCP_Orsimer_Tribal_HeavyArcher</defName>
+		<label>heavy archer</label>
+		<combatPower>75</combatPower>
+		<apparelMoney>200~550</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarMask</li>
+		</apparelRequired>
+		<weaponMoney>250~250</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedHeavy</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_TribalChiefBase]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalBase" Name="ESCP_Orsimer_TribalChiefBase" Abstract="True">
+		<combatPower>85</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>999</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>450~750</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_TribalHeaddress</li>
+			<li>Apparel_PlateArmor</li>
+		</apparelRequired>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponMoney>500~1000</weaponMoney>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>19~30</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Orsimer_Tribal_ChiefMelee]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalChiefBase">
+		<defName>ESCP_Orsimer_Tribal_ChiefMelee</defName>
+		<label>berserker chief</label>
+		<weaponTags>
+			<li>NeolithicMeleeAdvanced</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<initialResistanceRange>38~58</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_AchievementOrsimer_OrsimerColonists]========== -->
+	<PawnKindDef ParentName="ESCP_Orsimer_TribalChiefBase">
+		<defName>ESCP_Orsimer_Tribal_ChiefRanged</defName>
+		<label>archer chief</label>
+		<weaponTags>
+			<li>NeolithicRangedChief</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialResistanceRange>16~26</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

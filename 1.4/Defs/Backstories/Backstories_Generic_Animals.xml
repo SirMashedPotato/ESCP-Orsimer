@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_OrsimerBackstory_Adulthood_AnimalsA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_AdulthoodBase">
+		<defName>ESCP_OrsimerBackstory_Adulthood_AnimalsA</defName>
+		<title>welwa trainer</title>
+		<titleShort>trainer</titleShort>
+		<baseDesc>Somewhat skilled with animals, and secretly terrified of echatere, [PAWN_nameDef] decided to instead put [PAWN_possessive] skills to work training welwa. While comparatively safer to be around than echatere, [PAWN_nameDef] did nearly lose fingers a few times.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_OrsimerBackstory_Adulthood_AnimalsB]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_AdulthoodBase">
+		<defName>ESCP_OrsimerBackstory_Adulthood_AnimalsB</defName>
+		<title>echatere tender</title>
+		<titleShort>tender</titleShort>
+		<baseDesc>While [PAWN_nameDef] wasn't skilled enough to actually tame echatere, [PAWN_pronoun] did help tend the herds. Taking care of echatere was tough work, as echatere aren't very friendly, even 'tame' ones. [PAWN_nameDef] was sure [PAWN_pronoun] spent more time tending to wounds than actually taking care of the echatere.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_OrsimerBackstory_Adulthood_AnimalsC]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_AdulthoodBase">
+		<defName>ESCP_OrsimerBackstory_Adulthood_AnimalsC</defName>
+		<title>echatere tamer</title>
+		<titleShort>tamer</titleShort>
+		<baseDesc>[PAWN_nameDef] was one of the few Orsimer brave enough to tame wild echatere. [PAWN_pronoun] was also smart enough to know that even a tame echatere was still wild.</baseDesc>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>6</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+		</workDisables>
+		<maleCommonality>25</maleCommonality>
+		<femaleCommonality>25</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

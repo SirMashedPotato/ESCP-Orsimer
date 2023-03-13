@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_OrsimerNonPlayerFaction_Base]========== -->
+	<FactionDef ParentName="ESCP_NonPlayerFactionBase_Tribal" Name="ESCP_OrsimerNonPlayerFaction_Base" Abstract="True">
+		<modExtensions>
+			<li Class="ESCP_RaceTools.SettlementPreference">
+				<chance>1.0</chance>
+				<useTemperatureRange>true</useTemperatureRange>
+				<temperatureRangeMin>-30</temperatureRangeMin>
+				<temperatureRangeMax>50</temperatureRangeMax>
+				<useElevationRange>true</useElevationRange>
+				<elevationRangeMin>500</elevationRangeMin>
+				<elevationRangeMax>1200</elevationRangeMax>
+				<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
+			</li>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_OrsimerFaction</li>
+					<li>ESCP_OrsimerFactionNonPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+		<leaderTitle>high chieftain</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlement</factionIconPath>
+		<factionNameMaker>ESCP_Orsimer_NamerFaction</factionNameMaker>
+		<settlementNameMaker>ESCP_Orsimer_NamerSettlement</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_OrsimerCulture</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<ESCP_Structure_OriginMauloch MayRequire="Ludeon.RimWorld.Ideology">8</ESCP_Structure_OriginMauloch>
+			<ESCP_Structure_OriginTrinimac MayRequire="Ludeon.RimWorld.Ideology">4</ESCP_Structure_OriginTrinimac>
+		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+		</requiredMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		</disallowedPrecepts>
+		<raidLootMaker>ESCP_OrsimerRaidLootMaker</raidLootMaker>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<ESCP_Orsimer_Tribal_Penitent>5</ESCP_Orsimer_Tribal_Penitent>
+					<ESCP_Orsimer_Tribal_Warrior>5</ESCP_Orsimer_Tribal_Warrior>
+					<ESCP_Orsimer_Tribal_Archer>10</ESCP_Orsimer_Tribal_Archer>
+					<ESCP_Orsimer_Tribal_Hunter>10</ESCP_Orsimer_Tribal_Hunter>
+					<ESCP_Orsimer_Tribal_WelwaMaster>5</ESCP_Orsimer_Tribal_WelwaMaster>
+					<ESCP_Orsimer_Tribal_HeavyArcher>10</ESCP_Orsimer_Tribal_HeavyArcher>
+					<ESCP_Orsimer_Tribal_Berserker>5</ESCP_Orsimer_Tribal_Berserker>
+					<ESCP_Orsimer_Tribal_TrollMaster MayRequire="SirMashedPotato.ESCP.Trolls">2</ESCP_Orsimer_Tribal_TrollMaster>
+					<ESCP_Orsimer_Tribal_ChiefRanged>3</ESCP_Orsimer_Tribal_ChiefRanged>
+					<ESCP_Orsimer_Tribal_ChiefMelee>1.5</ESCP_Orsimer_Tribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<ESCP_Orsimer_Tribal_Archer>10</ESCP_Orsimer_Tribal_Archer>
+					<ESCP_Orsimer_Tribal_Hunter>10</ESCP_Orsimer_Tribal_Hunter>
+					<ESCP_Orsimer_Tribal_WelwaMaster>5</ESCP_Orsimer_Tribal_WelwaMaster>
+					<ESCP_Orsimer_Tribal_HeavyArcher>10</ESCP_Orsimer_Tribal_HeavyArcher>
+					<ESCP_Orsimer_Tribal_ChiefRanged>5</ESCP_Orsimer_Tribal_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<ESCP_Orsimer_Tribal_Penitent>10</ESCP_Orsimer_Tribal_Penitent>
+					<ESCP_Orsimer_Tribal_Warrior>10</ESCP_Orsimer_Tribal_Warrior>
+					<ESCP_Orsimer_Tribal_Berserker>10</ESCP_Orsimer_Tribal_Berserker>
+					<ESCP_Orsimer_Tribal_TrollMaster MayRequire="SirMashedPotato.ESCP.Trolls">5</ESCP_Orsimer_Tribal_TrollMaster>
+					<ESCP_Orsimer_Tribal_ChiefMelee>5</ESCP_Orsimer_Tribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<ESCP_Orsimer_Tribal_Breacher>5</ESCP_Orsimer_Tribal_Breacher>
+					<ESCP_Orsimer_Tribal_Penitent>5</ESCP_Orsimer_Tribal_Penitent>
+					<ESCP_Orsimer_Tribal_Warrior>5</ESCP_Orsimer_Tribal_Warrior>
+					<ESCP_Orsimer_Tribal_Archer>10</ESCP_Orsimer_Tribal_Archer>
+					<ESCP_Orsimer_Tribal_Hunter>10</ESCP_Orsimer_Tribal_Hunter>
+					<ESCP_Orsimer_Tribal_WelwaMaster>5</ESCP_Orsimer_Tribal_WelwaMaster>
+					<ESCP_Orsimer_Tribal_HeavyArcher>10</ESCP_Orsimer_Tribal_HeavyArcher>
+					<ESCP_Orsimer_Tribal_Berserker>5</ESCP_Orsimer_Tribal_Berserker>
+					<ESCP_Orsimer_Tribal_TrollMaster MayRequire="SirMashedPotato.ESCP.Trolls">2</ESCP_Orsimer_Tribal_TrollMaster>
+					<ESCP_Orsimer_Tribal_ChiefRanged>3</ESCP_Orsimer_Tribal_ChiefRanged>
+					<ESCP_Orsimer_Tribal_ChiefMelee>1.5</ESCP_Orsimer_Tribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<ESCP_Orsimer_Tribal_Warrior>20</ESCP_Orsimer_Tribal_Warrior>
+					<ESCP_Orsimer_Tribal_Archer>10</ESCP_Orsimer_Tribal_Archer>
+					<ESCP_Orsimer_Tribal_Hunter>10</ESCP_Orsimer_Tribal_Hunter>
+					<ESCP_Orsimer_Tribal_HeavyArcher>10</ESCP_Orsimer_Tribal_HeavyArcher>
+					<ESCP_Orsimer_Tribal_Berserker>5</ESCP_Orsimer_Tribal_Berserker>
+					<ESCP_Orsimer_Tribal_ChiefRanged>3</ESCP_Orsimer_Tribal_ChiefRanged>
+					<ESCP_Orsimer_Tribal_ChiefMelee>1.5</ESCP_Orsimer_Tribal_ChiefMelee>
+					<MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">0.5</MorrowRim_Scamp>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<ESCP_Orsimer_Tribal_Trader>1</ESCP_Orsimer_Tribal_Trader>
+				</traders>
+				<carriers>
+					<ESCP_Echatere>20</ESCP_Echatere>
+					<MorrowRim_Guar MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">5</MorrowRim_Guar>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<ESCP_Orsimer_Tribal_Warrior>7</ESCP_Orsimer_Tribal_Warrior>
+					<ESCP_Orsimer_Tribal_Archer>10</ESCP_Orsimer_Tribal_Archer>
+					<ESCP_Orsimer_Tribal_Hunter>10</ESCP_Orsimer_Tribal_Hunter>
+					<ESCP_Orsimer_Tribal_HeavyArcher>10</ESCP_Orsimer_Tribal_HeavyArcher>
+					<ESCP_Orsimer_Tribal_Berserker>7</ESCP_Orsimer_Tribal_Berserker>
+					<MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">0.5</MorrowRim_Scamp>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ESCP_Orsimer_Tribal_Warrior>7</ESCP_Orsimer_Tribal_Warrior>
+					<ESCP_Orsimer_Tribal_Archer>10</ESCP_Orsimer_Tribal_Archer>
+					<ESCP_Orsimer_Tribal_Hunter>10</ESCP_Orsimer_Tribal_Hunter>
+					<ESCP_Orsimer_Tribal_WelwaMaster>5</ESCP_Orsimer_Tribal_WelwaMaster>
+					<ESCP_Orsimer_Tribal_HeavyArcher>10</ESCP_Orsimer_Tribal_HeavyArcher>
+					<ESCP_Orsimer_Tribal_Berserker>7</ESCP_Orsimer_Tribal_Berserker>
+					<ESCP_Orsimer_Tribal_TrollMaster MayRequire="SirMashedPotato.ESCP.Trolls">3</ESCP_Orsimer_Tribal_TrollMaster>
+					<ESCP_Orsimer_Tribal_ChiefRanged>10</ESCP_Orsimer_Tribal_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<ESCP_Orsimer_Tribal_Archer>10</ESCP_Orsimer_Tribal_Archer>
+					<ESCP_Orsimer_Tribal_Hunter>10</ESCP_Orsimer_Tribal_Hunter>
+					<ESCP_Orsimer_Tribal_WelwaMaster>5</ESCP_Orsimer_Tribal_WelwaMaster>
+					<ESCP_Orsimer_Tribal_HeavyArcher>10</ESCP_Orsimer_Tribal_HeavyArcher>
+					<ESCP_Orsimer_Tribal_ChiefRanged>10</ESCP_Orsimer_Tribal_ChiefRanged>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Orsimer_Tribal_Miner>1</ESCP_Orsimer_Tribal_Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Orsimer_Tribal_Hunter>1</ESCP_Orsimer_Tribal_Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Orsimer_Tribal_Logger>1</ESCP_Orsimer_Tribal_Logger>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!-- ==========[ESCP_OrsimerNonPlayerFaction_Kingdom]========== -->
+	<FactionDef ParentName="ESCP_OrsimerNonPlayerFaction_Base">
+		<defName>ESCP_OrsimerNonPlayerFaction_Kingdom</defName>
+		<label>Orsimer kingdom</label>
+		<description>A collection of Orsimer tribes, bought together by a high chieftain, forming a great kingdom. The Orsimer settle strongholds anywhere the please, as long as the location is remote.\n\nOrsimer are somewhat reclusive and weary of outsiders, likely due to their treatment in the past. As long as one respects their culture they may be called a friend. In combat they present a powerful ally, as Orsimer are well known for their berserker rage.\n\nThese particular tribes pursue a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<colorSpectrum>
+			<li>(0.0, 0.7, 0.1)</li>
+			<li>(0.5, 0.3, 0.0)</li>
+		</colorSpectrum>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+		</disallowedMemes>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+	</FactionDef>
+	<!-- ==========[ESCP_OrsimerNonPlayerFaction_Tribe]========== -->
+	<FactionDef ParentName="ESCP_OrsimerNonPlayerFaction_Base">
+		<defName>ESCP_OrsimerNonPlayerFaction_Tribe</defName>
+		<label>Orsimer tribe</label>
+		<description>A reclusive Orsimer tribe following a high chieftain, one who earned their position through blood and sweat. The Orsimer settle strongholds anywhere the please, as long as the location is remote.\n\nOrsimer are somewhat reclusive and weary of outsiders, likely due to their treatment in the past. As long as one respects their culture they may be called a friend. In combat they present a powerful ally, as Orsimer are well known for their berserker rage.\n\nThis particular tribe is far more isolationist than most others; it may be difficult to turn them into an ally.</description>
+		<colorSpectrum>
+			<li>(0.7, 0.6, 0.3)</li>
+			<li>(0.8, 0.4, 0.1)</li>
+		</colorSpectrum>
+		<factionNameMaker>ESCP_Orsimer_NamerFactionTribe</factionNameMaker>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlementAlt</factionIconPath>
+		<naturalEnemy>true</naturalEnemy>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+		</disallowedMemes>
+		<configurationListOrderPriority>40</configurationListOrderPriority>
+	</FactionDef>
+	<!-- ==========[ESCP_OrsimerNonPlayerFaction_Deserters]========== -->
+	<FactionDef ParentName="ESCP_OrsimerNonPlayerFaction_Base">
+		<defName>ESCP_OrsimerNonPlayerFaction_Deserters</defName>
+		<label>Orsimer raiders</label>
+		<description>A collection of Orsimer strongholds, ruled over by a warlord, one who rightfully earned that title. The Orsimer settle strongholds anywhere the please, as long as the location is remote.\n\nMost avoid the regions they have settled in for a reason; you will not be able to ally with them!</description>
+		<colorSpectrum>
+			<li>(0.85, 0, 0)</li>
+			<li>(0.85, 0.7, 0.7)</li>
+		</colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerRaider</factionIconPath>
+		<permanentEnemy>true</permanentEnemy>
+		<factionNameMaker>ESCP_Orsimer_NamerFactionRaider</factionNameMaker>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<configurationListOrderPriority>50</configurationListOrderPriority>
+	</FactionDef>
+</Defs>

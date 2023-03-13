@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_AchievementReward_PawnJoinsIncident_Orsimer]========== -->
+	<IncidentDef ParentName="ESCP_AchievementReward_PawnJoinsIncident_Base">
+		<defName>ESCP_AchievementReward_PawnJoinsIncident_Orsimer</defName>
+		<label>Orsimer subject joins</label>
+		<letterLabel>Orsimer joins: {PAWN_nameDef}</letterLabel>
+		<pawnKind>ESCP_OrsimerPlayerPawnKind_Medieval</pawnKind>
+	</IncidentDef>
+</Defs>

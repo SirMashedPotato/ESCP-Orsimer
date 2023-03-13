@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_OrsimerBackstory_Adulthood_MeleeA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_Adulthood_WarriorBase">
+		<defName>ESCP_OrsimerBackstory_Adulthood_MeleeA</defName>
+		<title>berserker</title>
+		<titleShort>berserker</titleShort>
+		<baseDesc>Skilled with what ever weapon [PAWN_pronoun] could get [PAWN_possessive] hands on, as long as it wasn't a bow, [PAWN_nameDef] was a fearsome sight on the battlefield. Though [PAWN_pronoun] did have a tendency to ignore any potentially life-threatening wounds acquired during battle.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>5</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+			<li>Shooting</li>
+		</workDisables>
+		<maleCommonality>70</maleCommonality>
+		<femaleCommonality>70</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_OrsimerBackstory_Adulthood_MeleeB]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_Adulthood_WarriorBase">
+		<defName>ESCP_OrsimerBackstory_Adulthood_MeleeB</defName>
+		<title>great warrior</title>
+		<titleShort>warrior</titleShort>
+		<baseDesc>One of the most skilled warriors in [PAWN_possessive] stronghold, [PAWN_nameDef] over time grew tired of dealing with foes that offered little threat. So [PAWN_pronoun] set out into the world in search of a legendary fight, or an honourable death.</baseDesc>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>12</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+			<li>PlantWork</li>
+		</workDisables>
+		<maleCommonality>25</maleCommonality>
+		<femaleCommonality>25</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+</Defs>
