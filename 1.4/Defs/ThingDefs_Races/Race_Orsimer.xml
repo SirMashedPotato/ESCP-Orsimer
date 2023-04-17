@@ -190,6 +190,8 @@
 					<customDrawSize>(1.1, 1.1)</customDrawSize>
 					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
 					<headOffset>(0.0, 0.0)</headOffset>
+					<customFemaleDrawSize IgnoreIfNoMatchingField="True">1.05, 1.05</customFemaleDrawSize>
+					<customFemaleHeadDrawSize IgnoreIfNoMatchingField="True">1.05, 1.05</customFemaleHeadDrawSize>
 					<bodyAddons>
 						<!-- =====[Tusks]===== -->
 						<li>
