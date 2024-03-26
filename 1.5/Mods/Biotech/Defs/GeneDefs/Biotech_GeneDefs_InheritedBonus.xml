@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GeneInheritedBonus_Orsimer]========== -->
+	<GeneDef ParentName="ESCP_InheritedRacialBonus_Base">
+		<defName>ESCP_GeneInheritedBonus_Orsimer</defName>
+		<label>Orsimer blood</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Orsimer race, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/ESCP_InheritedBonus/ESCP_GeneInheritedBonus_Orsimer</iconPath>
+		<statOffsets>
+			<PsychicSensitivity>-0.15</PsychicSensitivity>
+			<SocialImpact>-0.15</SocialImpact>
+			<GlobalLearningFactor>-0.05</GlobalLearningFactor>
+			<GeneralLaborSpeed>0.05</GeneralLaborSpeed>
+			<MeleeDamageFactor>0.05</MeleeDamageFactor>
+		</statOffsets>
+		<displayOrderInCategory>10</displayOrderInCategory>
+	</GeneDef>
+</Defs>

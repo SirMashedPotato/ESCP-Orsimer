@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==================== [ANIMALS] ==================== -->
+	<!-- ==========[ESCP_OrsimerBackstory_ChildhoodAnimalA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_ChildhoodBase">
+		<defName>ESCP_OrsimerBackstory_ChildhoodAnimalA</defName>
+		<title>cub loon chaser</title>
+		<titleShort>chaser</titleShort>
+		<baseDesc>[PAWN_nameDef] would spend hours each day chasing the local chub loons around the coast. [PAWN_nameDef] never got close to actually catching one, which is quite an accomplishment as chub loons aren't exactly fast on land.</baseDesc>
+		<skillGains>
+			<Animals>2</Animals>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>SlowLearner</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_OrsimerBackstory_ChildhoodAnimalB]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_ChildhoodBase">
+		<defName>ESCP_OrsimerBackstory_ChildhoodAnimalB</defName>
+		<title>echatere herder</title>
+		<titleShort>herder</titleShort>
+		<baseDesc>[PAWN_nameDef] would always tell everyone how [PAWN_pronoun] helped to herd the tame echatere. In truth, [PAWN_nameDef] was bait, [PAWN_pronoun]. Would whistle, and then [PAWN_pronoun] would run.</baseDesc>
+		<skillGains>
+			<Animals>2</Animals>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Nimble</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==================== [Cooking] ==================== -->
+	<!-- ==================== [Construction] ==================== -->
+	<!-- ==================== [Crafting] ==================== -->
+	<!-- ==================== [Medicine] ==================== -->
+	<!-- ==================== [Melee] ==================== -->
+	<!-- ==========[ESCP_OrsimerBackstory_ChildhoodMeleeA]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_Orsimer_ChildhoodBase">
+		<defName>ESCP_OrsimerBackstory_ChildhoodMeleeA</defName>
+		<title>tiny warrior</title>
+		<titleShort>warrior</titleShort>
+		<baseDesc>[PAWN_nameDef] was practically born with a sword in [PAWN_possessive] hands. Every day since [PAWN_pronoun] would walk [PAWN_nameDef], was out in the fields, swinging away at anything that got too close. Luckily [PAWN_nameDef] was smart, and kept [PAWN_possessive] distance from the echatere herd.</baseDesc>
+		<skillGains>
+			<Melee>3</Melee>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==================== [Mining] ==================== -->
+	<!-- ==================== [Plants] ==================== -->
+	<!-- ==================== [Intellectual] ==================== -->
+	<!-- ==================== [Shooting] ==================== -->
+	<!-- ==================== [Social] ==================== -->
+</Defs>

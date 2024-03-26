@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>ESCP_Echatere</defName>
+		<label>echatere</label>
+		<description>A somewhat peculiar beast, an ox-like mammal, with three pairs of insectoid legs, adorned with a large crest on their head. The echatere can sometimes be found roaming the wilds in colder climates, though are most often found accompanied by their Orsimer tamers. Wild echatere are highly aggressive, and rather difficult to tame.\n\nThe echatere are  most commonly farmed for their pelt, wool and meat, or used as capable pack animals. Though it is rare to see tame echatere outside of the company of orsimer, as only the orsimer are foolish enough to even attempt at taming these beasts.\n\nIt is important to note the rules for handling echatere, documented in the book 'All About Echatere', written by one Stugbrulz gro-Shatul. Most important is the rules relating to the naming of echatere, as you do not want your children to become soft.</description>
+		<statBases>
+			<MoveSpeed>4.5</MoveSpeed>
+			<ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+			<MarketValue>300</MarketValue>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+		</statBases>
+		<uiIconScale>1.35</uiIconScale>
+		<tools>
+			<li>
+				<label>tusk</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>15.7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>left leg</label>
+				<capacities>
+					<li>Stab</li>
+					<li>Scratch</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right leg</label>
+				<capacities>
+					<li>Stab</li>
+					<li>Scratch</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Shearable">
+				<woolDef>ESCP_WoolEchatere</woolDef>
+				<shearIntervalDays>25</shearIntervalDays>
+				<woolAmount>60</woolAmount>
+			</li>
+		</comps>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<body>ESCP_SixInsectLeggedAnimal</body>
+			<baseBodySize>2.1</baseBodySize>
+			<baseHealthScale>2.35</baseHealthScale>
+			<baseHungerRate>0.535</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>ESCP_EchaterePelt</leatherDef>
+			<gestationPeriodDays>28</gestationPeriodDays>
+			<wildness>0.85</wildness>
+			<trainability>None</trainability>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>18</lifeExpectancy>
+			<roamMtbDays>2.5</roamMtbDays>
+			<manhunterOnDamageChance>0.70</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
+			<nameGenerator>ESCP_NamerEchatere</nameGenerator>
+			<nameGeneratorFemale>ESCP_NamerEchatere</nameGeneratorFemale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<wildBiomes>
+				<BorealForest>0.7</BorealForest>
+				<Tundra>0.5</Tundra>
+				<ColdBog>0.3</ColdBog>
+				<!-- Regrowth -->
+				<RG_TemperateGrassland MayRequire="ReGrowth.BOTR.Core">0.3</RG_TemperateGrassland>
+				<RG_AspenForest MayRequire="ReGrowth.BOTR.AspenForest">0.3</RG_AspenForest>
+				<!-- More Vanilla Biomes -->
+				<ZBiome_AlpineMeadow MayRequire="zylle.MoreVanillaBiomes">0.5</ZBiome_AlpineMeadow>
+				<!-- Winter taiga -->
+				<WinterTaiga MayRequire="reel.FrozenForest">0.5</WinterTaiga>
+				<!-- Biome Expansion - Redwood forest -->
+				<RedwoodForest MayRequire="kikohi.BERF">0.3</RedwoodForest>
+			</wildBiomes>
+		</race>
+		<tradeTags>
+			<li>AnimalExotic</li>
+			<li>ESCP_AnimalOrsimer</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef Name="ESCP_Echatere" ParentName="AnimalKindBase">
+		<defName>ESCP_Echatere</defName>
+		<label>echatere</label>
+		<race>ESCP_Echatere</race>
+		<combatPower>120</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>2~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>echalette</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Echatere/Echalette</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Echatere/Dessicated_Echalette</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Echatere/Echatere</texPath>
+					<drawSize>2.25</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Echatere/Dessicated_Echatere</texPath>
+					<drawSize>2.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Echatere/Echatere</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Echatere/Dessicated_Echatere</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Structure_OriginMauloch]========== -->
+	<MemeDef>
+		<defName>ESCP_Structure_OriginMauloch</defName>
+		<label>Code of Mauloch origin</label>
+		<description>This ideoligion is a descendant of the Code of Mauloch It may have very different precepts than those of thousands of years ago, but its symbols are similar.\n\nThe original Code of Mauloch was followed by many Orsimer strongholds, and was used to dictate the rules members abide by, and the punishment if any were broken.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.IdeoOrginProperties">
+				<IgnoreDuplicateDeityNames>true</IgnoreDuplicateDeityNames>
+				<RandomiseDeityName>true</RandomiseDeityName>
+				<RandomiseDeityType>true</RandomiseDeityType>
+				<overrideDeityIcons>true</overrideDeityIcons>
+				<iconPath>
+					<li>UI/Deities/ESCP_DeityMalacath</li>
+				</iconPath>
+			</li>
+		</modExtensions>
+		<iconPath>UI/Structures/ESCP_OriginMauloch</iconPath>
+		<deityCount>1</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>r_ideoName(p=99)->[globalAdjective] [packIdeoName]</li>
+				<li>r_ideoName(p=99)->[memeAdjective] [packIdeoName]</li>
+				<li>r_ideoName(p=99)->[packAdjective] [packIdeoName]</li>
+				<li>r_ideoName(p=99)->[packIdeoName]</li>
+				<li>memeLeaderNoun->warrior</li>
+				<li>memeLeaderNoun->voice</li>
+				<li>memeLeaderNoun->fist</li>
+				<li>memeLeaderNoun->hammer</li>
+				<li>memeLeaderNoun->axe</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeLeaderAdjective->Malacath's</li>
+				<li>memeLeaderAdjective->Mauloch's</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->cleric</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>TheistMyth</def>
+				</li>
+				<li>
+					<def>TheistFounder</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>ESCP_Structure_OriginMauloch</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Code of Mauloch</ideoName>
+				<adjective>Follower</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Code of Malacath</ideoName>
+				<adjective>Follower</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Code of Blood</ideoName>
+				<adjective>Follower</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Code of Honour</ideoName>
+				<adjective>Follower</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+		</symbolPacks>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Malacath</name>
+				<type>God of Curses</type>
+			</li>
+			<li>
+				<name>Mauloch</name>
+				<type>Prince of the Bloody Oath</type>
+			</li>
+			<li>
+				<name>Malacath</name>
+				<type>Lord of Monsters</type>
+			</li>
+			<li>
+				<name>Mauloch</name>
+				<type>Oathbreaker</type>
+			</li>
+			<li>
+				<name>Malacath</name>
+				<type>He Who Speaks Sideways</type>
+			</li>
+			<li>
+				<name>Mauloch</name>
+				<type>the Furious One</type>
+			</li>
+			<li>
+				<name>Malacath</name>
+				<type>Defender of the Betrayed</type>
+			</li>
+		</fixedDeityNameTypes>
+		<thingStyleCategories>
+			<li>
+				<category>ESCP_OrsimerStyle</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+	<!-- ==========[ESCP_Structure_OriginTrinimac]========== -->
+	<MemeDef>
+		<defName>ESCP_Structure_OriginTrinimac</defName>
+		<label>Cult of Trinimac origin</label>
+		<description>This ideoligion is a descendant of the Cult of Trinimac It may have very different precepts than those of thousands of years ago, but its symbols are similar.\n\nThe original Cult of Trinimac was followed by a small subsection of Orsimer, who believed Trinimac, and by proxy the Orsimer, were not cursed, but instead empowered by Boethiah.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.IdeoOrginProperties">
+				<IgnoreDuplicateDeityNames>true</IgnoreDuplicateDeityNames>
+				<RandomiseDeityType>true</RandomiseDeityType>
+				<overrideDeityIcons>true</overrideDeityIcons>
+				<iconPath>
+					<li>UI/Deities/ESCP_DeityTrinimac</li>
+				</iconPath>
+			</li>
+		</modExtensions>
+		<iconPath>UI/Structures/ESCP_OriginTrinimac</iconPath>
+		<deityCount>1</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>r_ideoName(p=99)->[globalAdjective] [packIdeoName]</li>
+				<li>r_ideoName(p=99)->[memeAdjective] [packIdeoName]</li>
+				<li>r_ideoName(p=99)->[packAdjective] [packIdeoName]</li>
+				<li>r_ideoName(p=99)->[packIdeoName]</li>
+				<li>memeLeaderNoun->warrior</li>
+				<li>memeLeaderNoun->voice</li>
+				<li>memeLeaderNoun->fist</li>
+				<li>memeLeaderNoun->hammer</li>
+				<li>memeLeaderNoun->axe</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeLeaderAdjective->Trinmac's</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->cleric</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>TheistMyth</def>
+				</li>
+				<li>
+					<def>TheistFounder</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>ESCP_Structure_OriginTrinimac</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Cult of Trinimac</ideoName>
+				<adjective>Follower</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+		</symbolPacks>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Trinimac</name>
+				<type>Lord of Ash and Bone</type>
+			</li>
+			<li>
+				<name>Trinimac</name>
+				<type>Creator of Curses</type>
+			</li>
+			<li>
+				<name>Trinimac</name>
+				<type>Keeper of the Bloody Curses</type>
+			</li>
+		</fixedDeityNameTypes>
+		<thingStyleCategories>
+			<li>
+				<category>ESCP_OrsimerStyle</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+</Defs>

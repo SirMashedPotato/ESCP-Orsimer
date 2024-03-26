@@ -9,4 +9,12 @@
 		<li IfModActive="vanillaexpanded.achievements">1.4/Mods/VE_Achievements</li>	
 		<li IfModActive="SirMashedPotato.ESCP.IndustrialFactionsDummy">1.4/Mods/IndustrialFactions</li>	
 	</v1.4>
+	<v1.5>
+		<li>Common</li>
+		<li>1.5</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/Mods/Royalty</li>	
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/Mods/Ideology</li>	
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/Mods/Biotech</li>	
+		<li IfModActive="SirMashedPotato.ESCP.IndustrialFactionsDummy">1.5/Mods/IndustrialFactions</li>	
+	</v1.5>
 </loadFolders>

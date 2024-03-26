@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Orsimer_NamerCultureLeaderTitle]========== -->
+	<RulePackDef>
+		<defName>ESCP_Orsimer_NamerCultureLeaderTitle</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+				<!-- ignore all meme nouns, tribals always use a culture noun -->
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->high</li>
+				<li>cultureLeaderAdjective->first</li>
+				<li>cultureLeaderAdjective->grand</li>
+				<li>cultureLeaderNoun->chieftain</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="ESCP_NonPlayerFactionBase_IndustrialCivil" Name="ESCP_Industrial_OrsimerNonPlayerFaction_CivilBase" Abstract="True">
+		<modExtensions>
+			<li Class="ESCP_RaceTools.SettlementPreference">
+				<chance>1.0</chance>
+				<useTemperatureRange>true</useTemperatureRange>
+				<temperatureRangeMin>-30</temperatureRangeMin>
+				<temperatureRangeMax>50</temperatureRangeMax>
+				<useElevationRange>true</useElevationRange>
+				<elevationRangeMin>500</elevationRangeMin>
+				<elevationRangeMax>1200</elevationRangeMax>
+				<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
+			</li>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_OrsimerFaction</li>
+					<li>ESCP_OrsimerFactionNonPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+		<leaderTitle>high chieftain</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_OrsimerSettlementIndustrial</factionIconPath>
+		<factionNameMaker>ESCP_Orsimer_NamerFaction</factionNameMaker>
+		<settlementNameMaker>ESCP_Orsimer_NamerSettlement</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_OrsimerCulture</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<ESCP_Structure_OriginMauloch MayRequire="Ludeon.RimWorld.Ideology">8</ESCP_Structure_OriginMauloch>
+			<ESCP_Structure_OriginTrinimac MayRequire="Ludeon.RimWorld.Ideology">4</ESCP_Structure_OriginTrinimac>
+		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+		</requiredMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		</disallowedPrecepts>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<ESCP_Industrial_OrsimerVillager>5</ESCP_Industrial_OrsimerVillager>
+					<ESCP_Industrial_OrsimerTown_Guard>10</ESCP_Industrial_OrsimerTown_Guard>
+					<ESCP_Industrial_OrsimerGrenadier_Destructive>1.5</ESCP_Industrial_OrsimerGrenadier_Destructive>
+					<ESCP_Industrial_OrsimerMercenary_Slasher>7</ESCP_Industrial_OrsimerMercenary_Slasher>
+					<ESCP_Industrial_OrsimerMercenary_Gunner>10</ESCP_Industrial_OrsimerMercenary_Gunner>
+					<ESCP_Industrial_OrsimerMercenary_Elite>10</ESCP_Industrial_OrsimerMercenary_Elite>
+					<ESCP_Industrial_OrsimerTown_Councilman>10</ESCP_Industrial_OrsimerTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<ESCP_Industrial_OrsimerVillager>20</ESCP_Industrial_OrsimerVillager>
+					<ESCP_Industrial_OrsimerVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</ESCP_Industrial_OrsimerVillager_Child>
+					<ESCP_Industrial_OrsimerTown_Guard>10</ESCP_Industrial_OrsimerTown_Guard>
+					<ESCP_Industrial_OrsimerTown_Councilman>10</ESCP_Industrial_OrsimerTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<ESCP_Industrial_OrsimerTown_Trader>1</ESCP_Industrial_OrsimerTown_Trader>
+				</traders>
+				<carriers>
+					<ESCP_Echatere>20</ESCP_Echatere>
+					<MorrowRim_Guar MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">5</MorrowRim_Guar>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<ESCP_Industrial_OrsimerVillager>3</ESCP_Industrial_OrsimerVillager>
+					<ESCP_Industrial_OrsimerTown_Guard>10</ESCP_Industrial_OrsimerTown_Guard>
+					<ESCP_Industrial_OrsimerGrenadier_Destructive>1.5</ESCP_Industrial_OrsimerGrenadier_Destructive>
+					<ESCP_Industrial_OrsimerMercenary_Slasher>7</ESCP_Industrial_OrsimerMercenary_Slasher>
+					<ESCP_Industrial_OrsimerMercenary_Gunner>10</ESCP_Industrial_OrsimerMercenary_Gunner>
+					<ESCP_Industrial_OrsimerMercenary_Elite>10</ESCP_Industrial_OrsimerMercenary_Elite>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ESCP_Industrial_OrsimerVillager>10</ESCP_Industrial_OrsimerVillager>
+					<ESCP_Industrial_OrsimerTown_Guard>10</ESCP_Industrial_OrsimerTown_Guard>
+					<ESCP_Industrial_OrsimerGrenadier_Destructive>1.5</ESCP_Industrial_OrsimerGrenadier_Destructive>
+					<ESCP_Industrial_OrsimerMercenary_Slasher>7</ESCP_Industrial_OrsimerMercenary_Slasher>
+					<ESCP_Industrial_OrsimerMercenary_Gunner>10</ESCP_Industrial_OrsimerMercenary_Gunner>
+					<ESCP_Industrial_OrsimerMercenary_Elite>10</ESCP_Industrial_OrsimerMercenary_Elite>
+					<ESCP_Industrial_OrsimerTown_Councilman>10</ESCP_Industrial_OrsimerTown_Councilman>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_OrsimerMiner>1</ESCP_Industrial_OrsimerMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_OrsimerHunter>1</ESCP_Industrial_OrsimerHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_OrsimerLogger>1</ESCP_Industrial_OrsimerLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_OrsimerFarmer>1</ESCP_Industrial_OrsimerFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!-- ==========[ESCP_Industrial_OrsimerNonPlayerFaction_Civil]========== -->
+	<FactionDef ParentName="ESCP_Industrial_OrsimerNonPlayerFaction_CivilBase">
+		<defName>ESCP_Industrial_OrsimerNonPlayerFaction_Civil</defName>
+		<label>Orsimer colonies (industrial)</label>
+		<description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behaviour in high regard.</description>
+	</FactionDef>
+</Defs>
