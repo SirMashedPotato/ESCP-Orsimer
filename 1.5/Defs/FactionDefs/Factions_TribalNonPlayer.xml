@@ -111,7 +111,7 @@
 					<ESCP_Orsimer_Tribal_Berserker>5</ESCP_Orsimer_Tribal_Berserker>
 					<ESCP_Orsimer_Tribal_ChiefRanged>3</ESCP_Orsimer_Tribal_ChiefRanged>
 					<ESCP_Orsimer_Tribal_ChiefMelee>1.5</ESCP_Orsimer_Tribal_ChiefMelee>
-					<MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">0.5</MorrowRim_Scamp>
+					<Mashed_Ashlands_Scamp MayRequire="sirmashedpotato.ashlands">0.5</Mashed_Ashlands_Scamp>
 				</options>
 			</li>
 			<li>
@@ -121,7 +121,7 @@
 				</traders>
 				<carriers>
 					<ESCP_Echatere>20</ESCP_Echatere>
-					<MorrowRim_Guar MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">5</MorrowRim_Guar>
+					<Mashed_Ashlands_Guar MayRequireAnyOf="sirmashedpotato.ashlands">5</Mashed_Ashlands_Guar>
 					<Muffalo>6</Muffalo>
 					<Dromedary>5</Dromedary>
 					<Alpaca>2.5</Alpaca>
@@ -133,7 +133,7 @@
 					<ESCP_Orsimer_Tribal_Hunter>10</ESCP_Orsimer_Tribal_Hunter>
 					<ESCP_Orsimer_Tribal_HeavyArcher>10</ESCP_Orsimer_Tribal_HeavyArcher>
 					<ESCP_Orsimer_Tribal_Berserker>7</ESCP_Orsimer_Tribal_Berserker>
-					<MorrowRim_Scamp MayRequire="SirMashedPotato.MorrowRim">0.5</MorrowRim_Scamp>
+					<Mashed_Ashlands_Scamp MayRequire="sirmashedpotato.ashlands">0.5</Mashed_Ashlands_Scamp>
 				</guards>
 			</li>
 			<li>

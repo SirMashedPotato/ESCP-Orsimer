@@ -129,7 +129,7 @@
 				<RG_TemperateGrassland MayRequire="ReGrowth.BOTR.Core">0.07</RG_TemperateGrassland>
 				<RG_AspenForest MayRequire="ReGrowth.BOTR.AspenForest">0.05</RG_AspenForest>
 				<!-- MorrowRim -->
-				<MorrowRim_Grazelands MayRequire="SirMashedPotato.MorrowRim.Grazelands">0.05</MorrowRim_Grazelands>
+				<Mashed_Ashlands_GrazelandAshlands MayRequire="sirmashedpotato.ashlands">0.05</Mashed_Ashlands_GrazelandAshlands>
 				<!-- Advanced Biomes -->
 				<Savanna MayRequire="Mlie.AdvancedBiomes">0.05</Savanna>
 			</wildBiomes>

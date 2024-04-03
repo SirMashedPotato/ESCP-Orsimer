@@ -7,6 +7,7 @@
 				<filter>
 					<thingDefs>
 						<li>Steel</li>
+						<li MayRequire="dankpyon.medieval.overhaul">DankPyon_IronIngot</li>
 						<li>ESCP_EchaterePelt</li>
 						<li>ESCP_WoolEchatere</li>
 						<li>Leather_Wolf</li>
