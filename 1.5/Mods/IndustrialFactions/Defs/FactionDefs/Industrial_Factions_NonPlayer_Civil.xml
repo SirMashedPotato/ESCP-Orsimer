@@ -68,7 +68,6 @@
 				</traders>
 				<carriers>
 					<ESCP_Echatere>20</ESCP_Echatere>
-					<Mashed_Ashlands_Guar MayRequire="sirmashedpotato.ashlands">5</Mashed_Ashlands_Guar>
 					<Muffalo>6</Muffalo>
 					<Dromedary>5</Dromedary>
 					<Alpaca>2</Alpaca>
